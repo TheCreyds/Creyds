@@ -1,0 +1,43 @@
+
+/* CREYDS - PRIMERA TABLILLA */
+
+.creyds-rol {
+    width: 90%;
+    max-width: 620px;
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+
+    border: 1px solid #56bfc4;
+    font-family: Georgia, serif;
+}
+
+.creyds-rol h1 {
+    margin: 0;
+    text-align: center;
+    color: #56bfc4;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.creyds-datos {
+    margin-top: 10px;
+    text-align: center;
+    color: #888888;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.creyds-texto {
+    margin-top: 30px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.creyds-adorno {
+    margin-top: 25px;
+    text-align: center;
+    color: #56bfc4;
+}
+    
