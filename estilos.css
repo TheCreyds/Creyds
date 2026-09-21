@@ -1,43 +1,231 @@
 
-/* CREYDS - PRIMERA TABLILLA */
+/* =====================================================
+   CREYDS — NOIR
+   VARIABLES Y CONFIGURACIÓN GENERAL
+   ===================================================== */
 
-.creyds-rol {
+.creyds-noir {
+
+    /* Hereda el color establecido por Foroactivo */
+    color: inherit;
+
+    /* Fondo completamente transparente */
+    background: transparent;
+
+    /* Tipografías */
+    font-family: Georgia, "Times New Roman", serif;
+
+    /* Tamaño y espaciado general */
+    font-size: 14px;
+    line-height: 1.9;
+
+    /* Dimensiones */
     width: 90%;
     max-width: 620px;
-    margin: 30px auto;
-    padding: 30px;
+    margin: 35px auto;
     box-sizing: border-box;
-
-    border: 1px solid #56bfc4;
-    font-family: Georgia, serif;
 }
 
-.creyds-rol h1 {
+
+.creyds-noir *,
+.creyds-noir *::before,
+.creyds-noir *::after {
+    box-sizing: border-box;
+}
+
+.creyds-noir-title {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.creyds-noir-title-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.creyds-noir-title h1 {
     margin: 0;
-    text-align: center;
-    color: #56bfc4;
-    font-size: 26px;
-    font-weight: normal;
+    /* Hereda el color del grupo */
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    text-transform: uppercase;
 }
 
-.creyds-datos {
-    margin-top: 10px;
-    text-align: center;
-    color: #888888;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
+.creyds-noir-title span {
+    /* Hereda el color del grupo */
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
 }
 
-.creyds-texto {
-    margin-top: 30px;
-    line-height: 1.8;
+
+.creyds-noir-quote {
+    margin-top: 16px;
+    /* Hereda el color del foro */
+    color: inherit;
+    opacity: 0.65;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.7;
+    text-align: center;
+
+}
+.creyds-noir-gap {
+    height: 30px;
+}
+
+
+.creyds-noir-post {
+    /* Usa el color heredado del grupo */
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    background: transparent;
+}
+
+.creyds-noir-post-inner {
+    display: grid;
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 18px;
+    padding: 28px 8px;
+}
+
+.creyds-noir-mark {
+    padding-top: 4px;
+    /* Hereda el color del grupo */
+    color: inherit;
+    font-size: 12px;
+    line-height: 1;
+}
+
+
+
+.creyds-noir-content {
+    min-width: 0;
+}
+
+.creyds-noir-text {
+    /* Hereda el color del tema del foro */
+    color: inherit;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    line-height: 1.9;
     text-align: justify;
 }
 
-.creyds-adorno {
-    margin-top: 25px;
-    text-align: center;
-    color: #56bfc4;
+.creyds-noir-text p {
+    margin: 0 0 16px;
 }
-    
+
+.creyds-noir-text p:last-child {
+    margin-bottom: 0;
+}
+
+
+.creyds-noir-text strong,
+.creyds-noir-text b {
+    /* Hereda el color del grupo */
+    color: inherit;
+    font-weight: bold;
+}
+
+.creyds-noir-text em,
+.creyds-noir-text i {
+    color: inherit;
+}
+
+
+
+.creyds-noir-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    /* Color heredado del foro */
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.creyds-noir-data-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.creyds-noir-data-icon,
+.creyds-noir-data-separator {
+    /* Heredan el color del grupo */
+    color: inherit;
+}
+
+.creyds-noir-data-icon {
+    font-size: 11px;
+}
+
+
+
+.creyds-noir a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.creyds-noir a:hover {
+    text-decoration: underline;
+}
+
+
+
+.creyds-noir ::selection {
+    background: currentColor;
+    color: inherit;
+}
+
+
+
+@media (max-width: 480px) {
+    .creyds-noir {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .creyds-noir-title h1 {
+        font-size: 19px;
+        letter-spacing: 2px;
+    }
+
+    .creyds-noir-title-inner {
+        gap: 9px;
+    }
+
+    .creyds-noir-post-inner {
+        grid-template-columns: 15px minmax(0, 1fr);
+        gap: 10px;
+        padding: 22px 4px;
+    }
+
+    .creyds-noir-text {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .creyds-noir-data {
+        gap: 7px;
+        font-size: 8px;
+    }
+
+}
