@@ -101,3 +101,214 @@
 .creyds-v2-text p {
   margin: 0 0 8px;
 }
+/* =========================================================
+   CREYDS - PACK DE TABLILLAS POKÉMON (1ª - 3ª GEN)
+   ========================================================= */
+
+/* --- 1. CHARIZARD (Táctico / Marco Cortado) --- */
+.charizard {
+  width: 480px;
+  max-width: 95%;
+  margin: 18px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+}
+
+.charizard-title {
+  font: 700 20px/1.2 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+}
+
+.charizard-meta {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 16px;
+}
+
+.charizard-text { text-align: justify; }
+
+
+/* --- 2. GENGAR (Esquinas Flotantes / Sombra Sutil) --- */
+.gengar {
+  width: 470px;
+  max-width: 95%;
+  margin: 18px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px dashed var(--grupo-color, #555);
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+
+.gengar::before {
+  content: "◆";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: var(--grupo-color, inherit);
+  background: transparent;
+}
+
+.gengar-header { text-align: center; margin-bottom: 14px; }
+
+.gengar-title {
+  font: 600 22px/1 'Cinzel', serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  margin-bottom: 6px;
+}
+
+.gengar-meta {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.gengar-text { text-align: justify; }
+
+
+/* --- 3. SCIZOR (Doble Barra Lateral Industrial) --- */
+.scizor {
+  width: 480px;
+  max-width: 95%;
+  margin: 18px auto;
+  padding: 16px 20px 16px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border-left: 4px solid var(--grupo-color, #777);
+  box-shadow: -8px 0 0 -4px var(--grupo-color, #777);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+
+.scizor-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grupo-color, #555);
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+.scizor-title {
+  font: 700 19px/1 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+}
+
+.scizor-meta {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.scizor-text { text-align: justify; }
+
+
+/* --- 4. TYRANITAR (Badge Superior Compacto) --- */
+.tyranitar {
+  width: 490px;
+  max-width: 95%;
+  margin: 22px auto 18px;
+  padding: 24px 22px 18px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+
+.tyranitar-badge {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  border: 1px solid var(--grupo-color, #666);
+  padding: 2px 12px;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  background: transparent;
+}
+
+.tyranitar-title {
+  font: 700 21px/1.1 'Montserrat', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  margin-bottom: 12px;
+}
+
+.tyranitar-text { text-align: justify; }
+
+
+/* --- 5. RAYQUAZA (Editorial Minimalista con Guías) --- */
+.rayquaza {
+  width: 480px;
+  max-width: 95%;
+  margin: 18px auto;
+  padding: 12px 0;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 2px solid var(--grupo-color, #888);
+  border-bottom: 2px solid var(--grupo-color, #888);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+
+.rayquaza-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.rayquaza-title {
+  font: 600 20px/1 'Cinzel', serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  white-space: nowrap;
+}
+
+.rayquaza-line {
+  flex: 1;
+  height: 1px;
+  background: var(--grupo-color, #888);
+  opacity: 0.4;
+}
+
+.rayquaza-meta {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+
+.rayquaza-text { text-align: justify; }
