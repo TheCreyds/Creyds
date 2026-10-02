@@ -1,31 +1,112 @@
 /* =========================================================
-   CREYDS - TABLILLA MINIMALISTA MASCULINA
+   CREYDS - TABLILLA DECORADA MASCULINA (Fondo Transparente)
    ========================================================= */
 
-.creyds-v1 {
-  width: 470px;
+.creyds-v2 {
+  width: 490px;
   max-width: 95%;
-  margin: 16px auto;
-  padding: 15px 22px;
+  margin: 18px auto;
+  padding: 18px 24px 22px;
   box-sizing: border-box;
-  border-left: 2px solid var(--grupo-color, #777);
   background: transparent;
+  border: 1px solid var(--grupo-color, #555);
+  position: relative;
   font: 13px/1.7 var(--creyds-post-font, sans-serif);
-  text-align: justify;
+  color: inherit;
 }
 
-.creyds-v1 h1 {
-  margin: 0 0 4px 0;
-  font: bold 18px/1.2 'Cinzel', serif;
-  letter-spacing: 2px;
+/* Esquinas decorativas sutiles */
+.creyds-v2::before,
+.creyds-v2::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--grupo-color, #555);
+}
+
+.creyds-v2::before {
+  top: 3px;
+  left: 3px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.creyds-v2::after {
+  bottom: 3px;
+  right: 3px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Encabezado y Título */
+.creyds-v2-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.creyds-v2 h1 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 3px;
   color: var(--grupo-color, inherit);
   text-transform: uppercase;
 }
 
-.creyds-v1-data {
-  font-size: 10px;
-  letter-spacing: 1.5px;
+/* Datos del Tema / Metadatos */
+.creyds-v2-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  opacity: 0.7;
-  margin-bottom: 14px;
+  opacity: 0.75;
+}
+
+.creyds-v2-data span.sep {
+  color: var(--grupo-color, inherit);
+  font-size: 8px;
+}
+
+/* Separador horizontal decorativo */
+.creyds-v2-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0 16px;
+}
+
+.creyds-v2-line {
+  flex: 1;
+  height: 1px;
+  background: var(--grupo-color, #555);
+  opacity: 0.35;
+}
+
+.creyds-v2-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--grupo-color, inherit);
+  transform: rotate(45deg);
+  margin: 0 10px;
+}
+
+/* Texto del Post */
+.creyds-v2-text {
+  text-align: justify;
+}
+
+.creyds-v2-text p {
+  margin: 0 0 10px;
+}
+
+.creyds-v2-text p:last-child {
+  margin-bottom: 0;
 }
