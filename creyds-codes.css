@@ -1,0 +1,68 @@
+/* =========================================================
+   CREYDS - TABLILLA 01 (Minimalista & Masculina - Transparente)
+   ========================================================= */
+
+.creyds-v1 {
+  width: 480px;
+  max-width: 95%;
+  margin: 16px auto;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+  font-family: var(--creyds-post-font, 'Inter', -apple-system, sans-serif);
+  text-align: left;
+}
+
+.creyds-v1-in {
+  padding: 22px 28px;
+  box-sizing: border-box;
+  border-left: 3px solid var(--grupo-color, #8e9daf);
+  background: transparent;
+  position: relative;
+}
+
+.creyds-v1-header {
+  margin-bottom: 18px;
+}
+
+.creyds-v1 h1 {
+  margin: 0 0 6px 0;
+  font-family: var(--creyds-title-font, 'Cinzel', 'Playfair Display', serif);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+
+.creyds-v1-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.creyds-v1-data span.sep {
+  color: var(--grupo-color, inherit);
+  opacity: 0.8;
+}
+
+.creyds-v1-text {
+  font-size: var(--creyds-post-size, 13px);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.creyds-v1-text p {
+  margin: 0 0 12px 0;
+}
+
+.creyds-v1-text p:last-child {
+  margin-bottom: 0;
+}
