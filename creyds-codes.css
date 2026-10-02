@@ -312,3 +312,296 @@
 }
 
 .rayquaza-text { text-align: justify; }
+
+/* =========================================================
+   CREYDS - PACK 10 TABLILLAS MASCULINAS POKÉMON (1ª - 3ª GEN)
+   ========================================================= */
+
+/* --- 01. MEWTWO (Marco Doble Cruzado Geométrico) --- */
+.mewtwo {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 18px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  outline: 1px solid var(--grupo-color, #666);
+  outline-offset: -6px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.mewtwo-head { text-align: center; margin-bottom: 12px; }
+.mewtwo h1 {
+  margin: 0;
+  font: 700 24px/1.1 'Bebas Neue', cursive;
+  letter-spacing: 3px;
+  color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.mewtwo-meta {
+  display: flex; justify-content: center; gap: 12px;
+  font-size: 9px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: 0.8; margin-top: 6px;
+}
+.mewtwo-text { text-align: justify; }
+
+
+/* --- 02. BLASTOISE (Borde Doble Grueso e Industrial) --- */
+.blastoise {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 16px 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 4px double var(--grupo-color, #555);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.blastoise-top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  border-bottom: 1px dashed var(--grupo-color, #555);
+  padding-bottom: 6px; margin-bottom: 14px;
+}
+.blastoise h1 {
+  margin: 0;
+  font: 700 20px/1 'Rajdhani', sans-serif;
+  letter-spacing: 2.5px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.blastoise-meta {
+  font-size: 9px; font-weight: 600; letter-spacing: 1px;
+  text-transform: uppercase; opacity: 0.75;
+}
+.blastoise-text { text-align: justify; }
+
+
+/* --- 03. STEELIX (Líneas Punteadas Intercaladas) --- */
+.steelix {
+  width: 470px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 2px dashed var(--grupo-color, #777);
+  border-bottom: 2px dashed var(--grupo-color, #777);
+  border-left: 1px dotted var(--grupo-color, #777);
+  border-right: 1px dotted var(--grupo-color, #777);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.steelix h1 {
+  margin: 0 0 4px 0; text-align: center;
+  font: 700 22px/1.1 'Syne', sans-serif;
+  letter-spacing: 2px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.steelix-meta {
+  text-align: center; font-size: 9.5px; letter-spacing: 2px;
+  text-transform: uppercase; opacity: 0.7; margin-bottom: 14px;
+}
+.steelix-text { text-align: justify; }
+
+
+/* --- 04. SALAMENCE (Marco Escalonado Doble) --- */
+.salamence {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 6px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+}
+.salamence-in {
+  border: 1px dashed var(--grupo-color, #666);
+  padding: 16px 20px;
+  box-sizing: border-box;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.salamence h1 {
+  margin: 0 0 8px 0;
+  font: 700 22px/1 'Chakra Petch', sans-serif;
+  letter-spacing: 3px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.salamence-meta {
+  display: flex; gap: 14px; font-size: 9px; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75;
+  margin-bottom: 12px; border-bottom: 1px solid var(--grupo-color, #666);
+  padding-bottom: 6px;
+}
+.salamence-text { text-align: justify; }
+
+
+/* --- 05. ARCANINE (Gótico-Elegante con Doble Marco Horizontal) --- */
+.arcanine {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 3px double var(--grupo-color, #555);
+  border-bottom: 3px double var(--grupo-color, #555);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.arcanine h1 {
+  margin: 0; text-align: center;
+  font: 400 26px/1.1 'UnifrakturMaguntia', cursive;
+  color: var(--grupo-color, inherit);
+}
+.arcanine-meta {
+  text-align: center; font-size: 9px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase; opacity: 0.7;
+  margin: 4px 0 14px; border-bottom: 1px dotted var(--grupo-color, #555);
+  padding-bottom: 8px;
+}
+.arcanine-text { text-align: justify; }
+
+
+/* --- 06. METAGROSS (Marco Táctico con Esquinas Cruzadas) --- */
+.metagross {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #555);
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.metagross::before {
+  content: ""; position: absolute;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
+  border: 1px dashed var(--grupo-color, #555);
+  pointer-events: none; opacity: 0.6;
+}
+.metagross h1 {
+  margin: 0; font: 700 24px/1 'Teko', sans-serif;
+  letter-spacing: 3px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.metagross-meta {
+  display: flex; gap: 10px; font-size: 9px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75;
+  margin: 4px 0 14px;
+}
+.metagross-text { text-align: justify; }
+
+
+/* --- 07. SCEPTILE (Doble Punteado Póliza) --- */
+.sceptile {
+  width: 470px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  background: transparent;
+  outline: 1px dotted var(--grupo-color, #666);
+  outline-offset: -5px;
+  border: 1px dotted var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.sceptile-head {
+  text-align: center; border-bottom: 1px solid var(--grupo-color, #666);
+  padding-bottom: 8px; margin-bottom: 12px;
+}
+.sceptile h1 {
+  margin: 0; font: 600 20px/1.1 'Cinzel', serif;
+  letter-spacing: 3px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.sceptile-meta {
+  font-size: 8.5px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; opacity: 0.7; margin-top: 4px;
+}
+.sceptile-text { text-align: justify; }
+
+
+/* --- 08. GENGAR-HAUNTED (Marco Intercalado Urbano) --- */
+.haunter {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 3px solid var(--grupo-color, #555);
+  border-bottom: 1px dashed var(--grupo-color, #555);
+  border-left: 1px dashed var(--grupo-color, #555);
+  border-right: 3px solid var(--grupo-color, #555);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.haunter h1 {
+  margin: 0; font: 700 21px/1.1 'Space Grotesk', sans-serif;
+  letter-spacing: 2px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.haunter-meta {
+  font-size: 9px; font-weight: 700; letter-spacing: 1.5px;
+  text-transform: uppercase; opacity: 0.75; margin: 6px 0 14px;
+}
+.haunter-text { text-align: justify; }
+
+
+/* --- 09. GYARADOS (Editorial Clásico con Marco Doble Fino) --- */
+.gyarados {
+  width: 480px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #555);
+  box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px var(--grupo-color, #555);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.gyarados h1 {
+  margin: 0; text-align: center;
+  font: 600 21px/1.1 'Cormorant Garamond', serif;
+  letter-spacing: 4px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.gyarados-meta {
+  text-align: center; font-size: 9px; letter-spacing: 2px;
+  text-transform: uppercase; opacity: 0.75; margin: 6px 0 16px;
+}
+.gyarados-text { text-align: justify; }
+
+
+/* --- 10. AERODACTYL (Marco Flotante Asimétrico) --- */
+.aerodactyl {
+  width: 470px;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border-left: 3px double var(--grupo-color, #666);
+  border-right: 3px double var(--grupo-color, #666);
+  border-top: 1px dashed var(--grupo-color, #666);
+  border-bottom: 1px dashed var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.aerodactyl h1 {
+  margin: 0; font: 700 20px/1 'Playfair Display', serif;
+  letter-spacing: 2px; color: var(--grupo-color, inherit);
+  text-transform: uppercase;
+}
+.aerodactyl-meta {
+  display: flex; gap: 12px; font-size: 9px; font-weight: 600;
+  letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75;
+  margin: 6px 0 14px;
+}
+.aerodactyl-text { text-align: justify; }
