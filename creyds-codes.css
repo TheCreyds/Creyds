@@ -816,3 +816,162 @@
 .kyogre h1 { margin: 0; text-align: center; font: 700 22px/1 'Cinzel Decorative', cursive; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
 .kyogre-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
 .kyogre-text { text-align: justify; }
+
+/* =========================================================
+   CREYDS - PACK 8 TABLILLAS LEGENDARIAS CON BORDES CURVOS
+   ========================================================= */
+
+/* --- 01. ZAPDOS (Asimétrico Eléctrico Curvo) --- */
+.zapdos {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--grupo-color, #777);
+  border-radius: 22px 4px 22px 4px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  position: relative;
+}
+.zapdos-head { border-bottom: 2px solid var(--grupo-color, #777); padding-bottom: 8px; margin-bottom: 14px; text-align: center; }
+.zapdos h1 { margin: 0; font: 700 24px/1 'Rajdhani', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.zapdos-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-top: 8px; }
+.zapdos-text { text-align: justify; }
+
+
+/* --- 02. MOLTRES (Llama Estilizada Arqueada) --- */
+.moltres {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 30px 6px 30px 6px;
+  outline: 1px solid var(--grupo-color, #666);
+  outline-offset: 4px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.moltres h1 { margin: 0; font: 700 23px/1 'Cinzel', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.moltres-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 10px 0 16px; border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); padding: 6px 0; }
+.moltres-text { text-align: justify; }
+
+
+/* --- 03. ARTICUNO (Cápsula Helada Hiper-Redondeada) --- */
+.articuno {
+  width: 470px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 28px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.articuno-top { text-align: center; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 10px; margin-bottom: 14px; }
+.articuno h1 { margin: 0; font: 600 22px/1 'Quicksand', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.articuno-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-top: 8px; }
+.articuno-text { text-align: justify; }
+
+
+/* --- 04. MEW (Burbuja Psíquica Punteada) --- */
+.mew {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px dashed var(--grupo-color, #666);
+  border-radius: 25px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.mew h1 { margin: 0; font: 700 21px/1 'Comfortaa', cursive; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.mew-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 10px 0 16px; border-bottom: 1px dotted var(--grupo-color, #666); padding-bottom: 8px; }
+.mew-text { text-align: justify; }
+
+
+/* --- 05. ENTEI (Placa Volcánica Borde Doble Curvo) --- */
+.entei {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 4px double var(--grupo-color, #666);
+  border-radius: 18px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.entei h1 { margin: 0; text-align: center; font: 700 23px/1 'UnifrakturMaguntia', cursive; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.entei-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 14px; border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); padding: 5px 0; }
+.entei-text { text-align: justify; }
+
+
+/* --- 06. SUICUNE (Cresta de Viento Fluvial) --- */
+.suicune {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 2px solid var(--grupo-color, #666);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  border-left: 1px solid var(--grupo-color, #666);
+  border-right: 1px solid var(--grupo-color, #666);
+  border-radius: 35px 10px 35px 10px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.suicune h1 { margin: 0; text-align: center; font: 600 22px/1 'Cormorant Garamond', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.suicune-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 14px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 6px; }
+.suicune-text { text-align: justify; }
+
+
+/* --- 07. RAIKOU (Nube de Tormenta con Muesca Curva) --- */
+.raikou {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 20px 20px 4px 20px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.raikou-head { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
+.raikou h1 { margin: 0; font: 800 22px/1 'Syne', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.raikou-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
+.raikou-text { text-align: justify; }
+
+
+/* --- 08. LUGIA (Aeroshell Marino Arqueado) --- */
+.lugia {
+  width: 470px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 24px;
+  box-shadow: 0 -3px 0 var(--grupo-color, #666), 0 3px 0 var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.lugia h1 { margin: 0; text-align: center; font: 500 22px/1 'Tenor Sans', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.lugia-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
+.lugia-text { text-align: justify; }
