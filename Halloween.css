@@ -27,7 +27,7 @@
 
 .h-body{font-size:13px;line-height:1.7;text-align:justify;margin:0 20px 28px 50px;color:#d1d1d1}
 
-.h-tree{position:absolute!important;bottom:4px;left:4px;width:85px!important;pointer-events:none}
+.h-tree{position:absolute!important;bottom:4px;left:4px;width:65px!important;pointer-events:none}
 .h-bat-bottom{position:absolute!important;bottom:18px;right:65px;width:22px!important;pointer-events:none;transform:rotate(-12deg)}
 .h-pumpkin{position:absolute!important;bottom:6px;right:8px;width:48px!important;pointer-events:none}
 
