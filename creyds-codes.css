@@ -1,28 +1,27 @@
 /* =========================================================
-   CREYDS - TABLILLA DECORADA MASCULINA (Fondo Transparente)
+   CREYDS - TABLILLA PHPBB3 DECORADA MASCULINA
    ========================================================= */
 
 .creyds-v2 {
-  width: 490px;
+  width: 480px;
   max-width: 95%;
-  margin: 18px auto;
-  padding: 18px 24px 22px;
+  margin: 10px auto;
+  padding: 18px 22px;
   box-sizing: border-box;
   background: transparent;
-  border: 1px solid var(--grupo-color, #555);
+  border: 1px solid var(--grupo-color, #666);
   position: relative;
   font: 13px/1.7 var(--creyds-post-font, sans-serif);
   color: inherit;
 }
 
-/* Esquinas decorativas sutiles */
 .creyds-v2::before,
 .creyds-v2::after {
   content: "";
   position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 1px solid var(--grupo-color, #555);
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--grupo-color, #666);
 }
 
 .creyds-v2::before {
@@ -39,16 +38,15 @@
   border-top: none;
 }
 
-/* Encabezado y Título */
 .creyds-v2-header {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .creyds-v2 h1 {
   margin: 0;
   font-family: 'Oswald', sans-serif;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: 3px;
@@ -56,14 +54,13 @@
   text-transform: uppercase;
 }
 
-/* Datos del Tema / Metadatos */
 .creyds-v2-data {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-top: 6px;
-  font-size: 9.5px;
+  gap: 8px;
+  margin-top: 5px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -75,19 +72,18 @@
   font-size: 8px;
 }
 
-/* Separador horizontal decorativo */
 .creyds-v2-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 14px 0 16px;
+  margin: 10px 0 14px;
 }
 
 .creyds-v2-line {
   flex: 1;
   height: 1px;
-  background: var(--grupo-color, #555);
-  opacity: 0.35;
+  background: var(--grupo-color, #666);
+  opacity: 0.3;
 }
 
 .creyds-v2-dot {
@@ -95,18 +91,13 @@
   height: 4px;
   background: var(--grupo-color, inherit);
   transform: rotate(45deg);
-  margin: 0 10px;
+  margin: 0 8px;
 }
 
-/* Texto del Post */
 .creyds-v2-text {
   text-align: justify;
 }
 
 .creyds-v2-text p {
-  margin: 0 0 10px;
-}
-
-.creyds-v2-text p:last-child {
-  margin-bottom: 0;
+  margin: 0 0 8px;
 }
