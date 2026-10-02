@@ -1,243 +1,308 @@
+.halloween{
+max-width:620px;
+width:100%;
+margin:20px auto;
+border:4px double #b83b28;
+border-radius:3px;
+padding:28px 30px 22px;
+position:relative;
+box-sizing:border-box;
+font-family:Georgia,serif;
+background:transparent;
+overflow:hidden;
+}
+
+.halloween:before,
+.halloween:after{
+content:"";
+position:absolute;
+width:12px;
+height:12px;
+border-color:#b83b28;
+border-style:solid;
+z-index:3;
+}
+
+.halloween:before{
+top:4px;
+left:4px;
+border-width:2px 0 0 2px;
+box-shadow:
+584px 0 0 -2px transparent;
+}
+
+.halloween:after{
+bottom:4px;
+right:4px;
+border-width:0 2px 2px 0;
+}
+
+.h-corners:before,
+.h-corners:after{
+content:"";
+position:absolute;
+width:12px;
+height:12px;
+border-color:#b83b28;
+border-style:solid;
+z-index:3;
+}
+
+.h-corners:before{
+top:4px;
+right:4px;
+border-width:2px 2px 0 0;
+}
+
+.h-corners:after{
+bottom:4px;
+left:4px;
+border-width:0 0 2px 2px;
+}
+
+.h-rama{
+position:absolute;
+top:6px;
+left:6px;
+width:90px;
+height:90px;
+background:url("https://i.imgur.com/i4HTijN.png") left top/contain no-repeat;
+pointer-events:none;
+}
+
+.h-moon{
+position:absolute;
+top:16px;
+right:18px;
+width:44px;
+height:44px;
+background:#e37b58;
+border-radius:50%;
+box-shadow:0 0 8px rgba(227,123,88,.4);
+pointer-events:none;
+}
+
+.h-bat-left{
+position:absolute;
+top:60px;
+left:65px;
+width:20px;
+height:20px;
+background:url("https://i.imgur.com/GrtwvKS.png") center/contain no-repeat;
+pointer-events:none;
+}
+
+.h-bat-right-1{
+position:absolute;
+top:14px;
+right:75px;
+width:22px;
+height:22px;
+background:url("https://i.imgur.com/GrtwvKS.png") center/contain no-repeat;
+pointer-events:none;
+}
+
+.h-bat-right-2{
+position:absolute;
+top:32px;
+right:110px;
+width:18px;
+height:18px;
+background:url("https://i.imgur.com/QQTZHst.png") center/contain no-repeat;
+pointer-events:none;
+}
+
+.h-bat-right-3{
+position:absolute;
+top:16px;
+right:145px;
+width:15px;
+height:15px;
+background:url("https://i.imgur.com/GrtwvKS.png") center/contain no-repeat;
+pointer-events:none;
+}
+
+.h-stars{
+position:absolute;
+left:10px;
+top:52%;
+transform:translateY(-50%);
+display:flex;
+flex-direction:column;
+gap:10px;
+color:#c84b31;
+font-size:10px;
+pointer-events:none;
+}
+
+.h-stars span{
+display:block;
+}
+
+.h-header{
+margin-left:75px;
+margin-top:2px;
+margin-bottom:18px;
+display:flex;
+align-items:center;
+}
+
+.h-header .line{
+height:1px;
+width:12px;
+background:#b83b28;
+}
+
+.h-header .star{
+color:#c84b31;
+font-size:8px;
+margin:0 3px;
+}
+
+.h-banner{
+background:#b83b28;
+color:#fff;
+padding:5px 20px;
+font-size:11px;
+letter-spacing:2px;
+font-weight:bold;
+text-transform:uppercase;
+clip-path:polygon(
+8px 0%,
+calc(100% - 8px) 0%,
+100% 50%,
+calc(100% - 8px) 100%,
+8px 100%,
+0% 50%
+);
+}
+
+.h-rule{
+border-bottom:1px solid #b83b28;
+opacity:.45;
+margin:14px 10px 14px 20px;
+}
+
+.h-title{
+text-align:center;
+font-size:16px;
+letter-spacing:5px;
+text-transform:uppercase;
+color:#d85a38;
+margin:12px 0 10px;
+font-weight:normal;
+}
+
+.h-title-star{
+text-align:center;
+color:#c84b31;
+font-size:10px;
+margin-bottom:10px;
+}
+
+.h-rule-title{
+margin:0 10px 22px 20px;
+}
+
+.h-body{
+font-size:13px;
+line-height:1.7;
+text-align:justify;
+margin:0 20px 28px 50px;
+color:#d1d1d1;
+}
+
+.h-tree{
+position:absolute;
+bottom:4px;
+left:4px;
+width:105px;
+height:105px;
+background:url("https://i.imgur.com/l6TocSi.png") left bottom/contain no-repeat;
+pointer-events:none;
+}
+
+.h-bat-bottom{
+position:absolute;
+bottom:18px;
+right:65px;
+width:22px;
+height:22px;
+background:url("https://i.imgur.com/QQTZHst.png") center/contain no-repeat;
+transform:rotate(-12deg);
+pointer-events:none;
+}
+
+.h-pumpkin{
+position:absolute;
+bottom:6px;
+right:8px;
+width:48px;
+height:48px;
+background:url("https://i.imgur.com/VH0gbm2.png") center/contain no-repeat;
+pointer-events:none;
+}
+
+.h-bottom-line{
+display:flex;
+align-items:center;
+position:absolute;
+bottom:16px;
+left:120px;
+right:95px;
+}
+
+.h-bottom-line span{
+height:1px;
+flex:1;
+background:#b83b28;
+opacity:.5;
+}
+
+.h-bottom-line b{
+color:#c84b31;
+font-size:8px;
+margin:0 5px;
+font-weight:normal;
+}
+
+.h-bottom-line i{
+height:1px;
+width:25px;
+background:#b83b28;
+opacity:.5;
+}
+
+
 /* ==========================================================
-   HALLOWEEN ROLEPLAY — CREYDS
-   Diseño externo para Foroactivo
+   TEMA CLARO
    ========================================================== */
 
-.halloween {
-    max-width: 620px;
-    width: 100%;
-    margin: 20px auto;
-    border: 4px double #b83b28;
-    border-radius: 3px;
-    padding: 28px 30px 22px 30px;
-    position: relative;
-    box-sizing: border-box;
-    font-family: Georgia, serif;
-    background: transparent;
+@media (prefers-color-scheme:light){
+
+.halloween{
+color:#4a2520;
 }
 
-.halloween .h-corner {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-color: #b83b28;
-    border-style: solid;
-    z-index: 2;
+.h-body{
+color:#4a2520;
 }
 
-.halloween .h-corner.tl {
-    top: 4px;
-    left: 4px;
-    border-width: 2px 0 0 2px;
 }
 
-.halloween .h-corner.tr {
-    top: 4px;
-    right: 4px;
-    border-width: 2px 2px 0 0;
+
+/* ==========================================================
+   TEMA OSCURO
+   ========================================================== */
+
+@media (prefers-color-scheme:dark){
+
+.halloween{
+color:#d1d1d1;
 }
 
-.halloween .h-corner.bl {
-    bottom: 4px;
-    left: 4px;
-    border-width: 0 0 2px 2px;
+.h-body{
+color:#d1d1d1;
 }
 
-.halloween .h-corner.br {
-    bottom: 4px;
-    right: 4px;
-    border-width: 0 2px 2px 0;
-}
-
-.halloween .h-rama {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 90px;
-    pointer-events: none;
-}
-
-.halloween .h-bat-left {
-    position: absolute;
-    top: 60px;
-    left: 65px;
-    width: 20px;
-    pointer-events: none;
-}
-
-.halloween .h-moon {
-    position: absolute;
-    top: 16px;
-    right: 18px;
-    width: 44px;
-    height: 44px;
-    background: #e37b58;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 8px rgba(227,123,88,.4);
-}
-
-.halloween .h-bat-right-1 {
-    position: absolute;
-    top: 14px;
-    right: 75px;
-    width: 22px;
-    pointer-events: none;
-}
-
-.halloween .h-bat-right-2 {
-    position: absolute;
-    top: 32px;
-    right: 110px;
-    width: 18px;
-    pointer-events: none;
-}
-
-.halloween .h-bat-right-3 {
-    position: absolute;
-    top: 16px;
-    right: 145px;
-    width: 15px;
-    pointer-events: none;
-}
-
-.halloween .h-stars {
-    position: absolute;
-    left: 10px;
-    top: 52%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: #c84b31;
-    font-size: 10px;
-    pointer-events: none;
-}
-
-.halloween .h-header {
-    margin-left: 75px;
-    margin-top: 2px;
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-}
-
-.halloween .h-header .line {
-    height: 1px;
-    width: 12px;
-    background: #b83b28;
-}
-
-.halloween .h-header .star {
-    color: #c84b31;
-    font-size: 8px;
-    margin: 0 3px;
-}
-
-.halloween .h-banner {
-    background: #b83b28;
-    color: #ffffff;
-    padding: 5px 20px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    text-transform: uppercase;
-    clip-path: polygon(
-        8px 0%,
-        calc(100% - 8px) 0%,
-        100% 50%,
-        calc(100% - 8px) 100%,
-        8px 100%,
-        0% 50%
-    );
-}
-
-.halloween .h-rule {
-    border-bottom: 1px solid #b83b28;
-    opacity: .45;
-    margin: 14px 10px 14px 20px;
-}
-
-.halloween .h-title {
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #d85a38;
-    margin: 12px 0 10px;
-    font-weight: normal;
-}
-
-.halloween .h-title-star {
-    text-align: center;
-    color: #c84b31;
-    font-size: 10px;
-    margin-bottom: 10px;
-}
-
-.halloween .h-rule-title {
-    margin: 0 10px 22px 20px;
-}
-
-.halloween .h-body {
-    font-size: 13px;
-    line-height: 1.7;
-    text-align: justify;
-    margin: 0 20px 28px 50px;
-    color: #d1d1d1;
-}
-
-.halloween .h-tree {
-    position: absolute;
-    bottom: 4px;
-    left: 4px;
-    width: 105px;
-    pointer-events: none;
-}
-
-.halloween .h-bat-bottom {
-    position: absolute;
-    bottom: 18px;
-    right: 65px;
-    width: 22px;
-    pointer-events: none;
-    transform: rotate(-12deg);
-}
-
-.halloween .h-pumpkin {
-    position: absolute;
-    bottom: 6px;
-    right: 8px;
-    width: 48px;
-    pointer-events: none;
-}
-
-.halloween .h-bottom-line {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 16px;
-    left: 120px;
-    right: 95px;
-}
-
-.halloween .h-bottom-line span {
-    height: 1px;
-    flex: 1;
-    background: #b83b28;
-    opacity: .5;
-}
-
-.halloween .h-bottom-line b {
-    color: #c84b31;
-    font-size: 8px;
-    margin: 0 5px;
-    font-weight: normal;
-}
-
-.halloween .h-bottom-line i {
-    height: 1px;
-    width: 25px;
-    background: #b83b28;
-    opacity: .5;
 }
