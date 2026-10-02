@@ -605,3 +605,214 @@
   margin: 6px 0 14px;
 }
 .aerodactyl-text { text-align: justify; }
+
+/* =========================================================
+   CREYDS - PACK 10 TABLILLAS OSADAS & INNOVADORAS (1ª - 3ª GEN)
+   ========================================================= */
+
+/* --- 01. NIDOKING (Táctico Cibernético Biselado) --- */
+.nidoking {
+  width: 490px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--grupo-color, #777);
+  clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  position: relative;
+}
+.nidoking-head { border-bottom: 2px dashed var(--grupo-color, #777); padding-bottom: 10px; margin-bottom: 14px; text-align: center; }
+.nidoking h1 { margin: 0; font: 700 24px/1 'Orbitron', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.nidoking-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-top: 8px; }
+.nidoking-text { text-align: justify; }
+
+
+/* --- 02. DRAGONITE (Badge / Credencial Inclinada) --- */
+.dragonite {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  box-shadow: 6px 6px 0 0 var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.dragonite-badge {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  padding: 4px 14px;
+  transform: skewX(-12deg);
+  margin-bottom: 12px;
+}
+.dragonite-badge span { display: block; transform: skewX(12deg); }
+.dragonite h1 { margin: 0; font: 800 22px/1 'Exo 2', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.dragonite-meta { display: flex; gap: 10px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin-bottom: 14px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; }
+.dragonite-text { text-align: justify; }
+
+
+/* --- 03. HOUNDOOM (Neogótico Agresivo / Marcos Cruzados) --- */
+.houndoom {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  outline: 2px solid var(--grupo-color, #666);
+  outline-offset: 4px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.houndoom h1 { margin: 0; font: 400 28px/1 'Pirata One', cursive; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.houndoom-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-top: 1px double var(--grupo-color, #666); border-bottom: 1px double var(--grupo-color, #666); padding: 6px 0; }
+.houndoom-text { text-align: justify; }
+
+
+/* --- 04. AGGRON (Placa Industrial Mecánica con Pernos) --- */
+.aggron {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--grupo-color, #666);
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.aggron::before, .aggron::after { content: "•"; position: absolute; font-size: 18px; color: var(--grupo-color, inherit); line-height: 0; }
+.aggron::before { top: 8px; left: 8px; box-shadow: calc(480px - 36px) 0 0 var(--grupo-color, inherit); }
+.aggron::after { bottom: 8px; left: 8px; box-shadow: calc(480px - 36px) 0 0 var(--grupo-color, inherit); }
+.aggron-head { border-left: 4px solid var(--grupo-color, #666); padding-left: 12px; margin-bottom: 14px; }
+.aggron h1 { margin: 0; font: 700 22px/1 'Chakra Petch', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.aggron-meta { display: flex; gap: 10px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-top: 6px; }
+.aggron-text { text-align: justify; }
+
+
+/* --- 05. BLAZIKEN (Dinámico Inclinado Táctico) --- */
+.blaziken {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border-left: 5px solid var(--grupo-color, #777);
+  border-right: 1px solid var(--grupo-color, #777);
+  border-top: 1px solid var(--grupo-color, #777);
+  border-bottom: 1px solid var(--grupo-color, #777);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.blaziken-top { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid var(--grupo-color, #777); padding-bottom: 8px; margin-bottom: 14px; }
+.blaziken h1 { margin: 0; font: 800 22px/1 'Kanit', sans-serif; font-style: italic; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.blaziken-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
+.blaziken-text { text-align: justify; }
+
+
+/* --- 06. UMBREON (Futurista Anillos Neón) --- */
+.umbreon {
+  width: 470px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px dotted var(--grupo-color, #666);
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.umbreon-ring { width: 10px; height: 10px; border: 2px solid var(--grupo-color, #666); border-radius: 50%; display: inline-block; margin-bottom: 8px; }
+.umbreon h1 { margin: 0; font: 700 20px/1 'Audiowide', cursive; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.umbreon-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px dotted var(--grupo-color, #666); padding-bottom: 8px; }
+.umbreon-text { text-align: justify; }
+
+
+/* --- 07. FLYGON (HUD Visor de Combate / Target) --- */
+.flygon {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid transparent;
+  position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.flygon::before { content: ""; position: absolute; top: 0; left: 0; width: 20px; height: 20px; border-top: 2px solid var(--grupo-color, #666); border-left: 2px solid var(--grupo-color, #666); }
+.flygon::after { content: ""; position: absolute; bottom: 0; right: 0; width: 20px; height: 20px; border-bottom: 2px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); }
+.flygon-corner-tr { position: absolute; top: 0; right: 0; width: 20px; height: 20px; border-top: 2px solid var(--grupo-color, #666); border-right: 2px solid var(--grupo-color, #666); }
+.flygon-corner-bl { position: absolute; bottom: 0; left: 0; width: 20px; height: 20px; border-bottom: 2px solid var(--grupo-color, #666); border-left: 2px solid var(--grupo-color, #666); }
+.flygon h1 { margin: 0 0 6px 0; font: 700 21px/1 'Share Tech Mono', monospace; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.flygon-meta { display: flex; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-bottom: 14px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 6px; }
+.flygon-text { text-align: justify; }
+
+
+/* --- 08. KABUTOPS (Corte Geométrico Filoso) --- */
+.kabutops {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--grupo-color, #666);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.kabutops h1 { margin: 0; font: 900 23px/1 'Montserrat', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.kabutops-meta { display: flex; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 14px; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 6px; }
+.kabutops-text { text-align: justify; }
+
+
+/* --- 09. GROUDON (Tectónico Pesado Fragmentado) --- */
+.groudon {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 4px solid var(--grupo-color, #666);
+  border-bottom: 4px solid var(--grupo-color, #666);
+  border-left: 1px dashed var(--grupo-color, #666);
+  border-right: 1px dashed var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.groudon h1 { margin: 0; text-align: center; font: 700 24px/1 'Russo One', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.groudon-meta { display: flex; justify-content: center; gap: 10px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 14px; border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); padding: 5px 0; }
+.groudon-text { text-align: justify; }
+
+
+/* --- 10. KYOGRE (Flotante Triple Capa Holográfico) --- */
+.kyogre {
+  width: 470px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  box-shadow: 0 0 0 4px transparent, inset 0 0 0 1px var(--grupo-color, #666), 0 0 0 6px var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.kyogre h1 { margin: 0; text-align: center; font: 700 22px/1 'Cinzel Decorative', cursive; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.kyogre-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
+.kyogre-text { text-align: justify; }
