@@ -282,163 +282,202 @@
 }
 
 /* =========================================================
-   CREYDS - PACK 10 TABLILLAS VECTORIALES (FONDO TRANSPARENTE)
+   CREYDS - PACK VECTORIAL EXPERIMENTAL (31 - 40)
    ========================================================= */
 
-/* 31. VEC-1: Crosshair & Coordenadas (Radar / Scope) */
-.tb-vec1 {
-  border: 1px dashed var(--grupo-color, #38bdf8);
-  padding: 30px 25px;
-  position: relative;
-}
-.tb-vec1::before {
-  content: '+ 01.92 // VECTOR_SCOPE';
-  position: absolute;
-  top: -10px; left: 20px;
-  font-size: 8px; font-weight: 800; letter-spacing: 2px;
-  background: var(--bg-forum, #000); padding: 0 6px;
-  color: var(--grupo-color, #38bdf8);
-}
-.tb-vec1::after {
-  content: '────────►';
-  position: absolute;
-  bottom: 8px; right: 15px;
-  font-size: 10px; color: var(--grupo-color, #38bdf8);
-  opacity: 0.6;
-}
-.tb-vec1 .tb-head { border-bottom: 1px dotted var(--grupo-color, #38bdf8); padding-bottom: 12px; }
-
-/* 32. VEC-2: Eje de Línea de Puntos y Flecha Flotante */
-.tb-vec2 {
-  border-left: 3px dotted var(--grupo-color, #ec4899);
-  border-right: 1px solid rgba(255,255,255,0.1);
-  padding-left: 20px;
-}
-.tb-vec2::before {
-  content: '↗';
-  position: absolute;
-  top: 10px; right: 15px;
-  font-size: 22px; color: var(--grupo-color, #ec4899);
-  opacity: 0.8;
-}
-.tb-vec2 .tb-head { border-bottom: 1px dashed rgba(255,255,255,0.15); padding-bottom: 10px; }
-
-/* 33. VEC-3: Blueprint / Cotas de Medición (<───>) */
-.tb-vec3 {
-  border-top: 1px solid var(--grupo-color, #10b981);
-  border-bottom: 1px solid var(--grupo-color, #10b981);
-  padding: 25px 15px;
-}
-.tb-vec3::before {
-  content: '<─────────────────────────────────────────>';
-  display: block; text-align: center;
-  font-size: 10px; color: var(--grupo-color, #10b981);
-  letter-spacing: -1px; margin-bottom: 15px; opacity: 0.7;
-}
-.tb-vec3 .tb-head { text-align: center; border-bottom: 1px dotted var(--grupo-color, #10b981); padding-bottom: 10px; }
-.tb-vec3 .tb-sub { justify-content: center; }
-
-/* 34. VEC-4: Red de Nodos & Constelación Vectorial */
-.tb-vec4 {
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 8px;
-}
-.tb-vec4::before {
-  content: '●───○───● ──►';
-  position: absolute;
-  top: 12px; right: 18px;
-  font-size: 9px; color: var(--grupo-color, #f59e0b);
-  letter-spacing: 1px;
-}
-.tb-vec4 .tb-head { border-bottom: 2px dotted var(--grupo-color, #f59e0b); padding-bottom: 12px; }
-
-/* 35. VEC-5: Esquinas Vectoriales Cruzadas (Crop Marks) */
-.tb-vec5 {
-  outline: 1px dotted var(--grupo-color, #a855f7);
-  outline-offset: -10px;
+/* 31. CIRCUIT - Esquema de Red / Diagrama Electrónico */
+.tb-circuit {
+  border: 1px dashed var(--grupo-color, rgba(255, 255, 255, 0.3));
   padding: 30px;
 }
-.tb-vec5::before {
-  content: '┌                 ┐';
-  position: absolute; top: 5px; left: 10px; right: 10px;
-  display: flex; justify-content: space-between;
-  font-size: 14px; color: var(--grupo-color, #a855f7);
+.tb-circuit::before {
+  content: '●────[ NODE_01 ]────►';
+  position: absolute;
+  top: 8px; left: 15px;
+  font-size: 9px; font-family: monospace;
+  letter-spacing: 2px;
+  color: var(--grupo-color, #38bdf8);
 }
-.tb-vec5::after {
-  content: '└                 ┘';
-  position: absolute; bottom: 5px; left: 10px; right: 10px;
-  display: flex; justify-content: space-between;
-  font-size: 14px; color: var(--grupo-color, #a855f7);
+.tb-circuit::after {
+  content: '◄────[ NODE_02 ]────●';
+  position: absolute;
+  bottom: 8px; right: 15px;
+  font-size: 9px; font-family: monospace;
+  letter-spacing: 2px;
+  color: var(--grupo-color, #38bdf8);
 }
-.tb-vec5 .tb-head { border-bottom: 1px dashed var(--grupo-color, #a855f7); padding-bottom: 10px; }
+.tb-circuit .tb-head {
+  border-bottom: 1px dotted var(--grupo-color, #38bdf8);
+  padding-bottom: 15px;
+}
 
-/* 36. VEC-6: Diagrama de Flujo (Flowchart Connector) */
-.tb-vec6 {
-  border-top: 3px solid var(--grupo-color, #06b6d4);
-  border-left: 1px dashed var(--grupo-color, #06b6d4);
-  border-bottom: 1px dashed var(--grupo-color, #06b6d4);
+/* 32. ASTROLABE - Constelación y Vectores Circulares */
+.tb-astrolabe {
+  border-radius: 50%;
+  border: 1px solid var(--grupo-color, rgba(255, 255, 255, 0.15));
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.02), inset 0 0 0 1px var(--grupo-color, rgba(255, 255, 255, 0.2));
+  padding: 35px;
+  text-align: center;
 }
-.tb-vec6::before {
-  content: '└─► [NODE_INPUT]';
-  position: absolute; top: 12px; right: 15px;
-  font-size: 8px; font-weight: 800; font-family: monospace;
-  color: var(--grupo-color, #06b6d4);
+.tb-astrolabe::before {
+  content: '↑ ✦ ─── 90° N ─── ✦ ↑';
+  position: absolute;
+  top: 10px; left: 0; width: 100%;
+  font-size: 9px; letter-spacing: 3px; opacity: 0.6;
 }
-.tb-vec6 .tb-head { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 12px; }
+.tb-astrolabe .tb-head {
+  border-bottom: 1px solid var(--grupo-color, #a855f7);
+  padding-bottom: 12px;
+}
+.tb-astrolabe .tb-sub { justify-content: center; }
 
-/* 37. VEC-7: Órbita Vectorial & Trayectoria */
-.tb-vec7 {
-  border: 1px solid var(--grupo-color, #e11d48);
-  border-radius: 20px 0 20px 0;
-  padding: 28px;
+/* 33. BLUEPRINT - Acotación y Mirilla CAD */
+.tb-blueprint {
+  border: 1px solid var(--grupo-color, #38bdf8);
+  padding: 30px 20px;
 }
-.tb-vec7::before {
-  content: '◌ ── ─ ─ ►';
-  position: absolute; bottom: 12px; left: 20px;
-  font-size: 11px; color: var(--grupo-color, #e11d48);
+.tb-blueprint::before {
+  content: '+ ────────────── 500px ────────────── +';
+  position: absolute;
+  top: 4px; left: 0; width: 100%;
+  text-align: center; font-size: 8px; font-family: monospace;
+  color: var(--grupo-color, #38bdf8); opacity: 0.7;
 }
-.tb-vec7 .tb-head { border-bottom: 2px dotted var(--grupo-color, #e11d48); padding-bottom: 10px; }
+.tb-blueprint::after {
+  content: '┌                                          ┐\n└                                          ┘';
+  position: absolute;
+  top: 2px; left: 2px; right: 2px; bottom: 2px;
+  font-family: monospace; font-size: 14px;
+  line-height: 100%; display: flex; justify-content: space-between;
+  flex-direction: column; pointer-events: none; opacity: 0.5;
+  color: var(--grupo-color, #38bdf8);
+}
 
-/* 38. VEC-8: Marco Asimétrico con Puntos Guiados */
-.tb-vec8 {
-  border-top: 2px solid var(--grupo-color, #84cc16);
-  border-bottom: 2px solid var(--grupo-color, #84cc16);
-  background: radial-gradient(circle at top right, rgba(132, 204, 22, 0.05), transparent);
+/* 34. SLASH - Diagonales Vectores y Segmentos Cortados */
+.tb-slash {
+  border-left: 2px solid var(--grupo-color, #f43f5e);
+  border-right: 2px solid var(--grupo-color, #f43f5e);
+  padding: 25px 30px;
 }
-.tb-vec8::after {
-  content: '• • • • • • • • • •';
-  position: absolute; top: 6px; right: 15px;
-  font-size: 8px; color: var(--grupo-color, #84cc16);
-  letter-spacing: 3px;
+.tb-slash::before {
+  content: '///----------------------------------►';
+  position: absolute;
+  top: 6px; left: 15px;
+  font-size: 10px; font-weight: 900; letter-spacing: 1px;
+  color: var(--grupo-color, #f43f5e);
 }
-.tb-vec8 .tb-head { border-bottom: 1px dashed var(--grupo-color, #84cc16); padding-bottom: 10px; }
+.tb-slash::after {
+  content: '◄----------------------------------///';
+  position: absolute;
+  bottom: 6px; right: 15px;
+  font-size: 10px; font-weight: 900; letter-spacing: 1px;
+  color: var(--grupo-color, #f43f5e);
+}
 
-/* 39. VEC-9: Timeline Axis (Línea Temporal Vertical) */
-.tb-vec9 {
-  border-left: 2px dotted var(--grupo-color, #f97316);
-  padding-left: 22px;
+/* 35. SIGIL - Alquimia Vectorial Geométrica */
+.tb-sigil {
+  border: 1px solid var(--grupo-color, #eab308);
+  outline: 1px dashed var(--grupo-color, #eab308);
+  outline-offset: -10px;
+  padding: 35px 25px;
+  text-align: center;
 }
-.tb-vec9::before {
-  content: '▲';
-  position: absolute; top: -2px; left: -5px;
-  font-size: 8px; color: var(--grupo-color, #f97316);
+.tb-sigil::before {
+  content: '◇ ─── ⚖ ─── ◇';
+  position: absolute;
+  top: 14px; left: 50%; transform: translateX(-50%);
+  font-size: 11px; color: var(--grupo-color, #eab308);
 }
-.tb-vec9::after {
-  content: '▼';
-  position: absolute; bottom: -2px; left: -5px;
-  font-size: 8px; color: var(--grupo-color, #f97316);
+.tb-sigil .tb-head {
+  border-bottom: 1px solid var(--grupo-color, #eab308);
+  padding-bottom: 12px;
 }
-.tb-vec9 .tb-head { border-bottom: 1px dashed rgba(255,255,255,0.15); padding-bottom: 10px; }
+.tb-sigil .tb-sub { justify-content: center; }
 
-/* 40. VEC-10: Matriz Geométrica Mínima */
-.tb-vec10 {
-  border: 1px solid var(--grupo-color, #3b82f6);
-  box-shadow: 4px 4px 0px var(--grupo-color, rgba(59, 130, 246, 0.3));
+/* 36. WAVEFORM - Frecuencia de Audio Vectorial */
+.tb-waveform {
+  border-top: 2px solid var(--grupo-color, #06b6d4);
+  border-bottom: 2px solid var(--grupo-color, #06b6d4);
+  padding: 25px 20px;
 }
-.tb-vec10::before {
-  content: ':: VECTOR_GRID ::';
-  position: absolute; top: 8px; right: 12px;
+.tb-waveform::before {
+  content: ' ▂▃▅▆▇  | | | |  ▇▆▅▃▂ ';
+  position: absolute;
+  top: 5px; right: 15px;
+  font-size: 10px; letter-spacing: 2px;
+  color: var(--grupo-color, #06b6d4); opacity: 0.8;
+}
+.tb-waveform .tb-head {
+  border-bottom: 1px dotted var(--grupo-color, rgba(255,255,255,0.2));
+  padding-bottom: 10px;
+}
+
+/* 37. RADAR - Retícula Táctica de Barrido */
+.tb-radar {
+  border: 1px solid var(--grupo-color, #10b981);
+  border-radius: 12px;
+  padding: 30px 25px;
+}
+.tb-radar::before {
+  content: '⤹ [ TARGET_ACQUIRED ] ⤸';
+  position: absolute;
+  top: 8px; left: 50%; transform: translateX(-50%);
   font-size: 8px; font-weight: 800; letter-spacing: 2px;
-  color: var(--grupo-color, #3b82f6); opacity: 0.8;
+  color: var(--grupo-color, #10b981);
 }
-.tb-vec10 .tb-head { border-bottom: 1px dotted var(--grupo-color, #3b82f6); padding-bottom: 10px; }
+.tb-radar::after {
+  content: '✛';
+  position: absolute;
+  bottom: 10px; right: 15px;
+  font-size: 14px; color: var(--grupo-color, #10b981);
+}
+
+/* 38. PRISM - Refracción de Luz y Vectores Triangulares */
+.tb-prism {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 25px 30px;
+  box-shadow: -4px 0 0 0 var(--grupo-color, #ec4899), 4px 0 0 0 var(--grupo-color, #3b82f6);
+}
+.tb-prism::before {
+  content: '▲ ─────── • ─────── ▲';
+  position: absolute;
+  top: 6px; left: 50%; transform: translateX(-50%);
+  font-size: 9px; opacity: 0.6;
+}
+
+/* 39. NODE - Diagrama de Flujo con Conectores */
+.tb-node {
+  border-left: 3px dotted var(--grupo-color, #f97316);
+  padding: 20px 25px 20px 35px;
+}
+.tb-node::before {
+  content: '●───►';
+  position: absolute;
+  top: 25px; left: -10px;
+  font-size: 11px; font-weight: 900;
+  color: var(--grupo-color, #f97316);
+}
+.tb-node::after {
+  content: '●───► [END_STREAM]';
+  position: absolute;
+  bottom: 8px; right: 10px;
+  font-size: 8px; font-family: monospace;
+  color: var(--grupo-color, #f97316); opacity: 0.7;
+}
+
+/* 40. HEXMESH - Malla Hexagonal Vectorial */
+.tb-hexmesh {
+  border: 1px solid var(--grupo-color, #8b5cf6);
+  padding: 30px 25px;
+  clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
+}
+.tb-hexmesh::before {
+  content: '⬡ ⬢ ⬡ ───────────────';
+  position: absolute;
+  top: 6px; left: 15px;
+  font-size: 10px; color: var(--grupo-color, #8b5cf6);
+}
+.tb-hexmesh .tb-head {
+  border-bottom: 2px solid var(--grupo-color, #8b5cf6);
+  padding-bottom: 12px;
+}
