@@ -1082,3 +1082,204 @@
 .jirachi h1 { margin: 0; font: 700 22px/1 'Playfair Display', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
 .jirachi-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 6px; }
 .jirachi-text { text-align: justify; }
+
+/* =========================================================
+   CREYDS - PACK 10 TABLILLAS UNISEX & ELEGANTES
+   ========================================================= */
+
+/* --- 01. LATIAS (Cápsula de Arcos Suaves) --- */
+.latias {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #777);
+  border-radius: 28px;
+  box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px var(--grupo-color, #777);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.latias h1 { margin: 0; font: 500 22px/1.2 'Lora', serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.latias-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin: 10px 0 16px; border-top: 1px solid var(--grupo-color, #777); border-bottom: 1px solid var(--grupo-color, #777); padding: 6px 0; }
+.latias-text { text-align: justify; }
+
+
+/* --- 02. LATIOS (Marco Lineal Offset) --- */
+.latios {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  outline: 1px solid var(--grupo-color, #666);
+  outline-offset: 5px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.latios-head { border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; text-align: center; }
+.latios h1 { margin: 0; font: 600 20px/1.2 'Plus Jakarta Sans', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.latios-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin-top: 6px; }
+.latios-text { text-align: justify; }
+
+
+/* --- 03. CRESSELIA (Borde Curvo Asimétrico Suave) --- */
+.cresselia {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 26px 8px 26px 8px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.cresselia h1 { margin: 0; text-align: center; font: 600 23px/1.2 'Cormorant Garamond', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.cresselia-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin: 8px 0 16px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 6px; }
+.cresselia-text { text-align: justify; }
+
+
+/* --- 04. DARKRAI (Geométrico con Muesca Delicada) --- */
+.darkrai {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  box-shadow: inset 0 0 0 3px transparent, inset 0 0 0 4px var(--grupo-color, #666);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.darkrai h1 { margin: 0; font: 600 21px/1.2 'Cinzel', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.darkrai-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin: 10px 0 16px; border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); padding: 5px 0; }
+.darkrai-text { text-align: justify; }
+
+
+/* --- 05. REGICE (Bisel Limpio y Neutro) --- */
+.regice {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.regice-head { text-align: center; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
+.regice h1 { margin: 0; font: 500 20px/1.2 'Inter', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.regice-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin-top: 6px; }
+.regice-text { text-align: justify; }
+
+
+/* --- 06. REGISTEEL (Doble Marco Recuadre Flotante) --- */
+.registeel {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 2px solid var(--grupo-color, #666);
+  border-radius: 12px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.registeel-head { text-align: center; margin-bottom: 14px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 8px; }
+.registeel h1 { margin: 0; font: 600 21px/1.2 'Montserrat', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.registeel-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin-top: 6px; }
+.registeel-text { text-align: justify; }
+
+
+/* --- 07. MANAPHY (Cápsula de Borde Arqueado) --- */
+.manaphy {
+  width: 470px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 3px solid var(--grupo-color, #666);
+  border-bottom: 3px solid var(--grupo-color, #666);
+  border-left: 1px solid var(--grupo-color, #666);
+  border-right: 1px solid var(--grupo-color, #666);
+  border-radius: 24px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.manaphy h1 { margin: 0; font: 600 22px/1.2 'Urbanist', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.manaphy-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
+.manaphy-text { text-align: justify; }
+
+
+/* --- 08. SHAYMIN (Orgánica Suave Punteada) --- */
+.shaymin {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 24px 28px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 30px 14px 30px 14px;
+  outline: 1px dotted var(--grupo-color, #666);
+  outline-offset: -6px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.shaymin-top { text-align: center; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
+.shaymin h1 { margin: 0; font: 500 21px/1.2 'Outfit', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.shaymin-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin-top: 6px; }
+.shaymin-text { text-align: justify; }
+
+
+/* --- 09. DIALGA (Marco Símbolo Astral) --- */
+.dialga {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--grupo-color, #666);
+  border-radius: 16px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+  text-align: center;
+}
+.dialga h1 { margin: 0; font: 600 22px/1.2 'EB Garamond', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.dialga-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.75; margin: 8px 0 16px; border-top: 1px double var(--grupo-color, #666); border-bottom: 1px double var(--grupo-color, #666); padding: 5px 0; }
+.dialga-text { text-align: justify; }
+
+
+/* --- 10. PALKIA (Marco Horizonte Flotante) --- */
+.palkia {
+  width: 480px;
+  max-width: 95%;
+  margin: 22px auto;
+  padding: 22px 26px;
+  box-sizing: border-box;
+  background: transparent;
+  border-top: 2px solid var(--grupo-color, #666);
+  border-bottom: 2px solid var(--grupo-color, #666);
+  border-left: 1px solid var(--grupo-color, #666);
+  border-right: 1px solid var(--grupo-color, #666);
+  border-radius: 18px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif);
+  color: inherit;
+}
+.palkia h1 { margin: 0; text-align: center; font: 500 21px/1.2 'Marcellus', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.palkia-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
+.palkia-text { text-align: justify; }
