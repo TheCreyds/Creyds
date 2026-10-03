@@ -1283,3 +1283,216 @@
 .palkia h1 { margin: 0; text-align: center; font: 500 21px/1.2 'Marcellus', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
 .palkia-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
 .palkia-text { text-align: justify; }
+
+/* =========================================================
+   CREYDS - PACK 15 TABLILLAS COMPLEJAS CON IMÁGENES
+   ========================================================= */
+
+/* --- 01. LUCARIO (Header Panorámico con Título Superpuesto) --- */
+.lucario {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 0; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 18px; overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.lucario-banner { width: 100%; height: 180px; position: relative; overflow: hidden; border-bottom: 2px solid var(--grupo-color, #666); }
+.lucario-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lucario-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; text-align: center; }
+.lucario-overlay h1 { margin: 0; font: 700 22px/1.2 'Orbitron', sans-serif; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.8); letter-spacing: 2.5px; text-transform: uppercase; }
+.lucario-body { padding: 22px 26px; }
+.lucario-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 16px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 8px; }
+.lucario-text { text-align: justify; }
+
+
+/* --- 02. GARCHOMP (Sidebar Izquierdo Vertical) --- */
+.garchomp {
+  width: 500px; max-width: 95%; margin: 22px auto; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 16px; display: flex; overflow: hidden;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.garchomp-side { width: 150px; flex-shrink: 0; border-right: 2px solid var(--grupo-color, #666); position: relative; }
+.garchomp-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.garchomp-main { flex-grow: 1; padding: 20px 22px; display: flex; flex-direction: column; }
+.garchomp h1 { margin: 0 0 6px 0; font: 800 20px/1.2 'Chakra Petch', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.garchomp-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
+.garchomp-text { text-align: justify; }
+
+
+/* --- 03. GIRATINA (Avatar Circular Flotante en Cabecera) --- */
+.giratina {
+  width: 480px; max-width: 95%; margin: 60px auto 22px; padding: 65px 26px 24px; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 20px; position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit; text-align: center;
+}
+.giratina-avatar { position: absolute; top: -50px; left: 50%; transform: translateX(-50%); width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--grupo-color, #666); overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.giratina-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.giratina h1 { margin: 0; font: 700 22px/1.2 'Cinzel', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.giratina-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 10px 0 16px; border-top: 1px double var(--grupo-color, #666); border-bottom: 1px double var(--grupo-color, #666); padding: 6px 0; }
+.giratina-text { text-align: justify; }
+
+
+/* --- 04. ARCEUS (Banner + Avatar Circular Superpuesto Estilo ID) --- */
+.arceus {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 0; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 22px; overflow: hidden;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.arceus-header { height: 140px; position: relative; border-bottom: 2px solid var(--grupo-color, #666); }
+.arceus-header-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.arceus-avatar { position: absolute; bottom: -35px; left: 24px; width: 75px; height: 75px; border-radius: 50%; border: 3px solid var(--grupo-color, #666); overflow: hidden; }
+.arceus-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.arceus-body { padding: 45px 24px 22px; }
+.arceus h1 { margin: 0 0 4px 0; font: 700 21px/1.2 'Syne', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.arceus-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
+.arceus-text { text-align: justify; }
+
+
+/* --- 05. VICTINI (Imagen Polaroid Flotante Inclinada) --- */
+.victini {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 24px; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 18px; position: relative;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.victini-top { display: flex; gap: 18px; align-items: center; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 14px; margin-bottom: 16px; }
+.victini-polaroid { width: 110px; height: 110px; padding: 6px; border: 1px solid var(--grupo-color, #666); border-radius: 12px; transform: rotate(-4deg); flex-shrink: 0; }
+.victini-polaroid img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.victini-info { flex-grow: 1; }
+.victini h1 { margin: 0 0 6px 0; font: 800 20px/1.2 'Kanit', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.victini-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
+.victini-text { text-align: justify; }
+
+
+/* --- 06. RESHIRAM (Header Diagonal Biselado Skew) --- */
+.reshiram {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 0; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 20px; overflow: hidden;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.reshiram-head { height: 160px; position: relative; overflow: hidden; border-bottom: 2px solid var(--grupo-color, #666); }
+.reshiram-head img { width: 100%; height: 100%; object-fit: cover; }
+.reshiram-badge { position: absolute; bottom: 12px; right: 12px; border: 1px solid var(--grupo-color, #666); padding: 6px 16px; transform: skewX(-12deg); }
+.reshiram-badge h1 { margin: 0; transform: skewX(12deg); font: 700 18px/1 'Rajdhani', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.reshiram-body { padding: 22px 26px; }
+.reshiram-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-bottom: 14px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; }
+.reshiram-text { text-align: justify; }
+
+
+/* --- 07. ZEKROM (Sidebar Derecho Táctico HUD) --- */
+.zekrom {
+  width: 500px; max-width: 95%; margin: 22px auto; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 16px; display: flex; overflow: hidden;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.zekrom-main { flex-grow: 1; padding: 20px 22px; display: flex; flex-direction: column; }
+.zekrom-side { width: 150px; flex-shrink: 0; border-left: 2px solid var(--grupo-color, #666); position: relative; }
+.zekrom-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.zekrom h1 { margin: 0 0 6px 0; font: 700 20px/1.2 'Share Tech Mono', monospace; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.zekrom-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
+.zekrom-text { text-align: justify; }
+
+
+/* --- 08. KYUREM (Header Hexagonal Cortado) --- */
+.kyurem {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 22px; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 18px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.kyurem-top { text-align: center; margin-bottom: 16px; }
+.kyurem-hex { width: 120px; height: 120px; margin: 0 auto 12px; clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); border: 2px solid var(--grupo-color, #666); }
+.kyurem-hex img { width: 100%; height: 100%; object-fit: cover; }
+.kyurem h1 { margin: 0 0 6px 0; font: 800 21px/1.2 'Exo 2', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.kyurem-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); padding: 6px 0; }
+.kyurem-text { text-align: justify; margin-top: 14px; }
+
+
+/* --- 09. XERNEAS (Avatar Ovalado Flotante Top-Right) --- */
+.xerneas {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 24px 26px; box-sizing: border-box; background: transparent;
+  border: 1px solid var(--grupo-color, #666); border-radius: 24px; outline: 1px solid var(--grupo-color, #666); outline-offset: 5px;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.xerneas-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 12px; margin-bottom: 16px; }
+.xerneas-title-box { flex-grow: 1; padding-right: 14px; }
+.xerneas h1 { margin: 0 0 4px 0; font: 600 22px/1.2 'Cormorant Garamond', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.xerneas-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
+.xerneas-img { width: 85px; height: 110px; border-radius: 40px; border: 2px solid var(--grupo-color, #666); overflow: hidden; flex-shrink: 0; }
+.xerneas-img img { width: 100%; height: 100%; object-fit: cover; }
+.xerneas-text { text-align: justify; }
+
+
+/* --- 10. YVELTAL (Header Panorámico con Marco Doble) --- */
+.yveltal {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 18px; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 20px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.yveltal-img-frame { width: 100%; height: 160px; border-radius: 14px; border: 1px solid var(--grupo-color, #666); overflow: hidden; margin-bottom: 16px; }
+.yveltal-img-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.yveltal h1 { margin: 0; text-align: center; font: 700 22px/1.2 'Marcellus', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.yveltal-meta { display: flex; justify-content: center; gap: 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-top: 1px double var(--grupo-color, #666); border-bottom: 1px double var(--grupo-color, #666); padding: 5px 0; }
+.yveltal-text { text-align: justify; }
+
+
+/* --- 11. ZYGARDE (Split 50/50 Cuadrícula con Marco) --- */
+.zygarde {
+  width: 500px; max-width: 95%; margin: 22px auto; padding: 22px; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 18px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.zygarde-grid { display: flex; gap: 16px; margin-bottom: 16px; align-items: center; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 14px; }
+.zygarde-img { width: 140px; height: 140px; border-radius: 14px; border: 2px solid var(--grupo-color, #666); overflow: hidden; flex-shrink: 0; }
+.zygarde-img img { width: 100%; height: 100%; object-fit: cover; }
+.zygarde-info { flex-grow: 1; }
+.zygarde h1 { margin: 0 0 6px 0; font: 700 21px/1.2 'Teko', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.zygarde-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
+.zygarde-text { text-align: justify; }
+
+
+/* --- 12. DIANCIE (Imagen en Rombo / Diamante Flotante) --- */
+.diancie {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 24px 26px; box-sizing: border-box; background: transparent;
+  border: 4px double var(--grupo-color, #666); border-radius: 22px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit; text-align: center;
+}
+.diancie-diamond { width: 100px; height: 100px; margin: 0 auto 14px; transform: rotate(45deg); overflow: hidden; border: 2px solid var(--grupo-color, #666); border-radius: 8px; }
+.diancie-diamond img { width: 140%; height: 140%; object-fit: cover; transform: rotate(-45deg) scale(1.2); margin: -20% 0 0 -20%; }
+.diancie h1 { margin: 0; font: 700 22px/1.2 'Playfair Display', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.diancie-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 6px; }
+.diancie-text { text-align: justify; }
+
+
+/* --- 13. SOLGALEO (Estilo Stamp / Sello Postal Dentado) --- */
+.solgaleo {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 20px; box-sizing: border-box; background: transparent;
+  border: 2px dashed var(--grupo-color, #666); border-radius: 16px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.solgaleo-top { display: flex; gap: 16px; align-items: center; border-bottom: 2px dashed var(--grupo-color, #666); padding-bottom: 12px; margin-bottom: 14px; }
+.solgaleo-stamp { width: 120px; height: 120px; border: 1px solid var(--grupo-color, #666); padding: 4px; border-radius: 8px; flex-shrink: 0; }
+.solgaleo-stamp img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.solgaleo-info { flex-grow: 1; }
+.solgaleo h1 { margin: 0 0 6px 0; font: 800 21px/1.2 'Montserrat', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.solgaleo-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
+.solgaleo-text { text-align: justify; }
+
+
+/* --- 14. LUNALA (Header Arqueado Cóncavo) --- */
+.lunala {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 0; box-sizing: border-box; background: transparent;
+  border: 1px solid var(--grupo-color, #666); border-radius: 26px; overflow: hidden;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.lunala-header { height: 170px; border-bottom: 2px solid var(--grupo-color, #666); border-radius: 0 0 35px 35px; overflow: hidden; position: relative; }
+.lunala-header img { width: 100%; height: 100%; object-fit: cover; }
+.lunala-body { padding: 22px 26px; }
+.lunala h1 { margin: 0; text-align: center; font: 500 22px/1.2 'Tenor Sans', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.lunala-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin: 8px 0 16px; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; }
+.lunala-text { text-align: justify; }
+
+
+/* --- 15. NECROZMA (Split Diagonal Cortado en Header) --- */
+.necrozma {
+  width: 480px; max-width: 95%; margin: 22px auto; padding: 0; box-sizing: border-box; background: transparent;
+  border: 2px solid var(--grupo-color, #666); border-radius: 18px; overflow: hidden;
+  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
+}
+.necrozma-header { height: 160px; clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); border-bottom: 2px solid var(--grupo-color, #666); }
+.necrozma-header img { width: 100%; height: 100%; object-fit: cover; }
+.necrozma-body { padding: 18px 24px 22px; }
+.necrozma h1 { margin: 0 0 4px 0; font: 700 22px/1.2 'Audiowide', cursive; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
+.necrozma-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 6px; margin-bottom: 14px; }
+.necrozma-text { text-align: justify; }
