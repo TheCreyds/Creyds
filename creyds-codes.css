@@ -1498,192 +1498,26 @@
 .necrozma-text { text-align: justify; }
 
 /* =========================================================
-   CREYDS - PACK 15 TABLILLAS AVANZADAS SIN IMÁGENES
+   CREYDS - PACK 15 TABLILLAS CORTAS (PHPBB3 / FOROACTIVO)
    ========================================================= */
+.tb-box { width: 480px; max-width: 95%; margin: 18px auto; padding: 20px; box-sizing: border-box; background: transparent; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit; text-align: justify; }
+.tb-head { border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 12px; }
+.tb-title { font: 700 18px/1.2 var(--creyds-title-font, sans-serif); letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; margin: 0; }
+.tb-sub { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-top: 4px; }
 
-/* --- 16. DRAGAPULT (HUD Táctico con Esquinas Recortadas) --- */
-.dragapult {
-  width: 490px; max-width: 95%; margin: 22px auto; padding: 22px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 4px;
-  clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit; position: relative;
-}
-.dragapult-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 12px; margin-bottom: 16px; }
-.dragapult h1 { margin: 0; font: 700 20px/1.2 'Chakra Petch', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.dragapult-badge { border: 1px solid var(--grupo-color, #666); padding: 3px 10px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; }
-.dragapult-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; margin-bottom: 16px; background: rgba(0,0,0,0.03); padding: 8px; border: 1px dashed var(--grupo-color, #666); }
-.dragapult-stat-item { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; opacity: 0.85; }
-.dragapult-text { text-align: justify; }
-
-
-/* --- 17. ZACIAN (Cresta Real con Bordes Ornamentados) --- */
-.zacian {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 26px 28px; box-sizing: border-box; background: transparent;
-  border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -7px;
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit; text-align: center; position: relative;
-}
-.zacian-crown { font: 700 10px/1 'Cinzel', serif; letter-spacing: 4px; text-transform: uppercase; opacity: 0.7; margin-bottom: 6px; }
-.zacian h1 { margin: 0 0 10px 0; font: 700 24px/1.2 'Cinzel', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.zacian-divider { width: 60%; height: 2px; background: var(--grupo-color, #666); margin: 0 auto 16px; position: relative; }
-.zacian-meta { display: flex; justify-content: center; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.85; margin-bottom: 18px; }
-.zacian-text { text-align: justify; }
-
-
-/* --- 18. ZAMAZENTA (Estructura de Escudo Táctico) --- */
-.zamazenta {
-  width: 500px; max-width: 95%; margin: 22px auto; padding: 20px; box-sizing: border-box; background: transparent;
-  border-left: 6px solid var(--grupo-color, #666); border-right: 6px solid var(--grupo-color, #666);
-  border-top: 2px solid var(--grupo-color, #666); border-bottom: 2px solid var(--grupo-color, #666);
-  border-radius: 12px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.zamazenta-top { border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 12px; margin-bottom: 16px; }
-.zamazenta h1 { margin: 0 0 4px 0; font: 800 22px/1.2 'Kanit', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.zamazenta-grid { display: flex; justify-content: space-between; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; }
-.zamazenta-text { text-align: justify; }
-
-
-/* --- 19. ETERNATUS (Panel Futurista Neón HUD) --- */
-.eternatus {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 22px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); box-shadow: 0 0 12px rgba(0,0,0,0.1); border-radius: 16px;
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.eternatus-head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 10px; margin-bottom: 16px; }
-.eternatus h1 { margin: 0; font: 700 20px/1.2 'Orbitron', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.eternatus-tag { transform: skewX(-12deg); border: 1px solid var(--grupo-color, #666); padding: 4px 12px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; }
-.eternatus-tag span { display: inline-block; transform: skewX(12deg); }
-.eternatus-meta { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 16px; display: flex; gap: 12px; }
-.eternatus-text { text-align: justify; }
-
-
-/* --- 20. URSHIFU (Asimétrico con Ribbon Quote Lateral) --- */
-.urshifu {
-  width: 500px; max-width: 95%; margin: 22px auto; display: flex; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 14px; overflow: hidden;
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.urshifu-ribbon { width: 45px; flex-shrink: 0; border-right: 2px solid var(--grupo-color, #666); display: flex; align-items: center; justify-content: center; writing-mode: vertical-rl; transform: rotate(180deg); font: 700 11px/1 'Teko', sans-serif; letter-spacing: 3px; text-transform: uppercase; color: var(--grupo-color, inherit); opacity: 0.9; }
-.urshifu-main { flex-grow: 1; padding: 20px 22px; }
-.urshifu h1 { margin: 0 0 4px 0; font: 700 21px/1.2 'Teko', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.urshifu-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
-.urshifu-text { text-align: justify; }
-
-
-/* --- 21. CALYREX (Gótico Ceremonial con Capitular) --- */
-.calyrex {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 26px 28px; box-sizing: border-box; background: transparent;
-  border: 2px double var(--grupo-color, #666); border-radius: 20px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.calyrex-header { text-align: center; border-bottom: 1px solid var(--grupo-color, #666); padding-bottom: 14px; margin-bottom: 16px; }
-.calyrex h1 { margin: 0 0 6px 0; font: 600 23px/1.2 'Cormorant Garamond', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.calyrex-meta { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; }
-.calyrex-text { text-align: justify; }
-.calyrex-text::first-letter { font: 700 36px/0.8 'Cormorant Garamond', serif; float: left; margin-right: 8px; color: var(--grupo-color, inherit); }
-
-
-/* --- 22. SPECTRIER (Minimalista Recargado con Floating Stamp) --- */
-.spectrier {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 28px 24px 22px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 18px; position: relative;
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.spectrier-stamp { position: absolute; top: -13px; left: 24px; border: 1px solid var(--grupo-color, #666); padding: 2px 14px; font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; background: transparent; }
-.spectrier h1 { margin: 0 0 4px 0; font: 700 21px/1.2 'Playfair Display', serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.spectrier-meta { display: flex; gap: 14px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 8px; margin-bottom: 14px; }
-.spectrier-text { text-align: justify; }
-
-
-/* --- 23. GLASTRIER (Facetado Angular Creciente) --- */
-.glastrier {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 22px 26px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 6px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.glastrier-top { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 10px; margin-bottom: 14px; }
-.glastrier h1 { margin: 0; font: 700 21px/1.2 'Rajdhani', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.glastrier-code { font-size: 10px; font-weight: 700; letter-spacing: 2px; opacity: 0.75; }
-.glastrier-boxes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
-.glastrier-box { border: 1px solid var(--grupo-color, #666); padding: 6px 10px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.85; text-align: center; }
-.glastrier-text { text-align: justify; }
-
-
-/* --- 24. MIRAIDON (Cyber-Terminal Bracketed HUD) --- */
-.miraidon {
-  width: 500px; max-width: 95%; margin: 22px auto; padding: 20px 24px; box-sizing: border-box; background: transparent;
-  border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666);
-  border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666);
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.miraidon-terminal { font: 700 18px/1.2 'Share Tech Mono', monospace; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; margin-bottom: 8px; }
-.miraidon-bar { display: flex; justify-content: space-between; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; border-top: 1px dashed var(--grupo-color, #666); border-bottom: 1px dashed var(--grupo-color, #666); padding: 5px 0; margin-bottom: 14px; opacity: 0.85; }
-.miraidon-text { text-align: justify; }
-
-
-/* --- 25. KORAIDON (Geométrico Ancestral Borde Doble) --- */
-.koraidon {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 24px; box-sizing: border-box; background: transparent;
-  border: 3px double var(--grupo-color, #666); border-radius: 14px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.koraidon-banner { border: 1px solid var(--grupo-color, #666); padding: 10px 16px; text-align: center; margin-bottom: 16px; }
-.koraidon h1 { margin: 0 0 4px 0; font: 800 21px/1.2 'Exo 2', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.koraidon-meta { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; }
-.koraidon-text { text-align: justify; }
-
-
-/* --- 26. TINGLU (Estructura Editorial Tallada) --- */
-.tinglu {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 26px 28px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 12px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit; text-align: center;
-}
-.tinglu h1 { margin: 0 0 8px 0; font: 700 23px/1.2 'Marcellus', serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.tinglu-rule { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 16px; }
-.tinglu-line { height: 1px; flex-grow: 1; background: var(--grupo-color, #666); }
-.tinglu-diamond { width: 8px; height: 8px; border: 1px solid var(--grupo-color, #666); transform: rotate(45deg); flex-shrink: 0; }
-.tinglu-meta { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; margin-bottom: 16px; }
-.tinglu-text { text-align: justify; }
-
-
-/* --- 27. CHIENPAO (Afilado Bisel Cuchilla) --- */
-.chienpao {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 22px 26px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 18px 0 18px 0; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.chienpao-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 10px; margin-bottom: 14px; }
-.chienpao h1 { margin: 0; font: 700 21px/1.2 'Syne', sans-serif; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.chienpao-quote { font-style: italic; font-size: 11px; opacity: 0.85; border-left: 2px solid var(--grupo-color, #666); padding-left: 10px; margin-bottom: 14px; }
-.chienpao-meta { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.8; margin-bottom: 14px; }
-.chienpao-text { text-align: justify; }
-
-
-/* --- 28. WOCHIEN (Manuscrito Antiguo Doble Marco) --- */
-.wochien {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 26px 28px; box-sizing: border-box; background: transparent;
-  border: 1px solid var(--grupo-color, #666); outline: 1px solid var(--grupo-color, #666); outline-offset: -5px;
-  font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.wochien-header { text-align: center; margin-bottom: 16px; }
-.wochien h1 { margin: 0 0 6px 0; font: 500 22px/1.2 'Tenor Sans', sans-serif; letter-spacing: 3px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.wochien-meta { font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); padding: 5px 0; }
-.wochien-text { text-align: justify; margin-top: 14px; }
-
-
-/* --- 29. CHIYU (Multicapa de Etiquetas Curvas) --- */
-.chiyu {
-  width: 480px; max-width: 95%; margin: 22px auto; padding: 22px 26px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 22px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.chiyu-pills { display: flex; justify-content: center; gap: 8px; margin-bottom: 14px; }
-.chiyu-pill { border: 1px solid var(--grupo-color, #666); border-radius: 12px; padding: 2px 10px; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.85; }
-.chiyu h1 { margin: 0 0 10px 0; text-align: center; font: 800 21px/1.2 'Montserrat', sans-serif; letter-spacing: 2.5px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.chiyu-divider { height: 1px; background: var(--grupo-color, #666); margin-bottom: 16px; }
-.chiyu-text { text-align: justify; }
-
-
-/* --- 30. IRONVALIANT (HUD de Combate con Ribbon Lateral Doblado) --- */
-.ironvaliant {
-  width: 500px; max-width: 95%; margin: 22px auto; padding: 22px; box-sizing: border-box; background: transparent;
-  border: 2px solid var(--grupo-color, #666); border-radius: 12px; font: 13px/1.7 var(--creyds-post-font, sans-serif); color: inherit;
-}
-.ironvaliant-top { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--grupo-color, #666); padding-bottom: 10px; margin-bottom: 12px; }
-.ironvaliant h1 { margin: 0; font: 700 20px/1.2 'Audiowide', cursive; letter-spacing: 2px; color: var(--grupo-color, inherit); text-transform: uppercase; }
-.ironvaliant-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; text-align: center; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.85; border-bottom: 1px dashed var(--grupo-color, #666); padding-bottom: 10px; margin-bottom: 14px; }
-.ironvaliant-text { text-align: justify; }
+/* Variaciones de Diseño */
+.tb-dragapult { border: 2px solid var(--grupo-color, #666); clip-path: polygon(0 12px, 12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%); }
+.tb-zacian { border: 1px solid var(--grupo-color, #666); outline: 2px solid var(--grupo-color, #666); outline-offset: -6px; text-align: center; }
+.tb-zamazenta { border-left: 6px solid var(--grupo-color, #666); border-right: 6px solid var(--grupo-color, #666); border-top: 1px solid var(--grupo-color, #666); border-bottom: 1px solid var(--grupo-color, #666); border-radius: 8px; }
+.tb-eternatus { border: 2px solid var(--grupo-color, #666); border-radius: 12px; }
+.tb-urshifu { border: 2px solid var(--grupo-color, #666); border-left: 8px solid var(--grupo-color, #666); border-radius: 10px; }
+.tb-calyrex { border: 2px double var(--grupo-color, #666); border-radius: 18px; text-align: center; }
+.tb-spectrier { border: 2px solid var(--grupo-color, #666); border-radius: 14px; position: relative; }
+.tb-glastrier { border: 2px solid var(--grupo-color, #666); border-radius: 4px; }
+.tb-miraidon { border-top: 3px solid var(--grupo-color, #666); border-bottom: 3px solid var(--grupo-color, #666); border-left: 1px solid var(--grupo-color, #666); border-right: 1px solid var(--grupo-color, #666); }
+.tb-koraidon { border: 3px double var(--grupo-color, #666); border-radius: 10px; }
+.tb-tinglu { border: 2px solid var(--grupo-color, #666); border-radius: 8px; text-align: center; }
+.tb-chienpao { border: 2px solid var(--grupo-color, #666); border-radius: 16px 0; }
+.tb-wochien { border: 1px solid var(--grupo-color, #666); outline: 1px solid var(--grupo-color, #666); outline-offset: -4px; }
+.tb-chiyu { border: 2px solid var(--grupo-color, #666); border-radius: 22px; }
+.tb-ironvaliant { border: 2px solid var(--grupo-color, #666); border-radius: 10px; }
