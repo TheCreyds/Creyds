@@ -280,3 +280,165 @@
   border-bottom: 2px solid var(--grupo-color, #ec4899);
   padding-bottom: 10px;
 }
+
+/* =========================================================
+   CREYDS - PACK 10 TABLILLAS VECTORIALES (FONDO TRANSPARENTE)
+   ========================================================= */
+
+/* 31. VEC-1: Crosshair & Coordenadas (Radar / Scope) */
+.tb-vec1 {
+  border: 1px dashed var(--grupo-color, #38bdf8);
+  padding: 30px 25px;
+  position: relative;
+}
+.tb-vec1::before {
+  content: '+ 01.92 // VECTOR_SCOPE';
+  position: absolute;
+  top: -10px; left: 20px;
+  font-size: 8px; font-weight: 800; letter-spacing: 2px;
+  background: var(--bg-forum, #000); padding: 0 6px;
+  color: var(--grupo-color, #38bdf8);
+}
+.tb-vec1::after {
+  content: '────────►';
+  position: absolute;
+  bottom: 8px; right: 15px;
+  font-size: 10px; color: var(--grupo-color, #38bdf8);
+  opacity: 0.6;
+}
+.tb-vec1 .tb-head { border-bottom: 1px dotted var(--grupo-color, #38bdf8); padding-bottom: 12px; }
+
+/* 32. VEC-2: Eje de Línea de Puntos y Flecha Flotante */
+.tb-vec2 {
+  border-left: 3px dotted var(--grupo-color, #ec4899);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  padding-left: 20px;
+}
+.tb-vec2::before {
+  content: '↗';
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 22px; color: var(--grupo-color, #ec4899);
+  opacity: 0.8;
+}
+.tb-vec2 .tb-head { border-bottom: 1px dashed rgba(255,255,255,0.15); padding-bottom: 10px; }
+
+/* 33. VEC-3: Blueprint / Cotas de Medición (<───>) */
+.tb-vec3 {
+  border-top: 1px solid var(--grupo-color, #10b981);
+  border-bottom: 1px solid var(--grupo-color, #10b981);
+  padding: 25px 15px;
+}
+.tb-vec3::before {
+  content: '<─────────────────────────────────────────>';
+  display: block; text-align: center;
+  font-size: 10px; color: var(--grupo-color, #10b981);
+  letter-spacing: -1px; margin-bottom: 15px; opacity: 0.7;
+}
+.tb-vec3 .tb-head { text-align: center; border-bottom: 1px dotted var(--grupo-color, #10b981); padding-bottom: 10px; }
+.tb-vec3 .tb-sub { justify-content: center; }
+
+/* 34. VEC-4: Red de Nodos & Constelación Vectorial */
+.tb-vec4 {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+}
+.tb-vec4::before {
+  content: '●───○───● ──►';
+  position: absolute;
+  top: 12px; right: 18px;
+  font-size: 9px; color: var(--grupo-color, #f59e0b);
+  letter-spacing: 1px;
+}
+.tb-vec4 .tb-head { border-bottom: 2px dotted var(--grupo-color, #f59e0b); padding-bottom: 12px; }
+
+/* 35. VEC-5: Esquinas Vectoriales Cruzadas (Crop Marks) */
+.tb-vec5 {
+  outline: 1px dotted var(--grupo-color, #a855f7);
+  outline-offset: -10px;
+  padding: 30px;
+}
+.tb-vec5::before {
+  content: '┌                 ┐';
+  position: absolute; top: 5px; left: 10px; right: 10px;
+  display: flex; justify-content: space-between;
+  font-size: 14px; color: var(--grupo-color, #a855f7);
+}
+.tb-vec5::after {
+  content: '└                 ┘';
+  position: absolute; bottom: 5px; left: 10px; right: 10px;
+  display: flex; justify-content: space-between;
+  font-size: 14px; color: var(--grupo-color, #a855f7);
+}
+.tb-vec5 .tb-head { border-bottom: 1px dashed var(--grupo-color, #a855f7); padding-bottom: 10px; }
+
+/* 36. VEC-6: Diagrama de Flujo (Flowchart Connector) */
+.tb-vec6 {
+  border-top: 3px solid var(--grupo-color, #06b6d4);
+  border-left: 1px dashed var(--grupo-color, #06b6d4);
+  border-bottom: 1px dashed var(--grupo-color, #06b6d4);
+}
+.tb-vec6::before {
+  content: '└─► [NODE_INPUT]';
+  position: absolute; top: 12px; right: 15px;
+  font-size: 8px; font-weight: 800; font-family: monospace;
+  color: var(--grupo-color, #06b6d4);
+}
+.tb-vec6 .tb-head { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 12px; }
+
+/* 37. VEC-7: Órbita Vectorial & Trayectoria */
+.tb-vec7 {
+  border: 1px solid var(--grupo-color, #e11d48);
+  border-radius: 20px 0 20px 0;
+  padding: 28px;
+}
+.tb-vec7::before {
+  content: '◌ ── ─ ─ ►';
+  position: absolute; bottom: 12px; left: 20px;
+  font-size: 11px; color: var(--grupo-color, #e11d48);
+}
+.tb-vec7 .tb-head { border-bottom: 2px dotted var(--grupo-color, #e11d48); padding-bottom: 10px; }
+
+/* 38. VEC-8: Marco Asimétrico con Puntos Guiados */
+.tb-vec8 {
+  border-top: 2px solid var(--grupo-color, #84cc16);
+  border-bottom: 2px solid var(--grupo-color, #84cc16);
+  background: radial-gradient(circle at top right, rgba(132, 204, 22, 0.05), transparent);
+}
+.tb-vec8::after {
+  content: '• • • • • • • • • •';
+  position: absolute; top: 6px; right: 15px;
+  font-size: 8px; color: var(--grupo-color, #84cc16);
+  letter-spacing: 3px;
+}
+.tb-vec8 .tb-head { border-bottom: 1px dashed var(--grupo-color, #84cc16); padding-bottom: 10px; }
+
+/* 39. VEC-9: Timeline Axis (Línea Temporal Vertical) */
+.tb-vec9 {
+  border-left: 2px dotted var(--grupo-color, #f97316);
+  padding-left: 22px;
+}
+.tb-vec9::before {
+  content: '▲';
+  position: absolute; top: -2px; left: -5px;
+  font-size: 8px; color: var(--grupo-color, #f97316);
+}
+.tb-vec9::after {
+  content: '▼';
+  position: absolute; bottom: -2px; left: -5px;
+  font-size: 8px; color: var(--grupo-color, #f97316);
+}
+.tb-vec9 .tb-head { border-bottom: 1px dashed rgba(255,255,255,0.15); padding-bottom: 10px; }
+
+/* 40. VEC-10: Matriz Geométrica Mínima */
+.tb-vec10 {
+  border: 1px solid var(--grupo-color, #3b82f6);
+  box-shadow: 4px 4px 0px var(--grupo-color, rgba(59, 130, 246, 0.3));
+}
+.tb-vec10::before {
+  content: ':: VECTOR_GRID ::';
+  position: absolute; top: 8px; right: 12px;
+  font-size: 8px; font-weight: 800; letter-spacing: 2px;
+  color: var(--grupo-color, #3b82f6); opacity: 0.8;
+}
+.tb-vec10 .tb-head { border-bottom: 1px dotted var(--grupo-color, #3b82f6); padding-bottom: 10px; }
