@@ -1,0 +1,286 @@
+/* =========================================================
+   CREYDS - PACK 15 TABLILLAS DECORADAS (FOROACTIVO)
+   ========================================================= */
+
+/* Estructura Base */
+.tb-box {
+  width: 500px;
+  max-width: 95%;
+  margin: 25px auto;
+  padding: 25px;
+  box-sizing: border-box;
+  background: #121318;
+  color: #d1d5db;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.75;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tb-head {
+  margin-bottom: 18px;
+  position: relative;
+  z-index: 2;
+}
+
+.tb-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: var(--grupo-color, rgba(255, 255, 255, 0.12));
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.tb-title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #e2e8f0);
+  margin: 0 0 6px 0;
+}
+
+.tb-sub {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tb-text {
+  text-align: justify;
+  position: relative;
+  z-index: 2;
+}
+
+/* 16. DRAGAPULT */
+.tb-dragapult {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  border: 2px solid var(--grupo-color, #10b981);
+  clip-path: polygon(0 18px, 18px 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.15);
+}
+.tb-dragapult::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; width: 60px; height: 3px;
+  background: var(--grupo-color, #10b981);
+  box-shadow: 0 0 10px var(--grupo-color, #10b981);
+}
+.tb-dragapult .tb-head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+}
+
+/* 17. ZACIAN */
+.tb-zacian {
+  background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 100%);
+  border: 1px solid var(--grupo-color, #38bdf8);
+  outline: 2px solid var(--grupo-color, #38bdf8);
+  outline-offset: -8px;
+  padding: 30px;
+  text-align: center;
+}
+.tb-zacian .tb-head {
+  border-bottom: 2px double var(--grupo-color, #38bdf8);
+  padding-bottom: 14px;
+}
+.tb-zacian .tb-sub { justify-content: center; }
+
+/* 18. ZAMAZENTA */
+.tb-zamazenta {
+  background: #18181b;
+  border-left: 10px solid var(--grupo-color, #ef4444);
+  border-right: 10px solid var(--grupo-color, #ef4444);
+  border-top: 2px solid #27272a;
+  border-bottom: 2px solid #27272a;
+  border-radius: 12px;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.8), 0 0 25px rgba(239, 68, 68, 0.2);
+}
+.tb-zamazenta .tb-head {
+  background: rgba(255,255,255,0.03);
+  padding: 12px 15px;
+  border-radius: 6px;
+  border-left: 3px solid var(--grupo-color, #ef4444);
+}
+
+/* 19. ETERNATUS */
+.tb-eternatus {
+  background: radial-gradient(ellipse at center, #2e1065 0%, #090514 100%);
+  border: 2px solid var(--grupo-color, #d946ef);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(217, 70, 239, 0.25);
+}
+.tb-eternatus::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; right: -20px; width: 100px; height: 100px;
+  background: var(--grupo-color, #d946ef);
+  filter: blur(50px);
+  opacity: 0.3;
+}
+.tb-eternatus .tb-title {
+  text-shadow: 0 0 10px var(--grupo-color, #d946ef);
+}
+
+/* 20. URSHIFU */
+.tb-urshifu {
+  background: #0f172a;
+  border: 2px solid #334155;
+  border-left: 10px solid var(--grupo-color, #f59e0b);
+  border-radius: 4px;
+}
+.tb-urshifu .tb-head {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--grupo-color, #f59e0b);
+  padding-bottom: 10px;
+}
+
+/* 21. CALYREX */
+.tb-calyrex {
+  background: linear-gradient(180deg, #022c22 0%, #064e3b 40%, #022c22 100%);
+  border: 3px double var(--grupo-color, #10b981);
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+}
+.tb-calyrex .tb-head {
+  border-bottom: 1px dashed var(--grupo-color, #10b981);
+  padding-bottom: 14px;
+}
+.tb-calyrex .tb-sub { justify-content: center; }
+
+/* 22. SPECTRIER */
+.tb-spectrier {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid var(--grupo-color, #a855f7);
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.2);
+}
+.tb-spectrier::before {
+  content: '✦';
+  position: absolute;
+  top: 15px; right: 20px;
+  font-size: 18px;
+  color: var(--grupo-color, #a855f7);
+}
+
+/* 23. GLASTRIER */
+.tb-glastrier {
+  background: linear-gradient(135deg, #082f49 0%, #0f172a 100%);
+  border: 2px solid var(--grupo-color, #38bdf8);
+  box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.15), 0 0 15px rgba(56, 189, 248, 0.2);
+  border-radius: 2px;
+}
+.tb-glastrier .tb-head {
+  border-bottom: 2px solid var(--grupo-color, #38bdf8);
+  padding-bottom: 10px;
+}
+
+/* 24. MIRAIDON */
+.tb-miraidon {
+  background: #09090b;
+  border-top: 4px solid var(--grupo-color, #6366f1);
+  border-bottom: 4px solid var(--grupo-color, #6366f1);
+  border-left: 1px solid #27272a;
+  border-right: 1px solid #27272a;
+}
+.tb-miraidon::before {
+  content: 'SYSTEM_ONLINE // V9.2';
+  position: absolute;
+  top: 6px; right: 12px;
+  font-size: 8px; font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--grupo-color, #6366f1);
+  opacity: 0.7;
+}
+
+/* 25. KORAIDON */
+.tb-koraidon {
+  background: linear-gradient(180deg, #450a0a 0%, #18181b 100%);
+  border: 3px double var(--grupo-color, #ef4444);
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+}
+.tb-koraidon .tb-head {
+  border-bottom: 2px solid var(--grupo-color, #ef4444);
+  padding-bottom: 10px;
+}
+
+/* 26. TINGLU */
+.tb-tinglu {
+  background: #1c1917;
+  border: 2px solid var(--grupo-color, #b45309);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.9);
+}
+.tb-tinglu .tb-head {
+  border-bottom: 1px solid var(--grupo-color, #b45309);
+  padding-bottom: 12px;
+}
+.tb-tinglu .tb-sub { justify-content: center; }
+
+/* 27. CHIENPAO */
+.tb-chienpao {
+  background: #0f172a;
+  border: 2px solid var(--grupo-color, #e0f2fe);
+  border-radius: 20px 0 20px 0;
+  box-shadow: 0 0 20px rgba(224, 242, 254, 0.2);
+}
+.tb-chienpao .tb-head {
+  border-bottom: 2px solid var(--grupo-color, #e0f2fe);
+  padding-bottom: 10px;
+}
+
+/* 28. WOCHIEN */
+.tb-wochien {
+  background: linear-gradient(135deg, #052e16 0%, #14532d 50%, #052e16 100%);
+  border: 1px solid var(--grupo-color, #22c55e);
+  outline: 2px solid var(--grupo-color, #22c55e);
+  outline-offset: -6px;
+  padding: 28px;
+}
+.tb-wochien .tb-head {
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 12px;
+}
+.tb-wochien .tb-sub { justify-content: center; }
+
+/* 29. CHIYU */
+.tb-chiyu {
+  background: radial-gradient(circle at top right, #7c2d12 0%, #18181b 80%);
+  border: 2px solid var(--grupo-color, #f97316);
+  border-radius: 26px;
+  box-shadow: 0 0 25px rgba(249, 115, 22, 0.3);
+}
+.tb-chiyu .tb-head {
+  border-bottom: 1px dashed var(--grupo-color, #f97316);
+  padding-bottom: 12px;
+}
+
+/* 30. IRON VALIANT */
+.tb-ironvaliant {
+  background: #09090b;
+  border: 2px solid var(--grupo-color, #ec4899);
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.2);
+}
+.tb-ironvaliant .tb-head {
+  border-bottom: 2px solid var(--grupo-color, #ec4899);
+  padding-bottom: 10px;
+}
