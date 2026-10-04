@@ -481,3 +481,174 @@
   border-bottom: 2px solid var(--grupo-color, #8b5cf6);
   padding-bottom: 12px;
 }
+/* =========================================================
+   CREYDS - BÚSQUEDA DE TRAMAS (TRANSPARENTE + HERENCIA COLOR)
+   ========================================================= */
+
+/* Estructura Contenedor General */
+.tb-bt-box {
+  width: 550px;
+  max-width: 95%;
+  margin: 25px auto;
+  padding: 30px 25px;
+  box-sizing: border-box;
+  background: transparent;
+  color: inherit;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  line-height: 1.75;
+  position: relative;
+}
+
+/* Cabecera Principal */
+.tb-bt-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed var(--grupo-color, rgba(255,255,255,0.2));
+}
+
+.tb-bt-avatar {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid var(--grupo-color, rgba(255,255,255,0.3));
+}
+
+.tb-bt-htitle {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+  line-height: 1.2;
+  margin: 0 0 6px 0;
+}
+
+.tb-bt-hsub {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* Sección de Cupos / Tramas */
+.tb-bt-item {
+  margin-top: 25px;
+  padding-top: 15px;
+}
+
+.tb-bt-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--grupo-color, rgba(255,255,255,0.3));
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.tb-bt-item-title {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, inherit);
+}
+
+.tb-bt-item-meta {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.tb-bt-text {
+  text-align: justify;
+}
+
+/* ---------------------------------------------------------
+   DISAÑOS VECTORIALES REDISEÑADOS (1 AL 6)
+   --------------------------------------------------------- */
+
+/* 1. VECTOR HUD TÁCTICO */
+.tb-bt-hud {
+  border: 2px solid var(--grupo-color, rgba(255,255,255,0.3));
+  clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+}
+.tb-bt-hud::before {
+  content: '●───[ SEARCH_PROTOCOL // SYS ]───►';
+  position: absolute;
+  top: 6px; left: 15px;
+  font-size: 8px; font-family: monospace; letter-spacing: 1px;
+  color: var(--grupo-color, inherit); opacity: 0.8;
+}
+
+/* 2. VECTOR MARCO REAL DOBLE BISEL */
+.tb-bt-royal {
+  border: 1px solid var(--grupo-color, rgba(255,255,255,0.3));
+  outline: 2px solid var(--grupo-color, rgba(255,255,255,0.3));
+  outline-offset: -8px;
+  padding: 35px 30px;
+}
+.tb-bt-royal::before {
+  content: '⚔ ─── ✦ ─── ⚔';
+  position: absolute;
+  top: 10px; left: 50%; transform: translateX(-50%);
+  font-size: 10px; color: var(--grupo-color, inherit);
+}
+
+/* 3. VECTOR COTAS CAD / BLUEPRINT */
+.tb-bt-blueprint {
+  border: 1px dashed var(--grupo-color, rgba(255,255,255,0.4));
+}
+.tb-bt-blueprint::before {
+  content: '+ ────────────── 550px // SCHEMATIC ────────────── +';
+  position: absolute;
+  top: 6px; left: 0; width: 100%;
+  text-align: center; font-size: 8px; font-family: monospace;
+  color: var(--grupo-color, inherit); opacity: 0.8;
+}
+
+/* 4. VECTOR CORTES DIAGONALES SLASH */
+.tb-bt-slash {
+  border-left: 4px solid var(--grupo-color, inherit);
+  border-right: 4px solid var(--grupo-color, inherit);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.tb-bt-slash::before {
+  content: '///------------------------------------------►';
+  position: absolute;
+  top: 8px; left: 15px;
+  font-size: 9px; font-weight: 900; color: var(--grupo-color, inherit);
+}
+
+/* 5. VECTOR ALQUIMIA / SIGIL */
+.tb-bt-sigil {
+  border: 1px solid var(--grupo-color, rgba(255,255,255,0.3));
+  border-radius: 16px;
+}
+.tb-bt-sigil::before {
+  content: '◇ ─── ⚖ ─── ◇';
+  position: absolute;
+  top: 8px; left: 50%; transform: translateX(-50%);
+  font-size: 10px; color: var(--grupo-color, inherit);
+}
+
+/* 6. VECTOR RED Y NODOS */
+.tb-bt-nodes {
+  border-left: 3px dotted var(--grupo-color, inherit);
+  padding-left: 30px;
+}
+.tb-bt-nodes::before {
+  content: '●───► [ PLOT_SEARCH_ACTIVE ]';
+  position: absolute;
+  top: 10px; left: -10px;
+  font-size: 9px; font-family: monospace; color: var(--grupo-color, inherit);
+}
