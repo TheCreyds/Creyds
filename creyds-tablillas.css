@@ -33,8 +33,8 @@
   text-transform: uppercase;
   padding: 3px 10px;
   border-radius: 3px;
-  background: var(--grupo-color, rgba(255, 255, 255, 0.1));
-  border: 1px solid var(--grupo-color, rgba(255, 255, 255, 0.2));
+  background: var(--grupo-color, currentColor);
+  border: 1px solid var(--grupo-color, currentColor);
   color: #fff;
   margin-bottom: 8px;
 }
@@ -68,7 +68,7 @@
 
 /* 16. DRAGAPULT - HUD Táctico Neón */
 .tb-dragapult {
-  border: 2px solid var(--grupo-color, #10b981);
+  border: 2px solid var(--grupo-color, currentColor);
   clip-path: polygon(0 20px, 20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
@@ -76,8 +76,8 @@
   content: '';
   position: absolute;
   top: 0; right: 0; width: 80px; height: 3px;
-  background: var(--grupo-color, #10b981);
-  box-shadow: 0 0 12px var(--grupo-color, #10b981);
+  background: var(--grupo-color, currentColor);
+  box-shadow: 0 0 12px var(--grupo-color, currentColor);
 }
 .tb-dragapult::after {
   content: 'DRAGAPULT';
@@ -88,14 +88,14 @@
   pointer-events: none;
 }
 .tb-dragapult .tb-head {
-  border-bottom: 1px dashed var(--grupo-color, rgba(255, 255, 255, 0.2));
+  border-bottom: 1px dashed var(--grupo-color, currentColor);
   padding-bottom: 12px;
 }
 
 /* 17. ZACIAN - Marco Real Doble Bisel */
 .tb-zacian {
-  border: 1px solid var(--grupo-color, #38bdf8);
-  outline: 2px solid var(--grupo-color, #38bdf8);
+  border: 1px solid var(--grupo-color, currentColor);
+  outline: 2px solid var(--grupo-color, currentColor);
   outline-offset: -8px;
   padding: 32px;
   text-align: center;
@@ -104,34 +104,34 @@
   content: '⚔';
   position: absolute;
   top: 12px; left: 50%; transform: translateX(-50%);
-  font-size: 14px; color: var(--grupo-color, #38bdf8);
+  font-size: 14px; color: var(--grupo-color, currentColor);
 }
 .tb-zacian .tb-head {
-  border-bottom: 2px double var(--grupo-color, #38bdf8);
+  border-bottom: 2px double var(--grupo-color, currentColor);
   padding-bottom: 14px;
 }
 .tb-zacian .tb-sub { justify-content: center; }
 
 /* 18. ZAMAZENTA - Escudo Pesado Lateral */
 .tb-zamazenta {
-  border-left: 8px solid var(--grupo-color, #ef4444);
-  border-right: 8px solid var(--grupo-color, #ef4444);
-  border-top: 1px solid var(--grupo-color, rgba(255,255,255,0.2));
-  border-bottom: 1px solid var(--grupo-color, rgba(255,255,255,0.2));
+  border-left: 8px solid var(--grupo-color, currentColor);
+  border-right: 8px solid var(--grupo-color, currentColor);
+  border-top: 1px solid var(--grupo-color, currentColor);
+  border-bottom: 1px solid var(--grupo-color, currentColor);
   border-radius: 12px;
   background: rgba(0,0,0,0.05);
 }
 .tb-zamazenta .tb-head {
   padding: 10px 14px;
-  border-left: 3px solid var(--grupo-color, #ef4444);
+  border-left: 3px solid var(--grupo-color, currentColor);
   background: rgba(255,255,255,0.03);
 }
 
 /* 19. ETERNATUS - Núcleo Cósmico Glowing */
 .tb-eternatus {
-  border: 2px solid var(--grupo-color, #d946ef);
+  border: 2px solid var(--grupo-color, currentColor);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .tb-eternatus::after {
   content: 'ETERNATUS';
@@ -142,23 +142,23 @@
   pointer-events: none;
 }
 .tb-eternatus .tb-title {
-  text-shadow: 0 0 10px var(--grupo-color, #d946ef);
+  text-shadow: 0 0 10px var(--grupo-color, currentColor);
 }
 
 /* 20. URSHIFU - Estilo Marcial Doble Franja */
 .tb-urshifu {
-  border: 2px solid var(--grupo-color, #f59e0b);
-  border-left: 12px solid var(--grupo-color, #f59e0b);
+  border: 2px solid var(--grupo-color, currentColor);
+  border-left: 12px solid var(--grupo-color, currentColor);
   border-radius: 4px;
 }
 .tb-urshifu .tb-head {
-  border-bottom: 2px solid var(--grupo-color, #f59e0b);
+  border-bottom: 2px solid var(--grupo-color, currentColor);
   padding-bottom: 10px;
 }
 
 /* 21. CALYREX - Corona Imperial Gótica */
 .tb-calyrex {
-  border: 3px double var(--grupo-color, #10b981);
+  border: 3px double var(--grupo-color, currentColor);
   border-radius: 24px;
   text-align: center;
 }
@@ -166,108 +166,108 @@
   content: '♔';
   position: absolute;
   top: 10px; left: 50%; transform: translateX(-50%);
-  font-size: 16px; color: var(--grupo-color, #10b981);
+  font-size: 16px; color: var(--grupo-color, currentColor);
 }
 .tb-calyrex .tb-head {
-  border-bottom: 1px dashed var(--grupo-color, #10b981);
+  border-bottom: 1px dashed var(--grupo-color, currentColor);
   padding-bottom: 14px;
 }
 .tb-calyrex .tb-sub { justify-content: center; }
 
 /* 22. SPECTRIER - Espectro Flotante */
 .tb-spectrier {
-  border: 1px solid var(--grupo-color, #a855f7);
+  border: 1px solid var(--grupo-color, currentColor);
   border-radius: 16px;
-  box-shadow: inset 0 0 15px rgba(168, 85, 247, 0.1);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .tb-spectrier::before {
   content: '✦';
   position: absolute;
   top: 15px; right: 20px;
-  font-size: 18px; color: var(--grupo-color, #a855f7);
+  font-size: 18px; color: var(--grupo-color, currentColor);
 }
 
 /* 23. GLASTRIER - Cristal Helado */
 .tb-glastrier {
-  border: 2px solid var(--grupo-color, #38bdf8);
+  border: 2px solid var(--grupo-color, currentColor);
   border-radius: 2px;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 .tb-glastrier .tb-head {
-  border-bottom: 2px solid var(--grupo-color, #38bdf8);
+  border-bottom: 2px solid var(--grupo-color, currentColor);
   padding-bottom: 10px;
 }
 
 /* 24. MIRAIDON - Terminal Cyberpunk */
 .tb-miraidon {
-  border-top: 4px solid var(--grupo-color, #6366f1);
-  border-bottom: 4px solid var(--grupo-color, #6366f1);
-  border-left: 1px solid var(--grupo-color, rgba(255,255,255,0.2));
-  border-right: 1px solid var(--grupo-color, rgba(255,255,255,0.2));
+  border-top: 4px solid var(--grupo-color, currentColor);
+  border-bottom: 4px solid var(--grupo-color, currentColor);
+  border-left: 1px solid var(--grupo-color, currentColor);
+  border-right: 1px solid var(--grupo-color, currentColor);
 }
 .tb-miraidon::before {
   content: 'SYS_LINK // ACTIVE';
   position: absolute;
   top: 6px; right: 12px;
   font-size: 8px; font-weight: 800; letter-spacing: 1px;
-  color: var(--grupo-color, #6366f1);
+  color: var(--grupo-color, currentColor);
   opacity: 0.8;
 }
 
 /* 25. KORAIDON - Dragón Ancestral */
 .tb-koraidon {
-  border: 3px double var(--grupo-color, #ef4444);
+  border: 3px double var(--grupo-color, currentColor);
   border-radius: 14px;
 }
 .tb-koraidon .tb-head {
-  border-bottom: 2px solid var(--grupo-color, #ef4444);
+  border-bottom: 2px solid var(--grupo-color, currentColor);
   padding-bottom: 10px;
 }
 
 /* 26. TINGLU - Vasija Ancestral */
 .tb-tinglu {
-  border: 2px solid var(--grupo-color, #b45309);
+  border: 2px solid var(--grupo-color, currentColor);
   border-radius: 8px;
   text-align: center;
 }
 .tb-tinglu .tb-head {
-  border-bottom: 1px solid var(--grupo-color, #b45309);
+  border-bottom: 1px solid var(--grupo-color, currentColor);
   padding-bottom: 12px;
 }
 .tb-tinglu .tb-sub { justify-content: center; }
 
 /* 27. CHIENPAO - Hoja Afilada Asimétrica */
 .tb-chienpao {
-  border: 2px solid var(--grupo-color, #e0f2fe);
+  border: 2px solid var(--grupo-color, currentColor);
   border-radius: 22px 0 22px 0;
 }
 .tb-chienpao .tb-head {
-  border-bottom: 2px solid var(--grupo-color, #e0f2fe);
+  border-bottom: 2px solid var(--grupo-color, currentColor);
   padding-bottom: 10px;
 }
 
 /* 28. WOCHIEN - Pergamino Sagrado */
 .tb-wochien {
-  border: 1px solid var(--grupo-color, #22c55e);
-  outline: 2px solid var(--grupo-color, #22c55e);
+  border: 1px solid var(--grupo-color, currentColor);
+  outline: 2px solid var(--grupo-color, currentColor);
   outline-offset: -6px;
   padding: 28px;
 }
 .tb-wochien .tb-head {
   text-align: center;
-  border-bottom: 1px solid var(--grupo-color, rgba(255,255,255,0.2));
+  border-bottom: 1px solid var(--grupo-color, currentColor);
   padding-bottom: 12px;
 }
 .tb-wochien .tb-sub { justify-content: center; }
 
 /* 29. CHIYU - Cuenta de Fuego */
 .tb-chiyu {
-  border: 2px solid var(--grupo-color, #f97316);
+  border: 2px solid var(--grupo-color, currentColor);
   border-radius: 26px;
-  box-shadow: 0 0 20px rgba(249, 115, 22, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .tb-chiyu .tb-head {
-  border-bottom: 1px dashed var(--grupo-color, #f97316);
+  border-bottom: 1px dashed var(--grupo-color, currentColor);
   padding-bottom: 12px;
 }
 
@@ -344,7 +344,7 @@
   color: var(--grupo-color, #38bdf8); opacity: 0.7;
 }
 .tb-blueprint::after {
-  content: '┌                                          ┐\n└                                          ┘';
+  content: '┌                                         ┐\n└                                         ┘';
   position: absolute;
   top: 2px; left: 2px; right: 2px; bottom: 2px;
   font-family: monospace; font-size: 14px;
