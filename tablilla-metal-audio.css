@@ -1,0 +1,138 @@
+/* =========================================================
+   CREYDS - DARK ROCK METAL GLAM TABLILLA CON AUDIO
+   ========================================================= */
+
+@keyframes rubyBlink {
+  0%, 100% { opacity: 0.2; color: #fb7185; }
+  50% { opacity: 1; color: #fff; text-shadow: 0 0 10px #f43f5e; }
+}
+
+.creyds-rock-box {
+  width: 540px;
+  max-width: 95%;
+  background: linear-gradient(135deg, #180309 0%, #0d0104 100%);
+  border: 2px solid #4c0519;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.9), 0 0 25px rgba(159, 18, 57, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  font-family: 'Georgia', serif;
+  color: #e7e5e4;
+  text-align: justify;
+  box-sizing: border-box;
+  margin: 16px auto;
+}
+
+.creyds-rock-blink-bar {
+  width: 100%;
+  padding: 10px;
+  background: #27020b;
+  border-bottom: 1px solid #881337;
+  text-align: center;
+}
+
+.creyds-rock-blink-bar span {
+  font-size: 9.5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  animation: rubyBlink 1.8s infinite;
+}
+
+.creyds-rock-body {
+  padding: 20px 25px;
+}
+
+.creyds-rock-img-container {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #9f1239;
+  margin-bottom: 15px;
+}
+
+.creyds-rock-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) contrast(1.2);
+}
+
+.creyds-rock-img-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #180309, transparent);
+}
+
+.creyds-rock-title {
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: #fce7f3;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.creyds-rock-divider {
+  width: 80px;
+  height: 1px;
+  background: #e11d48;
+  margin: 0 auto 12px auto;
+}
+
+.creyds-rock-info {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(159, 18, 57, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(225, 29, 72, 0.2);
+  padding: 8px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #fda4af;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.creyds-rock-quote {
+  background: rgba(0,0,0,0.4);
+  border-left: 2px solid #f43f5e;
+  padding: 10px 15px;
+  font-style: italic;
+  font-size: 12px;
+  color: #fbcfe8;
+  margin-bottom: 15px;
+  border-radius: 0 8px 8px 0;
+}
+
+.creyds-rock-text {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #d6d3d1;
+  margin-bottom: 15px;
+}
+
+.creyds-rock-footer {
+  background: rgba(13, 1, 4, 0.95);
+  padding: 12px 25px;
+  border-top: 1px solid #4c0519;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.creyds-rock-ost {
+  font-size: 10px;
+  color: #a8a29e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.creyds-rock-audio {
+  height: 30px;
+  width: 220px;
+  filter: invert(0.9) hue-rotate(300deg) contrast(1.5);
+}
