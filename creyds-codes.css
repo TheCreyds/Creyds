@@ -2490,3 +2490,27 @@
 .cr5-poppy .cr5-title { font-family:Georgia,serif; font-style:italic; font-weight:400; text-transform:none; }
 .cr5-poppy .cr5-post { padding:20px 12px; border-top:5px solid currentColor; border-radius:35px 0 0 0; }
 .cr5-poppy .cr5-meta span { border:1px solid currentColor; border-radius:25px 5px 25px 5px; }
+
+/* ==========================================
+   CREYDS CURVE — GROUP COLORED FRAMES
+========================================== */
+
+.cr5-serpentine,
+.cr5-camellia,
+.cr5-sundrop,
+.cr5-ruffle,
+.cr5-butterfly,
+.cr5-milky,
+.cr5-loop,
+.cr5-jelly,
+.cr5-orbital,
+.cr5-poppy {
+  border-color: var(--group, currentColor) !important;
+}
+
+/* Contornos interiores */
+.cr5-camellia:before,
+.cr5-milky:before,
+.cr5-poppy:before {
+  border-color: var(--group, currentColor) !important;
+}
