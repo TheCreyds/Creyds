@@ -1521,3 +1521,688 @@
 .tb-wochien { border: 1px solid var(--grupo-color, #666); outline: 1px solid var(--grupo-color, #666); outline-offset: -4px; }
 .tb-chiyu { border: 2px solid var(--grupo-color, #666); border-radius: 22px; }
 .tb-ironvaliant { border: 2px solid var(--grupo-color, #666); border-radius: 10px; }
+
+
+/* ==========================================================
+   CPT CREYDS — FRAMEWORK COLLECTION
+   10 UNIQUE ROLEPLAY TABLES
+   Foroactivo | Transparent | Group Color | Responsive
+   ========================================================== */
+
+/* ================= BASE ================= */
+
+.cr-table {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  padding: 30px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: transparent !important;
+  color: inherit;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.cr-table,
+.cr-table * {
+  box-sizing: border-box;
+}
+
+.cr-title {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: inherit !important;
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cr-icon {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--group, currentColor);
+  font-size: 30px;
+  line-height: 1;
+}
+
+.cr-icon i {
+  font-size: inherit;
+  font-style: normal;
+}
+
+.cr-post {
+  position: relative;
+  color: inherit;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.cr-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  color: inherit;
+}
+
+.cr-meta span {
+  min-width: 0;
+  display: block;
+  padding: 11px;
+  border: 1px solid currentColor;
+  font-size: 10px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.cr-meta span b {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--group, currentColor);
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cr-caption {
+  display: block;
+  color: var(--group, currentColor);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+/* ==========================================================
+   01 — IMPERIAL
+   Marco monumental de inspiración arquitectónica
+   ========================================================== */
+
+.cr-imperial {
+  border: 9px solid var(--group, currentColor);
+  outline: 2px solid currentColor;
+  outline-offset: -17px;
+  padding: 35px;
+}
+
+.cr-imperial .cr-header {
+  display: grid;
+  grid-template-columns: 1fr 70px;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 25px;
+  border-bottom: 3px double currentColor;
+}
+
+.cr-imperial .cr-title {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.cr-imperial .cr-icon {
+  border: 4px double var(--group, currentColor);
+  border-radius: 50%;
+}
+
+.cr-imperial .cr-post {
+  margin: 25px 0;
+  padding: 20px;
+  border-left: 7px solid var(--group, currentColor);
+  border-right: 1px solid currentColor;
+}
+
+.cr-imperial .cr-meta span {
+  border: 0;
+  border-top: 3px solid var(--group, currentColor);
+  padding: 12px 5px;
+}
+
+/* ==========================================================
+   02 — VITRA
+   Ventanas geométricas y marco de cristal
+   ========================================================== */
+
+.cr-vitra {
+  border: 6px solid currentColor;
+  padding: 24px;
+}
+
+.cr-vitra::before {
+  content: '';
+  position: absolute;
+  width: 145px;
+  height: 145px;
+  right: -65px;
+  top: -65px;
+  border: 18px solid var(--group, currentColor);
+  transform: rotate(45deg);
+  opacity: .75;
+}
+
+.cr-vitra .cr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+  border: 5px solid var(--group, currentColor);
+  margin-bottom: 20px;
+}
+
+.cr-vitra .cr-title {
+  font-size: 29px;
+  letter-spacing: 1px;
+}
+
+.cr-vitra .cr-icon {
+  border-left: 2px solid currentColor;
+}
+
+.cr-vitra .cr-post {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid currentColor;
+  border-radius: 0 30px 0 30px;
+}
+
+.cr-vitra .cr-meta span:nth-child(1) {
+  border: 4px solid var(--group, currentColor);
+}
+
+.cr-vitra .cr-meta span:nth-child(2) {
+  border: 1px dashed currentColor;
+}
+
+.cr-vitra .cr-meta span:nth-child(3) {
+  border: 1px solid currentColor;
+  border-radius: 0 15px 0 15px;
+}
+
+/* ==========================================================
+   03 — REGALIA
+   Marco ornamental de inspiración clásica
+   ========================================================== */
+
+.cr-regalia {
+  border: 8px double var(--group, currentColor);
+  padding: 34px;
+  outline: 1px solid currentColor;
+  outline-offset: -12px;
+}
+
+.cr-regalia .cr-header {
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid currentColor;
+}
+
+.cr-regalia .cr-icon {
+  margin: 0 auto 15px;
+  width: 75px;
+  height: 75px;
+  border: 3px solid var(--group, currentColor);
+  border-radius: 50% 50% 8px 8px;
+  font-size: 34px;
+}
+
+.cr-regalia .cr-title {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+.cr-regalia .cr-post {
+  padding: 25px 8px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.cr-regalia .cr-meta {
+  border-top: 4px double var(--group, currentColor);
+  padding-top: 15px;
+}
+
+.cr-regalia .cr-meta span {
+  border: 0;
+  text-align: center;
+  padding: 8px 3px;
+  border-right: 1px solid currentColor;
+}
+
+.cr-regalia .cr-meta span:last-child {
+  border-right: 0;
+}
+
+/* ==========================================================
+   04 — AUREOLE
+   Marco circular y arcos superpuestos
+   ========================================================== */
+
+.cr-aureole {
+  border: 7px solid var(--group, currentColor);
+  border-radius: 100px 100px 18px 18px;
+  padding: 35px 30px;
+}
+
+.cr-aureole .cr-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.cr-aureole .cr-icon {
+  width: 95px;
+  height: 95px;
+  border: 5px double var(--group, currentColor);
+  outline: 1px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 50%;
+  margin-bottom: 22px;
+  font-size: 37px;
+}
+
+.cr-aureole .cr-title {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.cr-aureole .cr-post {
+  padding: 24px 15px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  margin-bottom: 20px;
+}
+
+.cr-aureole .cr-meta span {
+  border: 2px solid var(--group, currentColor);
+  border-radius: 30px;
+  text-align: center;
+  padding: 12px 5px;
+}
+
+/* ==========================================================
+   05 — FORTRESS
+   Marco de bloques y refuerzos arquitectónicos
+   ========================================================== */
+
+.cr-fortress {
+  border: 10px solid var(--group, currentColor);
+  padding: 25px;
+}
+
+.cr-fortress::before,
+.cr-fortress::after {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border: 5px solid currentColor;
+  pointer-events: none;
+}
+
+.cr-fortress::before {
+  top: 10px;
+  left: 10px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.cr-fortress::after {
+  right: 10px;
+  bottom: 10px;
+  border-left: 0;
+  border-top: 0;
+}
+
+.cr-fortress .cr-header {
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 10px;
+  border-bottom: 7px solid var(--group, currentColor);
+}
+
+.cr-fortress .cr-icon {
+  background: var(--group, currentColor);
+  color: inherit;
+  border: 3px solid currentColor;
+}
+
+.cr-fortress .cr-title {
+  font-size: 27px;
+}
+
+.cr-fortress .cr-post {
+  margin: 25px 0;
+  padding: 20px;
+  border: 2px solid currentColor;
+  box-shadow: 8px 8px 0 var(--group, currentColor);
+}
+
+.cr-fortress .cr-meta span {
+  border: 3px solid currentColor;
+  border-bottom: 7px solid var(--group, currentColor);
+}
+
+/* ==========================================================
+   06 — MARQUIS
+   Marco de lujo con esquinas escalonadas
+   ========================================================== */
+
+.cr-marquis {
+  border: 7px solid currentColor;
+  padding: 32px;
+  outline: 3px solid var(--group, currentColor);
+  outline-offset: -15px;
+}
+
+.cr-marquis .cr-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 5px;
+  border-bottom: 5px solid var(--group, currentColor);
+}
+
+.cr-marquis .cr-title {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: 400;
+  max-width: 75%;
+}
+
+.cr-marquis .cr-icon {
+  width: 55px;
+  height: 55px;
+  border: 3px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.cr-marquis .cr-icon i {
+  transform: rotate(-45deg);
+}
+
+.cr-marquis .cr-post {
+  margin: 25px 0;
+  padding: 0 15px 0 25px;
+  border-left: 5px solid var(--group, currentColor);
+}
+
+.cr-marquis .cr-meta {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.cr-marquis .cr-meta span {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  align-items: center;
+  border: 0;
+  border-top: 1px solid currentColor;
+  padding: 12px 5px;
+}
+
+.cr-marquis .cr-meta span b {
+  margin: 0;
+}
+
+/* ==========================================================
+   07 — MOSAIC
+   Marco de módulos tipo mosaico
+   ========================================================== */
+
+.cr-mosaic {
+  border: 6px solid var(--group, currentColor);
+  padding: 25px;
+}
+
+.cr-mosaic .cr-header {
+  display: grid;
+  grid-template-columns: 1fr 85px;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.cr-mosaic .cr-title {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid currentColor;
+  font-size: 28px;
+}
+
+.cr-mosaic .cr-icon {
+  width: 85px;
+  height: auto;
+  min-height: 85px;
+  border: 5px solid var(--group, currentColor);
+  background: transparent;
+  font-size: 35px;
+}
+
+.cr-mosaic .cr-post {
+  margin: 15px 0;
+  padding: 25px;
+  border: 5px solid currentColor;
+  border-top: 12px solid var(--group, currentColor);
+}
+
+.cr-mosaic .cr-meta {
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.cr-mosaic .cr-meta span {
+  border: 1px solid currentColor;
+  border-left: 5px solid var(--group, currentColor);
+}
+
+/* ==========================================================
+   08 — BAROQUE
+   Marco ornamental multicapa
+   ========================================================== */
+
+.cr-baroque {
+  border: 12px double var(--group, currentColor);
+  padding: 30px;
+  outline: 2px solid currentColor;
+  outline-offset: -19px;
+}
+
+.cr-baroque .cr-header {
+  text-align: center;
+  padding: 15px 15px 25px;
+}
+
+.cr-baroque .cr-header::before,
+.cr-baroque .cr-header::after {
+  content: '✦  ✧  ✦';
+  display: block;
+  color: var(--group, currentColor);
+  font-size: 13px;
+  letter-spacing: 8px;
+  margin: 8px 0;
+}
+
+.cr-baroque .cr-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 15px;
+  border: 5px double var(--group, currentColor);
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+.cr-baroque .cr-title {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.cr-baroque .cr-post {
+  padding: 22px;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  font-family: Georgia, serif;
+  line-height: 2;
+}
+
+.cr-baroque .cr-meta {
+  margin-top: 18px;
+  grid-template-columns: 1fr;
+  gap: 7px;
+}
+
+.cr-baroque .cr-meta span {
+  border: 1px solid currentColor;
+  border-left: 6px solid var(--group, currentColor);
+  padding: 9px 14px;
+}
+
+/* ==========================================================
+   09 — HEXA
+   Arquitectura hexagonal y paneles técnicos
+   ========================================================== */
+
+.cr-hexa {
+  border: 8px solid var(--group, currentColor);
+  padding: 28px;
+}
+
+.cr-hexa .cr-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 22px;
+  border-bottom: 2px dashed currentColor;
+}
+
+.cr-hexa .cr-icon {
+  width: 75px;
+  height: 75px;
+  border: 5px solid var(--group, currentColor);
+  clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
+}
+
+.cr-hexa .cr-title {
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.cr-hexa .cr-post {
+  margin: 25px 0;
+  padding: 22px;
+  border: 2px dashed currentColor;
+  border-radius: 0 25px 0 25px;
+}
+
+.cr-hexa .cr-meta {
+  gap: 10px;
+}
+
+.cr-hexa .cr-meta span {
+  border: 4px solid var(--group, currentColor);
+  clip-path: polygon(0 0,100% 0,100% 85%,85% 100%,0 100%);
+  padding: 13px 9px;
+}
+
+/* ==========================================================
+   10 — CELESTIQUE
+   Marco de inspiración art déco
+   ========================================================== */
+
+.cr-celestique {
+  border: 7px solid var(--group, currentColor);
+  padding: 32px;
+  outline: 2px solid currentColor;
+  outline-offset: -13px;
+}
+
+.cr-celestique .cr-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px 25px;
+}
+
+.cr-celestique .cr-icon {
+  width: 85px;
+  height: 85px;
+  border: 5px solid var(--group, currentColor);
+  border-radius: 50% 50% 0 0;
+  outline: 1px solid currentColor;
+  outline-offset: 5px;
+  margin-bottom: 25px;
+  font-size: 34px;
+}
+
+.cr-celestique .cr-title {
+  font-family: Georgia, serif;
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.cr-celestique .cr-post {
+  margin: 15px 0 25px;
+  padding: 25px 12px;
+  border-top: 5px double var(--group, currentColor);
+  border-bottom: 5px double var(--group, currentColor);
+}
+
+.cr-celestique .cr-meta {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.cr-celestique .cr-meta span {
+  border: 0;
+  border-top: 3px solid var(--group, currentColor);
+  text-align: center;
+  padding: 12px 4px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 540px) {
+  .cr-table {
+    width: 95%;
+    padding: 22px;
+  }
+
+  .cr-title {
+    font-size: 23px;
+    overflow-wrap: anywhere;
+  }
+
+  .cr-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cr-marquis .cr-meta {
+    grid-template-columns: 1fr;
+  }
+}
