@@ -2502,15 +2502,24 @@
    Variable real de Foroactivo: --grupo-color
 ========================================== */
 
-/* MARCOS EXTERIORES */
+
+/* ==========================================
+   CREYDS — FINAL GROUP COLOR CORRECTION
+   Color de grupo solo en decoración
+   Texto narrativo conserva color del foro
+========================================== */
+
+/* CONTENEDORES: marco de grupo de 4px mínimo */
 .cr-table,
 .cr4-table,
 .cr5-table,
 .cr6-table {
-  border-color:var(--grupo-color,currentColor) !important;
+  border:4px solid var(--grupo-color,currentColor) !important;
+  background:transparent !important;
+  color:inherit !important;
 }
 
-/* TÍTULOS */
+/* TÍTULOS: color del personaje */
 .cr-title,
 .cr4-title,
 .cr5-title,
@@ -2518,16 +2527,17 @@
   color:var(--grupo-color,currentColor) !important;
 }
 
-/* ICONOS Y ESPACIOS DECORATIVOS */
+/* ICONOS Y MARCOS DE IMAGEN */
 .cr-icon,
 .cr4-icon,
 .cr5-icon,
-.cr6-icon {
+.cr6-icon,
+.cr6-image {
   color:var(--grupo-color,currentColor) !important;
   border-color:var(--grupo-color,currentColor) !important;
 }
 
-/* ETIQUETAS Y SUBTÍTULOS */
+/* ETIQUETAS DECORATIVAS */
 .cr-caption,
 .cr-kicker,
 .cr4-kicker,
@@ -2537,37 +2547,42 @@
   color:var(--grupo-color,currentColor) !important;
 }
 
-/* INFORMACIÓN INFERIOR */
+/* SUBTÍTULOS Y ENCABEZADOS DE DATOS */
 .cr-meta b,
 .cr4-meta b,
 .cr5-meta b,
-.cr6-meta b,
-.cr4-label,
-.cr5-label {
+.cr6-meta b {
   color:var(--grupo-color,currentColor) !important;
 }
 
-/* BORDES Y DETALLES INTERNOS */
-.cr-table [class*="meta"] span,
-.cr4-table [class*="meta"] span,
-.cr5-table [class*="meta"] span,
-.cr6-table [class*="meta"] span {
-  border-color:var(--grupo-color,currentColor);
+/* VALORES DE INFORMACIÓN: color normal */
+.cr-meta span,
+.cr4-meta span,
+.cr5-meta span,
+.cr6-meta span {
+  color:inherit !important;
 }
 
-/* IMÁGENES */
-.cr6-image {
-  border-color:var(--grupo-color,currentColor) !important;
+/* TEXTO NARRATIVO: NUNCA COLOR DE GRUPO */
+.cr-post,
+.cr4-post,
+.cr5-post,
+.cr6-post {
+  color:inherit !important;
 }
 
-/* ELEMENTOS DECORATIVOS */
-.cr-table:before,
-.cr-table:after,
-.cr4-table:before,
-.cr4-table:after,
-.cr5-table:before,
-.cr5-table:after,
-.cr6-table:before,
-.cr6-table:after {
+/* OTROS TEXTOS INTERNOS */
+.cr-table .cr-post *,
+.cr4-table .cr4-post *,
+.cr5-table .cr5-post *,
+.cr6-table .cr6-post * {
+  color:inherit;
+}
+
+/* BORDES DE LOS MÓDULOS DE INFORMACIÓN */
+.cr-meta span,
+.cr4-meta span,
+.cr5-meta span,
+.cr6-meta span {
   border-color:var(--grupo-color,currentColor);
 }
