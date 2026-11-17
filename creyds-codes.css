@@ -2517,150 +2517,320 @@
 }
 
 
+
 /* ==========================================
-   CREYDS POKEMON — IMAGE FRAME V2
-   Eevee / Snorlax / Chikorita / Cyndaquil
-   Togetic / Ampharos / Espeon
+   CREYDS POKEMON — IMAGE COLLECTION
+   5 NEW IMAGE LAYOUTS
+   Grupo: --grupo-color
+   Fondo: transparente
 ========================================== */
 
-.crpk-table .crpk-picture {
-  position: relative !important;
-  display: flex !important;
-  flex: 0 0 100px !important;
-  width: 100px !important;
-  height: 100px !important;
-  min-width: 100px !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 9px !important;
-  margin: 0 !important;
-  overflow: hidden !important;
+.crpk-imgtable,
+.crpk-imgtable * {
   box-sizing: border-box !important;
-  border: 1px solid var(--grupo-color, #888) !important;
-  outline: 1px solid var(--grupo-color, #888) !important;
-  outline-offset: 4px !important;
+}
+
+.crpk-imgtable {
+  display: block !important;
+  width: 540px !important;
+  max-width: 95% !important;
+  margin: 35px auto !important;
+  padding: 25px !important;
+  overflow: hidden !important;
+  position: relative !important;
   background: transparent !important;
   color: inherit !important;
-  transform: none !important;
-  float: none !important;
+  font-family: 'Inter', 'Segoe UI', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.8 !important;
 }
 
-.crpk-table .crpk-picture::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 5px !important;
-  border: 1px dashed var(--grupo-color, #888) !important;
-  opacity: .55 !important;
-  pointer-events: none !important;
-}
-
-.crpk-table .crpk-picture img {
+.crpk-imgtable .crpk-photo {
+  display: block !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  background: transparent !important;
   position: relative !important;
-  z-index: 1 !important;
+}
+
+.crpk-imgtable .crpk-photo img {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
   max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center !important;
   border: 0 !important;
-  outline: 0 !important;
+  margin: 0 !important;
+}
+
+.crpk-imgtable .crpk-head {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 15px !important;
+  margin: 20px 0 !important;
+}
+
+.crpk-imgtable .crpk-title {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 25px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+.crpk-imgtable .crpk-caption {
+  display: block !important;
+  margin-bottom: 8px !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 8px !important;
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+}
+
+.crpk-imgtable .crpk-icon {
+  display: flex !important;
+  flex: 0 0 52px !important;
+  width: 52px !important;
+  height: 52px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 3px solid var(--grupo-color, #888) !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 23px !important;
+}
+
+.crpk-imgtable .crpk-post {
+  display: block !important;
+  width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   background: transparent !important;
+  color: inherit !important;
+  font-size: 13px !important;
+  line-height: 1.9 !important;
+  text-align: justify !important;
 }
 
-/* Eevee — marco doble */
-.crpk-eevee .crpk-picture {
-  border: 4px double var(--grupo-color, #888) !important;
-  outline: none !important;
-  border-radius: 0 22px 0 22px !important;
+.crpk-imgtable .crpk-meta {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin-top: 24px !important;
 }
 
-/* Snorlax — marco circular */
-.crpk-snorlax .crpk-picture {
-  border: 3px solid var(--grupo-color, #888) !important;
-  outline: 1px solid var(--grupo-color, #888) !important;
-  outline-offset: 4px !important;
-  border-radius: 50% !important;
-  padding: 12px !important;
-}
-
-/* Chikorita — marco editorial */
-.crpk-chiko .crpk-picture {
-  float: right !important;
-  margin: 0 5px 15px 20px !important;
-  width: 85px !important;
-  height: 85px !important;
-  flex-basis: 85px !important;
-  min-width: 85px !important;
-  border: 0 !important;
-  border-left: 4px solid var(--grupo-color, #888) !important;
-  outline: none !important;
-}
-
-/* Cyndaquil — marco inclinado */
-.crpk-cynda .crpk-picture {
-  border: 3px solid var(--grupo-color, #888) !important;
-  outline: none !important;
-  border-radius: 0 !important;
-  transform: rotate(3deg) !important;
-}
-
-/* Togetic — marco celestial */
-.crpk-togetic .crpk-picture {
-  border: 4px double var(--grupo-color, #888) !important;
-  outline: none !important;
-  border-radius: 50% 50% 0 0 !important;
-  padding: 13px !important;
-}
-
-/* Ampharos — marco técnico */
-.crpk-ampha .crpk-picture {
-  border: 4px solid var(--grupo-color, #888) !important;
-  outline: none !important;
-  border-radius: 0 !important;
-  padding: 7px !important;
-}
-
-/* Espeon — marco Art Deco */
-.crpk-espeon .crpk-picture {
-  border: 4px double var(--grupo-color, #888) !important;
-  outline: 1px solid var(--grupo-color, #888) !important;
-  outline-offset: 4px !important;
-  border-radius: 50% 50% 0 0 !important;
-  padding: 12px !important;
-}
-
-/* Ajustes de cabeceras */
-.crpk-eevee .crpk-head,
-.crpk-cynda .crpk-head,
-.crpk-ampha .crpk-head {
-  align-items: center !important;
-}
-
-.crpk-togetic .crpk-head,
-.crpk-espeon .crpk-head,
-.crpk-snorlax .crpk-head {
-  align-items: center !important;
-}
-
-.crpk-chiko .crpk-head {
+.crpk-imgtable .crpk-meta span {
   display: block !important;
-  min-height: 95px !important;
+  min-width: 0 !important;
+  padding: 10px !important;
+  border-top: 3px solid var(--grupo-color, #888) !important;
+  color: inherit !important;
+  font-size: 10px !important;
+  line-height: 1.5 !important;
+  overflow-wrap: anywhere !important;
 }
 
-.crpk-chiko .crpk-caption,
-.crpk-chiko .crpk-title {
-  text-align: left !important;
+.crpk-imgtable .crpk-meta b {
+  display: block !important;
+  margin-bottom: 4px !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 8px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
 }
 
+/* 01 — VULPIX / CINEMATIC */
+.crpk-vulpix {
+  padding: 0 0 25px !important;
+  border-bottom: 5px solid var(--grupo-color, #888) !important;
+}
+.crpk-vulpix .crpk-photo {
+  height: 230px !important;
+  border-bottom: 5px solid var(--grupo-color, #888) !important;
+}
+.crpk-vulpix .crpk-head,
+.crpk-vulpix .crpk-post,
+.crpk-vulpix .crpk-meta {
+  width: calc(100% - 50px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.crpk-vulpix .crpk-title {
+  font-size: 30px !important;
+  letter-spacing: 4px !important;
+}
+.crpk-vulpix .crpk-icon {
+  border-radius: 50% !important;
+}
+
+/* 02 — PSYDUCK / SPLIT */
+.crpk-psyduck {
+  border: 1px solid var(--grupo-color, #888) !important;
+  padding: 18px !important;
+}
+.crpk-psyduck .crpk-layout {
+  display: grid !important;
+  grid-template-columns: 180px minmax(0, 1fr) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+}
+.crpk-psyduck .crpk-photo {
+  height: 100% !important;
+  min-height: 330px !important;
+}
+.crpk-psyduck .crpk-photo img {
+  position: absolute !important;
+  inset: 0 !important;
+}
+.crpk-psyduck .crpk-head {
+  margin: 0 0 20px !important;
+  padding-bottom: 15px !important;
+  border-bottom: 2px solid var(--grupo-color, #888) !important;
+}
+.crpk-psyduck .crpk-title {
+  font-size: 21px !important;
+}
+.crpk-psyduck .crpk-icon {
+  flex-basis: 42px !important;
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 50% !important;
+}
+.crpk-psyduck .crpk-meta {
+  grid-template-columns: 1fr !important;
+  gap: 5px !important;
+}
+.crpk-psyduck .crpk-meta span {
+  padding: 6px 8px !important;
+}
+
+/* 03 — DRAGONAIR / DOUBLE EXPOSURE */
+.crpk-dragonair {
+  border-top: 5px solid var(--grupo-color, #888) !important;
+  border-bottom: 5px solid var(--grupo-color, #888) !important;
+}
+.crpk-dragonair .crpk-gallery {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px !important;
+}
+.crpk-dragonair .crpk-photo {
+  height: 175px !important;
+}
+.crpk-dragonair .crpk-photo:first-child {
+  border-radius: 35px 0 0 0 !important;
+}
+.crpk-dragonair .crpk-photo:last-child {
+  border-radius: 0 0 35px 0 !important;
+}
+.crpk-dragonair .crpk-head {
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid var(--grupo-color, #888) !important;
+}
+.crpk-dragonair .crpk-title {
+  font-size: 27px !important;
+  letter-spacing: 5px !important;
+}
+.crpk-dragonair .crpk-icon {
+  border: 0 !important;
+  border-bottom: 3px solid var(--grupo-color, #888) !important;
+  font-size: 30px !important;
+}
+
+/* 04 — HOOTHOOT / POLAROID */
+.crpk-hoothoot {
+  border: 2px solid var(--grupo-color, #888) !important;
+  padding: 25px !important;
+}
+.crpk-hoothoot .crpk-photo {
+  width: 75% !important;
+  height: 260px !important;
+  margin: 0 auto !important;
+  padding: 8px !important;
+  border: 2px solid var(--grupo-color, #888) !important;
+}
+.crpk-hoothoot .crpk-photo img {
+  height: 100% !important;
+}
+.crpk-hoothoot .crpk-head {
+  display: block !important;
+  text-align: center !important;
+  margin: 22px 0 !important;
+}
+.crpk-hoothoot .crpk-icon {
+  width: 40px !important;
+  height: 40px !important;
+  margin: 12px auto 0 !important;
+  border-radius: 50% !important;
+}
+.crpk-hoothoot .crpk-title {
+  font-size: 24px !important;
+  letter-spacing: 4px !important;
+}
+.crpk-hoothoot .crpk-post {
+  padding: 18px 0 !important;
+  border-top: 1px dashed var(--grupo-color, #888) !important;
+  border-bottom: 1px dashed var(--grupo-color, #888) !important;
+}
+
+/* 05 — MAREEP / PHOTO JOURNAL */
+.crpk-mareep {
+  padding: 25px !important;
+  border-left: 5px solid var(--grupo-color, #888) !important;
+}
+.crpk-mareep .crpk-gallery {
+  display: grid !important;
+  grid-template-columns: 1.4fr 1fr !important;
+  grid-template-rows: 125px 125px !important;
+  gap: 8px !important;
+}
+.crpk-mareep .crpk-photo:first-child {
+  grid-row: 1 / 3 !important;
+  height: 258px !important;
+}
+.crpk-mareep .crpk-photo:nth-child(2),
+.crpk-mareep .crpk-photo:nth-child(3) {
+  height: 125px !important;
+}
+.crpk-mareep .crpk-head {
+  padding-bottom: 15px !important;
+  border-bottom: 3px solid var(--grupo-color, #888) !important;
+}
+.crpk-mareep .crpk-title {
+  font-size: 28px !important;
+  letter-spacing: 3px !important;
+}
+.crpk-mareep .crpk-icon {
+  border-radius: 0 50% 50% 50% !important;
+}
+
+/* RESPONSIVE */
 @media screen and (max-width: 540px) {
-  .crpk-table .crpk-picture {
-    flex-basis: 85px !important;
-    width: 85px !important;
-    height: 85px !important;
-    min-width: 85px !important;
+  .crpk-imgtable {
+    width: 95% !important;
+    padding: 18px !important;
+  }
+  .crpk-psyduck .crpk-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .crpk-psyduck .crpk-photo {
+    height: 220px !important;
+    min-height: 220px !important;
+  }
+  .crpk-imgtable .crpk-meta {
+    grid-template-columns: 1fr !important;
+  }
+  .crpk-dragonair .crpk-photo {
+    height: 125px !important;
+  }
+  .crpk-hoothoot .crpk-photo {
+    width: 90% !important;
   }
 }
