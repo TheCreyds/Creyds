@@ -2531,7 +2531,7 @@
   overflow:hidden;
   box-sizing:border-box;
   background:transparent !important;
-  color:inherit !important;
+  color:var(--grupo-color) !important;
   border:4px solid var(--group) !important;
   font-family:'Inter','Segoe UI',sans-serif;
   font-size:13px;
@@ -2555,7 +2555,7 @@
 .cr6-title {
   margin:0 !important;
   padding:0 !important;
-  color:(--group) !important;
+  color:var(--grupo-color) !important;
   font-size:21px;
   font-weight:900;
   line-height:1.2;
