@@ -2517,24 +2517,23 @@
 }
 
 
-
-
 /* ==========================================
-   CREYDS — POKEMON IMAGE TABLES
-   VERSION CORREGIDA PARA FOROACTIVO
+   CREYDS POKEMON — IMAGE COLLECTION
+   5 diseños con espacios para imágenes
+   Grupo: --grupo-color
 ========================================== */
 
-.crpk-imgtable,
-.crpk-imgtable * {
+.crpk2-table,
+.crpk2-table * {
   box-sizing: border-box !important;
 }
 
-.crpk-imgtable {
+.crpk2-table {
   display: block !important;
-  width: 540px !important;
+  width: 520px !important;
   max-width: 95% !important;
   margin: 35px auto !important;
-  padding: 24px !important;
+  padding: 26px !important;
   position: relative !important;
   overflow: hidden !important;
   background: transparent !important;
@@ -2544,22 +2543,44 @@
   line-height: 1.8 !important;
 }
 
-.crpk-imgtable .crpk-photo {
+.crpk2-table .crpk2-title {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 25px !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+.crpk2-table .crpk2-caption {
+  display: block !important;
+  margin: 0 0 9px !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 8px !important;
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+}
+
+.crpk2-table .crpk2-image {
   display: block !important;
   width: 100% !important;
   height: 220px !important;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
-  position: relative !important;
   background: transparent !important;
+  border: 3px solid var(--grupo-color, #888) !important;
 }
 
-.crpk-imgtable .crpk-photo img {
+.crpk2-table .crpk2-image img {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
-  max-width: none !important;
+  max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   object-fit: cover !important;
@@ -2568,62 +2589,10 @@
   border-radius: 0 !important;
 }
 
-.crpk-imgtable .crpk-head {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  gap: 15px !important;
-  margin: 20px 0 !important;
-  padding: 0 !important;
-}
-
-.crpk-imgtable .crpk-heading {
-  display: block !important;
-  min-width: 0 !important;
-  flex: 1 1 auto !important;
-}
-
-.crpk-imgtable .crpk-caption {
-  display: block !important;
-  margin: 0 0 8px !important;
-  color: var(--grupo-color, #888) !important;
-  font-size: 8px !important;
-  font-weight: 900 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-}
-
-.crpk-imgtable .crpk-title {
-  display: block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  color: var(--grupo-color, #888) !important;
-  font-size: 25px !important;
-  line-height: 1.2 !important;
-  font-weight: 900 !important;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-}
-
-.crpk-imgtable .crpk-icon {
-  display: flex !important;
-  flex: 0 0 52px !important;
-  width: 52px !important;
-  height: 52px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border: 3px solid var(--grupo-color, #888) !important;
-  color: var(--grupo-color, #888) !important;
-  font-size: 23px !important;
-  line-height: 1 !important;
-}
-
-.crpk-imgtable .crpk-post {
+.crpk2-table .crpk2-post {
   display: block !important;
   width: 100% !important;
-  margin: 0 !important;
+  margin: 20px 0 0 !important;
   padding: 0 !important;
   background: transparent !important;
   color: inherit !important;
@@ -2632,7 +2601,7 @@
   text-align: justify !important;
 }
 
-.crpk-imgtable .crpk-meta {
+.crpk2-table .crpk2-meta {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 8px !important;
@@ -2641,11 +2610,10 @@
   padding: 0 !important;
 }
 
-.crpk-imgtable .crpk-meta span {
+.crpk2-table .crpk2-meta span {
   display: block !important;
   min-width: 0 !important;
-  margin: 0 !important;
-  padding: 10px !important;
+  padding: 9px !important;
   border-top: 3px solid var(--grupo-color, #888) !important;
   background: transparent !important;
   color: inherit !important;
@@ -2654,10 +2622,9 @@
   overflow-wrap: anywhere !important;
 }
 
-.crpk-imgtable .crpk-meta b {
+.crpk2-table .crpk2-meta b {
   display: block !important;
   margin: 0 0 4px !important;
-  padding: 0 !important;
   color: var(--grupo-color, #888) !important;
   font-size: 8px !important;
   font-weight: 900 !important;
@@ -2665,185 +2632,174 @@
   text-transform: uppercase !important;
 }
 
-/* 01 VULPIX — CINEMATIC */
-.crpk-vulpix {
-  padding: 0 0 25px !important;
+/* 01 — VULPIX / PANORAMIC */
+.crpk2-vulpix {
+  border: 1px solid var(--grupo-color, #888) !important;
+  padding: 14px !important;
+}
+.crpk2-vulpix .crpk2-image {
+  height: 205px !important;
+  border: 0 !important;
   border-bottom: 5px solid var(--grupo-color, #888) !important;
 }
-.crpk-vulpix .crpk-photo {
-  height: 235px !important;
-  border-bottom: 5px solid var(--grupo-color, #888) !important;
+.crpk2-vulpix .crpk2-head {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  gap: 15px !important;
+  padding: 20px 8px 12px !important;
+  border-bottom: 1px solid var(--grupo-color, #888) !important;
 }
-.crpk-vulpix .crpk-head,
-.crpk-vulpix .crpk-post,
-.crpk-vulpix .crpk-meta {
-  width: calc(100% - 48px) !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-.crpk-vulpix .crpk-title {
-  font-size: 29px !important;
+.crpk2-vulpix .crpk2-title {
+  font-size: 27px !important;
   letter-spacing: 4px !important;
 }
-.crpk-vulpix .crpk-icon {
-  border-radius: 50% !important;
+.crpk2-vulpix .crpk2-number {
+  color: var(--grupo-color, #888) !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
 }
 
-/* 02 PSYDUCK — SPLIT */
-.crpk-psyduck {
-  border: 1px solid var(--grupo-color, #888) !important;
-  padding: 18px !important;
+/* 02 — PSYDUCK / SIDE EDITORIAL */
+.crpk2-psyduck {
+  padding: 24px !important;
+  border-left: 6px solid var(--grupo-color, #888) !important;
 }
-.crpk-psyduck .crpk-layout {
-  display: grid !important;
-  grid-template-columns: 175px minmax(0, 1fr) !important;
-  gap: 18px !important;
-  align-items: stretch !important;
-}
-.crpk-psyduck .crpk-photo {
-  height: 100% !important;
-  min-height: 350px !important;
-}
-.crpk-psyduck .crpk-photo img {
-  position: absolute !important;
-  inset: 0 !important;
-}
-.crpk-psyduck .crpk-head {
-  margin: 0 0 18px !important;
+.crpk2-psyduck .crpk2-head {
+  margin-bottom: 20px !important;
   padding-bottom: 13px !important;
+  border-bottom: 1px solid var(--grupo-color, #888) !important;
+}
+.crpk2-psyduck .crpk2-layout {
+  display: grid !important;
+  grid-template-columns: 165px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 18px !important;
+}
+.crpk2-psyduck .crpk2-image {
+  height: 245px !important;
+  border: 3px solid var(--grupo-color, #888) !important;
+}
+.crpk2-psyduck .crpk2-post {
+  margin: 0 !important;
+}
+.crpk2-psyduck .crpk2-meta {
+  margin-top: 22px !important;
+}
+
+/* 03 — DRAGONAIR / PORTRAIT */
+.crpk2-dragonair {
+  padding: 30px !important;
+  border: 4px double var(--grupo-color, #888) !important;
+  text-align: center !important;
+}
+.crpk2-dragonair .crpk2-head {
+  margin-bottom: 20px !important;
+}
+.crpk2-dragonair .crpk2-title {
+  font-size: 28px !important;
+  letter-spacing: 5px !important;
+}
+.crpk2-dragonair .crpk2-image {
+  width: 230px !important;
+  max-width: 100% !important;
+  height: 280px !important;
+  margin: 0 auto !important;
+  border: 5px solid var(--grupo-color, #888) !important;
+  border-radius: 115px 115px 0 0 !important;
+}
+.crpk2-dragonair .crpk2-image img {
+  border-radius: 110px 110px 0 0 !important;
+}
+.crpk2-dragonair .crpk2-post {
+  padding: 18px 4px !important;
+  border-top: 1px solid var(--grupo-color, #888) !important;
+  border-bottom: 1px solid var(--grupo-color, #888) !important;
+}
+.crpk2-dragonair .crpk2-meta {
+  text-align: left !important;
+}
+
+/* 04 — MARILL / FRAMED */
+.crpk2-marill {
+  padding: 28px !important;
+  border-top: 8px solid var(--grupo-color, #888) !important;
   border-bottom: 2px solid var(--grupo-color, #888) !important;
 }
-.crpk-psyduck .crpk-title {
-  font-size: 20px !important;
+.crpk2-marill .crpk2-head {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 15px !important;
+  margin-bottom: 18px !important;
 }
-.crpk-psyduck .crpk-icon {
-  flex-basis: 40px !important;
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 50% !important;
+.crpk2-marill .crpk2-title {
+  font-size: 23px !important;
 }
-.crpk-psyduck .crpk-meta {
-  grid-template-columns: 1fr !important;
-  gap: 5px !important;
+.crpk2-marill .crpk2-image {
+  height: 230px !important;
+  padding: 7px !important;
+  border: 1px solid var(--grupo-color, #888) !important;
+  outline: 1px solid var(--grupo-color, #888) !important;
+  outline-offset: 4px !important;
 }
-.crpk-psyduck .crpk-meta span {
-  padding: 6px 8px !important;
+.crpk2-marill .crpk2-image img {
+  object-position: center 35% !important;
+}
+.crpk2-marill .crpk2-post {
+  padding: 15px 0 0 !important;
 }
 
-/* 03 DRAGONAIR — DOUBLE IMAGE */
-.crpk-dragonair {
-  border-top: 5px solid var(--grupo-color, #888) !important;
-  border-bottom: 5px solid var(--grupo-color, #888) !important;
+/* 05 — HOPPIP / DOUBLE IMAGE */
+.crpk2-hoppip {
+  padding: 25px !important;
+  border: 1px solid var(--grupo-color, #888) !important;
 }
-.crpk-dragonair .crpk-gallery {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 8px !important;
+.crpk2-hoppip .crpk2-head {
+  text-align: center !important;
+  padding-bottom: 17px !important;
+  border-bottom: 3px double var(--grupo-color, #888) !important;
 }
-.crpk-dragonair .crpk-gallery .crpk-photo {
-  height: 175px !important;
-}
-.crpk-dragonair .crpk-gallery .crpk-photo:first-child {
-  border-radius: 30px 0 0 0 !important;
-}
-.crpk-dragonair .crpk-gallery .crpk-photo:last-child {
-  border-radius: 0 0 30px 0 !important;
-}
-.crpk-dragonair .crpk-title {
+.crpk2-hoppip .crpk2-title {
   font-size: 26px !important;
   letter-spacing: 4px !important;
 }
-.crpk-dragonair .crpk-icon {
-  border: 0 !important;
-  border-bottom: 3px solid var(--grupo-color, #888) !important;
-  font-size: 30px !important;
-}
-
-/* 04 HOOTHOOT — POLAROID */
-.crpk-hoothoot {
-  border: 2px solid var(--grupo-color, #888) !important;
-  padding: 25px !important;
-}
-.crpk-hoothoot .crpk-photo {
-  width: 75% !important;
-  height: 260px !important;
-  margin: 0 auto !important;
-  padding: 8px !important;
-  border: 2px solid var(--grupo-color, #888) !important;
-}
-.crpk-hoothoot .crpk-photo img {
-  height: 100% !important;
-}
-.crpk-hoothoot .crpk-head {
-  display: block !important;
-  text-align: center !important;
-}
-.crpk-hoothoot .crpk-heading {
-  width: 100% !important;
-}
-.crpk-hoothoot .crpk-icon {
-  width: 40px !important;
-  height: 40px !important;
-  margin: 12px auto 0 !important;
-  border-radius: 50% !important;
-}
-.crpk-hoothoot .crpk-title {
-  font-size: 24px !important;
-  letter-spacing: 4px !important;
-}
-.crpk-hoothoot .crpk-post {
-  padding: 18px 0 !important;
-  border-top: 1px dashed var(--grupo-color, #888) !important;
-  border-bottom: 1px dashed var(--grupo-color, #888) !important;
-}
-
-/* 05 MAREEP — PHOTO JOURNAL */
-.crpk-mareep {
-  padding: 25px !important;
-  border-left: 5px solid var(--grupo-color, #888) !important;
-}
-.crpk-mareep .crpk-gallery {
+.crpk2-hoppip .crpk2-gallery {
   display: grid !important;
-  grid-template-columns: 1.4fr 1fr !important;
-  grid-template-rows: 125px 125px !important;
-  gap: 8px !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px !important;
+  margin-top: 20px !important;
 }
-.crpk-mareep .crpk-gallery .crpk-photo:first-child {
-  grid-row: 1 / 3 !important;
-  height: 258px !important;
+.crpk2-hoppip .crpk2-image {
+  height: 175px !important;
+  border: 2px solid var(--grupo-color, #888) !important;
 }
-.crpk-mareep .crpk-gallery .crpk-photo:nth-child(2),
-.crpk-mareep .crpk-gallery .crpk-photo:nth-child(3) {
-  height: 125px !important;
+.crpk2-hoppip .crpk2-image img {
+  object-position: center !important;
 }
-.crpk-mareep .crpk-title {
-  font-size: 27px !important;
-  letter-spacing: 3px !important;
+.crpk2-hoppip .crpk2-post {
+  padding-top: 17px !important;
+  border-top: 1px solid var(--grupo-color, #888) !important;
 }
-.crpk-mareep .crpk-icon {
-  border-radius: 0 50% 50% 50% !important;
+.crpk2-hoppip .crpk2-meta span {
+  border-top: 0 !important;
+  border-bottom: 3px solid var(--grupo-color, #888) !important;
 }
 
 /* MOBILE */
 @media screen and (max-width: 540px) {
-  .crpk-imgtable {
+  .crpk2-table {
     width: 95% !important;
     padding: 17px !important;
   }
-  .crpk-imgtable .crpk-meta {
+  .crpk2-table .crpk2-meta {
     grid-template-columns: 1fr !important;
   }
-  .crpk-psyduck .crpk-layout {
+  .crpk2-psyduck .crpk2-layout {
     grid-template-columns: 1fr !important;
   }
-  .crpk-psyduck .crpk-photo {
+  .crpk2-psyduck .crpk2-image {
+    width: 100% !important;
     height: 220px !important;
-    min-height: 220px !important;
-  }
-  .crpk-dragonair .crpk-gallery .crpk-photo {
-    height: 125px !important;
-  }
-  .crpk-hoothoot .crpk-photo {
-    width: 90% !important;
   }
 }
