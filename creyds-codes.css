@@ -2518,11 +2518,10 @@
 
 
 
+
 /* ==========================================
-   CREYDS POKEMON — IMAGE COLLECTION
-   5 NEW IMAGE LAYOUTS
-   Grupo: --grupo-color
-   Fondo: transparente
+   CREYDS — POKEMON IMAGE TABLES
+   VERSION CORREGIDA PARA FOROACTIVO
 ========================================== */
 
 .crpk-imgtable,
@@ -2535,9 +2534,9 @@
   width: 540px !important;
   max-width: 95% !important;
   margin: 35px auto !important;
-  padding: 25px !important;
-  overflow: hidden !important;
+  padding: 24px !important;
   position: relative !important;
+  overflow: hidden !important;
   background: transparent !important;
   color: inherit !important;
   font-family: 'Inter', 'Segoe UI', sans-serif !important;
@@ -2548,28 +2547,50 @@
 .crpk-imgtable .crpk-photo {
   display: block !important;
   width: 100% !important;
+  height: 220px !important;
+  margin: 0 !important;
+  padding: 0 !important;
   overflow: hidden !important;
-  background: transparent !important;
   position: relative !important;
+  background: transparent !important;
 }
 
 .crpk-imgtable .crpk-photo img {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
-  max-width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
   object-fit: cover !important;
   object-position: center !important;
   border: 0 !important;
-  margin: 0 !important;
+  border-radius: 0 !important;
 }
 
 .crpk-imgtable .crpk-head {
   display: flex !important;
-  justify-content: space-between !important;
   align-items: center !important;
+  justify-content: space-between !important;
   gap: 15px !important;
   margin: 20px 0 !important;
+  padding: 0 !important;
+}
+
+.crpk-imgtable .crpk-heading {
+  display: block !important;
+  min-width: 0 !important;
+  flex: 1 1 auto !important;
+}
+
+.crpk-imgtable .crpk-caption {
+  display: block !important;
+  margin: 0 0 8px !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 8px !important;
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
 }
 
 .crpk-imgtable .crpk-title {
@@ -2584,26 +2605,19 @@
   text-transform: uppercase !important;
 }
 
-.crpk-imgtable .crpk-caption {
-  display: block !important;
-  margin-bottom: 8px !important;
-  color: var(--grupo-color, #888) !important;
-  font-size: 8px !important;
-  font-weight: 900 !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-}
-
 .crpk-imgtable .crpk-icon {
   display: flex !important;
   flex: 0 0 52px !important;
   width: 52px !important;
   height: 52px !important;
+  margin: 0 !important;
+  padding: 0 !important;
   align-items: center !important;
   justify-content: center !important;
   border: 3px solid var(--grupo-color, #888) !important;
   color: var(--grupo-color, #888) !important;
   font-size: 23px !important;
+  line-height: 1 !important;
 }
 
 .crpk-imgtable .crpk-post {
@@ -2623,14 +2637,17 @@
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 8px !important;
   width: 100% !important;
-  margin-top: 24px !important;
+  margin: 24px 0 0 !important;
+  padding: 0 !important;
 }
 
 .crpk-imgtable .crpk-meta span {
   display: block !important;
   min-width: 0 !important;
+  margin: 0 !important;
   padding: 10px !important;
   border-top: 3px solid var(--grupo-color, #888) !important;
+  background: transparent !important;
   color: inherit !important;
   font-size: 10px !important;
   line-height: 1.5 !important;
@@ -2639,68 +2656,70 @@
 
 .crpk-imgtable .crpk-meta b {
   display: block !important;
-  margin-bottom: 4px !important;
+  margin: 0 0 4px !important;
+  padding: 0 !important;
   color: var(--grupo-color, #888) !important;
   font-size: 8px !important;
+  font-weight: 900 !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
 }
 
-/* 01 — VULPIX / CINEMATIC */
+/* 01 VULPIX — CINEMATIC */
 .crpk-vulpix {
   padding: 0 0 25px !important;
   border-bottom: 5px solid var(--grupo-color, #888) !important;
 }
 .crpk-vulpix .crpk-photo {
-  height: 230px !important;
+  height: 235px !important;
   border-bottom: 5px solid var(--grupo-color, #888) !important;
 }
 .crpk-vulpix .crpk-head,
 .crpk-vulpix .crpk-post,
 .crpk-vulpix .crpk-meta {
-  width: calc(100% - 50px) !important;
+  width: calc(100% - 48px) !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
 .crpk-vulpix .crpk-title {
-  font-size: 30px !important;
+  font-size: 29px !important;
   letter-spacing: 4px !important;
 }
 .crpk-vulpix .crpk-icon {
   border-radius: 50% !important;
 }
 
-/* 02 — PSYDUCK / SPLIT */
+/* 02 PSYDUCK — SPLIT */
 .crpk-psyduck {
   border: 1px solid var(--grupo-color, #888) !important;
   padding: 18px !important;
 }
 .crpk-psyduck .crpk-layout {
   display: grid !important;
-  grid-template-columns: 180px minmax(0, 1fr) !important;
-  gap: 20px !important;
+  grid-template-columns: 175px minmax(0, 1fr) !important;
+  gap: 18px !important;
   align-items: stretch !important;
 }
 .crpk-psyduck .crpk-photo {
   height: 100% !important;
-  min-height: 330px !important;
+  min-height: 350px !important;
 }
 .crpk-psyduck .crpk-photo img {
   position: absolute !important;
   inset: 0 !important;
 }
 .crpk-psyduck .crpk-head {
-  margin: 0 0 20px !important;
-  padding-bottom: 15px !important;
+  margin: 0 0 18px !important;
+  padding-bottom: 13px !important;
   border-bottom: 2px solid var(--grupo-color, #888) !important;
 }
 .crpk-psyduck .crpk-title {
-  font-size: 21px !important;
+  font-size: 20px !important;
 }
 .crpk-psyduck .crpk-icon {
-  flex-basis: 42px !important;
-  width: 42px !important;
-  height: 42px !important;
+  flex-basis: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 50% !important;
 }
 .crpk-psyduck .crpk-meta {
@@ -2711,32 +2730,28 @@
   padding: 6px 8px !important;
 }
 
-/* 03 — DRAGONAIR / DOUBLE EXPOSURE */
+/* 03 DRAGONAIR — DOUBLE IMAGE */
 .crpk-dragonair {
   border-top: 5px solid var(--grupo-color, #888) !important;
   border-bottom: 5px solid var(--grupo-color, #888) !important;
 }
 .crpk-dragonair .crpk-gallery {
   display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 8px !important;
 }
-.crpk-dragonair .crpk-photo {
+.crpk-dragonair .crpk-gallery .crpk-photo {
   height: 175px !important;
 }
-.crpk-dragonair .crpk-photo:first-child {
-  border-radius: 35px 0 0 0 !important;
+.crpk-dragonair .crpk-gallery .crpk-photo:first-child {
+  border-radius: 30px 0 0 0 !important;
 }
-.crpk-dragonair .crpk-photo:last-child {
-  border-radius: 0 0 35px 0 !important;
-}
-.crpk-dragonair .crpk-head {
-  padding-bottom: 15px !important;
-  border-bottom: 1px solid var(--grupo-color, #888) !important;
+.crpk-dragonair .crpk-gallery .crpk-photo:last-child {
+  border-radius: 0 0 30px 0 !important;
 }
 .crpk-dragonair .crpk-title {
-  font-size: 27px !important;
-  letter-spacing: 5px !important;
+  font-size: 26px !important;
+  letter-spacing: 4px !important;
 }
 .crpk-dragonair .crpk-icon {
   border: 0 !important;
@@ -2744,7 +2759,7 @@
   font-size: 30px !important;
 }
 
-/* 04 — HOOTHOOT / POLAROID */
+/* 04 HOOTHOOT — POLAROID */
 .crpk-hoothoot {
   border: 2px solid var(--grupo-color, #888) !important;
   padding: 25px !important;
@@ -2762,7 +2777,9 @@
 .crpk-hoothoot .crpk-head {
   display: block !important;
   text-align: center !important;
-  margin: 22px 0 !important;
+}
+.crpk-hoothoot .crpk-heading {
+  width: 100% !important;
 }
 .crpk-hoothoot .crpk-icon {
   width: 40px !important;
@@ -2780,7 +2797,7 @@
   border-bottom: 1px dashed var(--grupo-color, #888) !important;
 }
 
-/* 05 — MAREEP / PHOTO JOURNAL */
+/* 05 MAREEP — PHOTO JOURNAL */
 .crpk-mareep {
   padding: 25px !important;
   border-left: 5px solid var(--grupo-color, #888) !important;
@@ -2791,31 +2808,30 @@
   grid-template-rows: 125px 125px !important;
   gap: 8px !important;
 }
-.crpk-mareep .crpk-photo:first-child {
+.crpk-mareep .crpk-gallery .crpk-photo:first-child {
   grid-row: 1 / 3 !important;
   height: 258px !important;
 }
-.crpk-mareep .crpk-photo:nth-child(2),
-.crpk-mareep .crpk-photo:nth-child(3) {
+.crpk-mareep .crpk-gallery .crpk-photo:nth-child(2),
+.crpk-mareep .crpk-gallery .crpk-photo:nth-child(3) {
   height: 125px !important;
 }
-.crpk-mareep .crpk-head {
-  padding-bottom: 15px !important;
-  border-bottom: 3px solid var(--grupo-color, #888) !important;
-}
 .crpk-mareep .crpk-title {
-  font-size: 28px !important;
+  font-size: 27px !important;
   letter-spacing: 3px !important;
 }
 .crpk-mareep .crpk-icon {
   border-radius: 0 50% 50% 50% !important;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media screen and (max-width: 540px) {
   .crpk-imgtable {
     width: 95% !important;
-    padding: 18px !important;
+    padding: 17px !important;
+  }
+  .crpk-imgtable .crpk-meta {
+    grid-template-columns: 1fr !important;
   }
   .crpk-psyduck .crpk-layout {
     grid-template-columns: 1fr !important;
@@ -2824,10 +2840,7 @@
     height: 220px !important;
     min-height: 220px !important;
   }
-  .crpk-imgtable .crpk-meta {
-    grid-template-columns: 1fr !important;
-  }
-  .crpk-dragonair .crpk-photo {
+  .crpk-dragonair .crpk-gallery .crpk-photo {
     height: 125px !important;
   }
   .crpk-hoothoot .crpk-photo {
