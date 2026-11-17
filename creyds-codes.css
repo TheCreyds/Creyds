@@ -2491,291 +2491,308 @@
 .cr5-poppy .cr5-post { padding:20px 12px; border-top:5px solid currentColor; border-radius:35px 0 0 0; }
 .cr5-poppy .cr5-meta span { border:1px solid currentColor; border-radius:25px 5px 25px 5px; }
 
+
 /* ==========================================
-   CREYDS POKEMON — GEN 1 & GEN 2
-   Color de grupo: --grupo-color
-   Fondo transparente / texto adaptable
+   CREYDS POKEMON — FIX DEFINITIVO
+   Compatible con fondo transparente
+   Color decorativo: --grupo-color
 ========================================== */
 
+.crpk-table,
+.crpk-table * {
+  box-sizing: border-box !important;
+}
+
 .crpk-table {
-  width: 520px;
-  max-width: 95%;
-  margin: 35px auto;
-  padding: 28px;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
+  display: block !important;
+  width: 520px !important;
+  max-width: 95% !important;
+  margin: 35px auto !important;
+  padding: 28px !important;
+  position: relative !important;
+  overflow: hidden !important;
   background: transparent !important;
-  color: inherit;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  font-size: 13px;
-  line-height: 1.8;
+  color: inherit !important;
+  font-family: 'Inter', 'Segoe UI', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.8 !important;
 }
-.crpk-table, .crpk-table * { box-sizing: border-box; }
-.crpk-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  margin-bottom: 24px;
+
+.crpk-table .crpk-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px !important;
+  margin: 0 0 24px !important;
 }
-.crpk-title {
+
+.crpk-table .crpk-title {
+  display: block !important;
   margin: 0 !important;
   padding: 0 !important;
-  color: var(--grupo-color, #666) !important;
-  font-size: 25px;
-  line-height: 1.1;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.crpk-icon {
-  width: 58px;
-  height: 58px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--grupo-color, #666);
-  border: 4px solid var(--grupo-color, #666);
-  font-size: 25px;
-  line-height: 1;
-}
-.crpk-icon i { font-style: normal; }
-.crpk-post {
-  color: inherit;
-  text-align: justify;
-  font-size: 13px;
-  line-height: 1.9;
-}
-.crpk-meta {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  margin-top: 25px;
-}
-.crpk-meta span {
-  min-width: 0;
-  padding: 10px;
-  border-top: 4px solid var(--grupo-color, #666);
-  color: inherit;
-  font-size: 10px;
-  line-height: 1.5;
-  overflow-wrap: anywhere;
-}
-.crpk-meta b {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--grupo-color, #666);
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.crpk-caption {
-  display: block;
-  margin-bottom: 10px;
-  color: var(--grupo-color, #666);
-  font-size: 8px;
-  font-weight: 900;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  color: var(--grupo-color, #888) !important;
+  font-size: 25px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
 }
 
-/* 01 — BULBASAUR / BOTANICAL */
+.crpk-table .crpk-icon {
+  display: flex !important;
+  flex: 0 0 58px !important;
+  width: 58px !important;
+  height: 58px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 4px solid var(--grupo-color, #888) !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 25px !important;
+  line-height: 1 !important;
+}
+
+.crpk-table .crpk-icon i {
+  font-style: normal !important;
+  font-size: inherit !important;
+}
+
+.crpk-table .crpk-post {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  font-size: 13px !important;
+  line-height: 1.9 !important;
+  text-align: justify !important;
+}
+
+.crpk-table .crpk-meta {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 25px 0 0 !important;
+  padding: 0 !important;
+}
+
+.crpk-table .crpk-meta span {
+  display: block !important;
+  min-width: 0 !important;
+  padding: 10px !important;
+  border-top: 4px solid var(--grupo-color, #888) !important;
+  background: transparent !important;
+  color: inherit !important;
+  font-size: 10px !important;
+  line-height: 1.5 !important;
+  overflow-wrap: anywhere !important;
+}
+
+.crpk-table .crpk-meta b {
+  display: block !important;
+  margin: 0 0 4px !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 8px !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+}
+
+.crpk-table .crpk-caption {
+  display: block !important;
+  margin: 0 0 10px !important;
+  color: var(--grupo-color, #888) !important;
+  font-size: 8px !important;
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+}
+
+/* 01 — BULBASAUR */
 .crpk-bulba {
-  border: 4px solid var(--grupo-color, #666);
-  border-radius: 0 35px 0 35px;
+  border: 4px solid var(--grupo-color, #888) !important;
+  border-radius: 0 35px !important;
 }
 .crpk-bulba .crpk-head {
-  padding-bottom: 18px;
-  border-bottom: 4px solid var(--grupo-color, #666);
+  padding-bottom: 18px !important;
+  border-bottom: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-bulba .crpk-icon {
-  border-radius: 50% 50% 0 50%;
+  border-radius: 50% 50% 0 50% !important;
   transform: rotate(8deg);
 }
-.crpk-bulba .crpk-title { letter-spacing: 4px; }
 
-/* 02 — PIKACHU / ELECTRIC */
+/* 02 — PIKACHU */
 .crpk-pikachu {
-  border-left: 8px solid var(--grupo-color, #666);
-  border-right: 4px solid var(--grupo-color, #666);
-  padding: 30px 28px;
+  border-left: 8px solid var(--grupo-color, #888) !important;
+  border-right: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-pikachu .crpk-head {
-  align-items: flex-end;
-  border-bottom: 4px dashed var(--grupo-color, #666);
-  padding-bottom: 16px;
+  align-items: flex-end !important;
+  padding-bottom: 16px !important;
+  border-bottom: 4px dashed var(--grupo-color, #888) !important;
 }
 .crpk-pikachu .crpk-icon {
-  border-radius: 50%;
-  outline: 2px solid var(--grupo-color, #666);
+  border-radius: 50% !important;
+  outline: 2px solid var(--grupo-color, #888);
   outline-offset: 4px;
 }
-.crpk-pikachu .crpk-title { font-size: 30px; }
+.crpk-pikachu .crpk-title { font-size: 30px !important; }
 
-/* 03 — LAPRAS / OCEAN */
+/* 03 — LAPRAS */
 .crpk-lapras {
-  border: 4px double var(--grupo-color, #666);
-  border-radius: 45px 0 45px 0;
+  border: 4px double var(--grupo-color, #888) !important;
+  border-radius: 45px 0 !important;
 }
 .crpk-lapras .crpk-head {
-  justify-content: center;
-  flex-direction: column-reverse;
-  text-align: center;
+  flex-direction: column-reverse !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 .crpk-lapras .crpk-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  flex-basis: 70px !important;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
 }
-.crpk-lapras .crpk-title { font-size: 24px; }
 .crpk-lapras .crpk-post {
-  padding: 20px 8px;
-  border-top: 1px solid var(--grupo-color, #666);
-  border-bottom: 1px solid var(--grupo-color, #666);
+  padding: 20px 8px !important;
+  border-top: 1px solid var(--grupo-color, #888) !important;
+  border-bottom: 1px solid var(--grupo-color, #888) !important;
 }
 
-/* 04 — EEVEE / EVOLUTION */
+/* 04 — EEVEE */
 .crpk-eevee {
-  border: 4px solid var(--grupo-color, #666);
-  padding: 22px;
+  border: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-eevee .crpk-head {
-  padding: 15px;
-  border: 4px solid var(--grupo-color, #666);
-  outline: 1px solid var(--grupo-color, #666);
+  padding: 15px !important;
+  border: 4px solid var(--grupo-color, #888) !important;
+  outline: 1px solid var(--grupo-color, #888);
   outline-offset: 4px;
 }
 .crpk-eevee .crpk-icon {
-  border: 0;
-  border-left: 4px solid var(--grupo-color, #666);
+  border: 0 !important;
+  border-left: 4px solid var(--grupo-color, #888) !important;
 }
-.crpk-eevee .crpk-title { font-size: 22px; }
 
-/* 05 — SNORLAX / MINIMAL */
+/* 05 — SNORLAX */
 .crpk-snorlax {
-  padding: 36px 32px;
-  border-top: 8px solid var(--grupo-color, #666);
-  border-bottom: 8px solid var(--grupo-color, #666);
+  padding: 36px 32px !important;
+  border-top: 8px solid var(--grupo-color, #888) !important;
+  border-bottom: 8px solid var(--grupo-color, #888) !important;
 }
 .crpk-snorlax .crpk-head {
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
-.crpk-snorlax .crpk-icon {
-  border: 4px solid var(--grupo-color, #666);
-  border-radius: 50%;
-}
-.crpk-snorlax .crpk-title { font-size: 28px; letter-spacing: 5px; }
-.crpk-snorlax .crpk-meta { border-top: 1px solid var(--grupo-color, #666); }
+.crpk-snorlax .crpk-icon { border-radius: 50% !important; }
+.crpk-snorlax .crpk-title { letter-spacing: 5px !important; }
 
-/* 06 — CHIKORITA / EDITORIAL */
+/* 06 — CHIKORITA */
 .crpk-chiko {
-  border-left: 4px solid var(--grupo-color, #666);
-  padding-left: 35px;
+  padding-left: 35px !important;
+  border-left: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-chiko .crpk-head {
-  display: block;
-  padding-bottom: 18px;
-  border-bottom: 1px solid var(--grupo-color, #666);
+  display: block !important;
+  padding-bottom: 18px !important;
+  border-bottom: 1px solid var(--grupo-color, #888) !important;
 }
 .crpk-chiko .crpk-icon {
   float: right;
-  width: 48px;
-  height: 48px;
-  border: 4px solid var(--grupo-color, #666);
-  border-radius: 50% 50% 50% 0;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% 50% 50% 0 !important;
 }
-.crpk-chiko .crpk-title { font-size: 26px; }
-.crpk-chiko .crpk-caption { margin-top: 5px; }
+.crpk-chiko .crpk-caption { margin-top: 5px !important; }
 
-/* 07 — CYNDAQUIL / FLAME */
+/* 07 — CYNDAQUIL */
 .crpk-cynda {
-  border: 4px solid var(--grupo-color, #666);
-  border-radius: 0;
+  border: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-cynda .crpk-head {
-  padding: 15px;
-  border-bottom: 4px solid var(--grupo-color, #666);
-  border-left: 12px solid var(--grupo-color, #666);
+  padding: 15px !important;
+  border-bottom: 4px solid var(--grupo-color, #888) !important;
+  border-left: 12px solid var(--grupo-color, #888) !important;
 }
-.crpk-cynda .crpk-icon {
-  border: 4px solid var(--grupo-color, #666);
-  transform: rotate(45deg);
-}
+.crpk-cynda .crpk-icon { transform: rotate(45deg); }
 .crpk-cynda .crpk-icon i { transform: rotate(-45deg); }
-.crpk-cynda .crpk-post { padding: 12px 4px; }
 
-/* 08 — TOGETIC / CELESTIAL */
+/* 08 — TOGETIC */
 .crpk-togetic {
-  border: 4px solid var(--grupo-color, #666);
-  border-radius: 50px 50px 0 0;
-  padding: 35px;
+  padding: 35px !important;
+  border: 4px solid var(--grupo-color, #888) !important;
+  border-radius: 50px 50px 0 0 !important;
 }
 .crpk-togetic .crpk-head {
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 .crpk-togetic .crpk-icon {
-  border-radius: 50%;
-  border-style: double;
-  border-width: 6px;
+  border-style: double !important;
+  border-width: 6px !important;
+  border-radius: 50% !important;
 }
-.crpk-togetic .crpk-title { letter-spacing: 4px; }
+.crpk-togetic .crpk-title { letter-spacing: 4px !important; }
 .crpk-togetic .crpk-meta span {
-  border-top: 0;
-  border-bottom: 4px solid var(--grupo-color, #666);
+  border-top: 0 !important;
+  border-bottom: 4px solid var(--grupo-color, #888) !important;
 }
 
-/* 09 — AMPHAROS / TECH */
+/* 09 — AMPHAROS */
 .crpk-ampha {
-  border: 4px solid var(--grupo-color, #666);
-  padding: 20px;
+  padding: 20px !important;
+  border: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-ampha .crpk-head {
-  padding: 12px;
-  border: 4px solid var(--grupo-color, #666);
-  border-bottom-width: 8px;
+  padding: 12px !important;
+  border: 4px solid var(--grupo-color, #888) !important;
+  border-bottom-width: 8px !important;
 }
 .crpk-ampha .crpk-icon {
-  border: 0;
-  border-left: 4px solid var(--grupo-color, #666);
-  font-size: 30px;
+  border: 0 !important;
+  border-left: 4px solid var(--grupo-color, #888) !important;
 }
 .crpk-ampha .crpk-title {
-  font-family: 'Courier New', monospace;
-  letter-spacing: 1px;
+  font-family: 'Courier New', monospace !important;
 }
 .crpk-ampha .crpk-post {
-  padding: 15px;
-  border-left: 4px dashed var(--grupo-color, #666);
+  padding: 15px !important;
+  border-left: 4px dashed var(--grupo-color, #888) !important;
 }
 
-/* 10 — ESPEON / ART DECO */
+/* 10 — ESPEON */
 .crpk-espeon {
-  border: 4px double var(--grupo-color, #666);
-  padding: 32px;
+  padding: 32px !important;
+  border: 4px double var(--grupo-color, #888) !important;
 }
 .crpk-espeon .crpk-head {
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  padding-bottom: 20px;
+  flex-direction: column !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 .crpk-espeon .crpk-icon {
-  border-radius: 50% 50% 0 0;
-  border-width: 4px 4px 0;
+  border-width: 4px 4px 0 !important;
+  border-radius: 50% 50% 0 0 !important;
 }
-.crpk-espeon .crpk-title {
-  font-size: 25px;
-  letter-spacing: 5px;
-}
+.crpk-espeon .crpk-title { letter-spacing: 5px !important; }
 .crpk-espeon .crpk-post {
-  padding: 18px 0;
-  border-top: 4px double var(--grupo-color, #666);
-  border-bottom: 4px double var(--grupo-color, #666);
+  padding: 18px 0 !important;
+  border-top: 4px double var(--grupo-color, #888) !important;
+  border-bottom: 4px double var(--grupo-color, #888) !important;
+}
+
+/* ADAPTACIÓN MÓVIL */
+@media screen and (max-width: 540px) {
+  .crpk-table {
+    width: 95% !important;
+    padding: 18px !important;
+  }
+  .crpk-table .crpk-meta {
+    grid-template-columns: 1fr !important;
+  }
 }
