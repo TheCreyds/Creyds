@@ -2495,436 +2495,79 @@
    CREYDS CURVE — GROUP COLORED FRAMES
 ========================================== */
 
-.cr5-serpentine,
-.cr5-camellia,
-.cr5-sundrop,
-.cr5-ruffle,
-.cr5-butterfly,
-.cr5-milky,
-.cr5-loop,
-.cr5-jelly,
-.cr5-orbital,
-.cr5-poppy {
-  border-color: var(--group, currentColor) !important;
-}
-
-/* Contornos interiores */
-.cr5-camellia:before,
-.cr5-milky:before,
-.cr5-poppy:before {
-  border-color: var(--group, currentColor) !important;
-}
-
 
 /* ==========================================
-   CREYDS — IMAGE CURVE FIX
-   Marco exterior: 4px
-   Imagen real + color de grupo
+   CREYDS — GLOBAL GROUP COLOR FIX
+   Obtiene el color individual de cada post
+   Variable real de Foroactivo: --grupo-color
 ========================================== */
 
+/* MARCOS EXTERIORES */
+.cr-table,
+.cr4-table,
+.cr5-table,
 .cr6-table {
-  width:520px;
-  max-width:95%;
-  margin:35px auto;
-  padding:26px;
-  position:relative;
-  overflow:hidden;
-  box-sizing:border-box;
-  background:transparent !important;
-  color:var(--grupo-color) !important;
-  border:4px solid var(--group) !important;
-  font-family:'Inter','Segoe UI',sans-serif;
-  font-size:13px;
-  line-height:1.8;
+  border-color:var(--grupo-color,currentColor) !important;
 }
 
-.cr6-table,
-.cr6-table * {
-  box-sizing:border-box;
-}
-
-.cr6-head {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-  margin-bottom:22px;
-  position:relative;
-}
-
+/* TÍTULOS */
+.cr-title,
+.cr4-title,
+.cr5-title,
 .cr6-title {
-  margin:0 !important;
-  padding:0 !important;
-  color:var(--grupo-color) !important;
-  font-size:21px;
-  font-weight:900;
-  line-height:1.2;
-  letter-spacing:1px;
-  text-transform:uppercase;
+  color:var(--grupo-color,currentColor) !important;
 }
 
-.cr6-image {
-  display:block;
-  width:82px;
-  height:82px;
-  flex:0 0 82px;
-  overflow:hidden;
-  border:4px solid var(--group,currentColor) !important;
-  background:transparent !important;
-  line-height:0;
+/* ICONOS Y ESPACIOS DECORATIVOS */
+.cr-icon,
+.cr4-icon,
+.cr5-icon,
+.cr6-icon {
+  color:var(--grupo-color,currentColor) !important;
+  border-color:var(--grupo-color,currentColor) !important;
 }
 
-.cr6-image img {
-  display:block !important;
-  width:100% !important;
-  height:100% !important;
-  max-width:none !important;
-  max-height:none !important;
-  object-fit:cover !important;
-  object-position:center !important;
-  border:0 !important;
-  outline:0 !important;
-  margin:0 !important;
-  padding:0 !important;
-  box-shadow:none !important;
-}
-
-.cr6-post {
-  position:relative;
-  margin:0;
-  padding:0;
-  color:inherit !important;
-  font-size:13px;
-  line-height:1.9;
-  text-align:justify;
-}
-
+/* ETIQUETAS Y SUBTÍTULOS */
+.cr-caption,
+.cr-kicker,
+.cr4-kicker,
+.cr4-caption,
+.cr5-label,
 .cr6-label {
-  display:block;
-  margin-bottom:8px;
-  color:var(--group,currentColor) !important;
-  font-size:8px;
-  font-weight:900;
-  letter-spacing:3px;
-  text-transform:uppercase;
+  color:var(--grupo-color,currentColor) !important;
 }
 
-.cr6-meta {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:9px;
-  margin-top:24px;
+/* INFORMACIÓN INFERIOR */
+.cr-meta b,
+.cr4-meta b,
+.cr5-meta b,
+.cr6-meta b,
+.cr4-label,
+.cr5-label {
+  color:var(--grupo-color,currentColor) !important;
 }
 
-.cr6-meta span {
-  display:block;
-  min-width:0;
-  padding:10px;
-  color:inherit !important;
-  font-size:10px;
-  line-height:1.55;
-  overflow-wrap:anywhere;
+/* BORDES Y DETALLES INTERNOS */
+.cr-table [class*="meta"] span,
+.cr4-table [class*="meta"] span,
+.cr5-table [class*="meta"] span,
+.cr6-table [class*="meta"] span {
+  border-color:var(--grupo-color,currentColor);
 }
 
-.cr6-meta b {
-  display:block;
-  margin-bottom:5px;
-  color:var(--group,currentColor) !important;
-  font-size:8px;
-  letter-spacing:2px;
-  text-transform:uppercase;
+/* IMÁGENES */
+.cr6-image {
+  border-color:var(--grupo-color,currentColor) !important;
 }
 
-/* 01 — PORTRAIT */
-.cr6-portrait {
-  border-radius:28px 85px 28px 28px;
+/* ELEMENTOS DECORATIVOS */
+.cr-table:before,
+.cr-table:after,
+.cr4-table:before,
+.cr4-table:after,
+.cr5-table:before,
+.cr5-table:after,
+.cr6-table:before,
+.cr6-table:after {
+  border-color:var(--grupo-color,currentColor);
 }
-.cr6-portrait .cr6-image {
-  width:88px;
-  height:112px;
-  flex-basis:88px;
-  border-radius:45px 45px 10px 10px;
-}
-.cr6-portrait .cr6-title {
-  font-family:Georgia,serif;
-  font-weight:400;
-  font-style:italic;
-}
-.cr6-portrait .cr6-post {
-  padding:18px 5px;
-  border-top:4px solid var(--group,currentColor);
-}
-.cr6-portrait .cr6-meta span {
-  border-top:4px solid var(--group,currentColor);
-}
-
-/* 02 — POLAROID */
-.cr6-polaroid {
-  border-radius:22px 55px 22px 55px;
-}
-.cr6-polaroid .cr6-head {
-  flex-direction:column;
-  align-items:stretch;
-}
-.cr6-polaroid .cr6-image {
-  width:100%;
-  height:190px;
-  flex-basis:auto;
-  border-radius:35px 8px 35px 8px;
-}
-.cr6-polaroid .cr6-title {
-  text-align:center;
-  font-family:Georgia,serif;
-  font-weight:400;
-}
-.cr6-polaroid .cr6-post {
-  padding:18px;
-  border:4px solid var(--group,currentColor);
-  border-radius:22px;
-}
-.cr6-polaroid .cr6-meta span {
-  text-align:center;
-  border-bottom:4px solid var(--group,currentColor);
-}
-
-/* 03 — SIDEFRAME */
-.cr6-sideframe {
-  border-radius:65px 20px 65px 20px;
-}
-.cr6-sideframe .cr6-head {
-  flex-direction:row-reverse;
-}
-.cr6-sideframe .cr6-image {
-  width:105px;
-  height:105px;
-  flex-basis:105px;
-  border-radius:50% 50% 10px 50%;
-}
-.cr6-sideframe .cr6-title {
-  font-size:22px;
-}
-.cr6-sideframe .cr6-post {
-  padding:18px 10px;
-  border-left:4px solid var(--group,currentColor);
-}
-.cr6-sideframe .cr6-meta span {
-  border:4px solid var(--group,currentColor);
-  border-radius:0 18px 0 18px;
-}
-
-/* 04 — GALLERY */
-.cr6-gallery {
-  border-radius:35px;
-}
-.cr6-gallery .cr6-head {
-  flex-direction:column-reverse;
-  align-items:stretch;
-  gap:15px;
-}
-.cr6-gallery .cr6-image {
-  width:100%;
-  height:150px;
-  flex-basis:auto;
-  border-radius:65px 12px 65px 12px;
-}
-.cr6-gallery .cr6-title {
-  text-align:center;
-  letter-spacing:3px;
-}
-.cr6-gallery .cr6-post {
-  padding:20px 5px;
-  border-top:4px solid var(--group,currentColor);
-  border-bottom:4px solid var(--group,currentColor);
-}
-.cr6-gallery .cr6-meta span {
-  border:4px solid var(--group,currentColor);
-  border-radius:25px;
-  text-align:center;
-}
-
-/* 05 — MEDALLION */
-.cr6-medallion {
-  border-radius:100px 25px 100px 25px;
-}
-.cr6-medallion .cr6-head {
-  flex-direction:column;
-  text-align:center;
-  gap:12px;
-}
-.cr6-medallion .cr6-image {
-  width:120px;
-  height:120px;
-  flex-basis:120px;
-  border-radius:50%;
-}
-.cr6-medallion .cr6-title {
-  font-family:Georgia,serif;
-  font-weight:400;
-  letter-spacing:2px;
-}
-.cr6-medallion .cr6-post {
-  padding:18px 12px;
-  border-top:4px solid var(--group,currentColor);
-  text-align:center;
-}
-.cr6-medallion .cr6-meta span {
-  border-top:4px solid var(--group,currentColor);
-  text-align:center;
-}
-
-/* 06 — FILM */
-.cr6-film {
-  border-radius:20px 70px 20px 70px;
-}
-.cr6-film .cr6-head {
-  align-items:flex-end;
-}
-.cr6-film .cr6-image {
-  width:110px;
-  height:78px;
-  flex-basis:110px;
-  border-radius:8px;
-}
-.cr6-film .cr6-title {
-  font-family:Georgia,serif;
-  font-weight:400;
-  font-style:italic;
-}
-.cr6-film .cr6-post {
-  padding:20px 5px;
-  border-top:4px solid var(--group,currentColor);
-}
-.cr6-film .cr6-meta span {
-  border-bottom:4px solid var(--group,currentColor);
-}
-
-/* 07 — CASCADE */
-.cr6-cascade {
-  border-radius:20px 90px 20px 20px;
-}
-.cr6-cascade .cr6-head {
-  display:grid;
-  grid-template-columns:95px minmax(0,1fr);
-  align-items:center;
-}
-.cr6-cascade .cr6-image {
-  grid-column:1;
-  grid-row:1;
-  width:90px;
-  height:110px;
-  flex-basis:auto;
-  border-radius:50% 50% 8px 8px;
-}
-.cr6-cascade .cr6-title {
-  grid-column:2;
-  grid-row:1;
-  padding-left:10px !important;
-}
-.cr6-cascade .cr6-post {
-  padding:20px;
-  border:4px solid var(--group,currentColor);
-  border-radius:30px 5px 30px 5px;
-}
-.cr6-cascade .cr6-meta span {
-  border-left:4px solid var(--group,currentColor);
-}
-
-/* 08 — WINDOW */
-.cr6-window {
-  border-radius:55px 55px 18px 18px;
-}
-.cr6-window .cr6-head {
-  flex-direction:column;
-  align-items:stretch;
-}
-.cr6-window .cr6-image {
-  width:100%;
-  height:170px;
-  flex-basis:auto;
-  border-radius:100px 100px 15px 15px;
-}
-.cr6-window .cr6-title {
-  text-align:center;
-  font-family:Georgia,serif;
-  font-weight:400;
-}
-.cr6-window .cr6-post {
-  padding:18px 8px;
-}
-.cr6-window .cr6-meta span {
-  border:4px solid var(--group,currentColor);
-  border-radius:18px 18px 5px 5px;
-  text-align:center;
-}
-
-/* 09 — MOSAIC */
-.cr6-mosaic {
-  border-radius:18px 80px 18px 80px;
-}
-.cr6-mosaic .cr6-head {
-  display:grid;
-  grid-template-columns:125px minmax(0,1fr);
-  align-items:center;
-}
-.cr6-mosaic .cr6-image {
-  grid-column:1;
-  grid-row:1;
-  width:120px;
-  height:120px;
-  flex-basis:auto;
-  border-radius:12px 55px 12px 12px;
-}
-.cr6-mosaic .cr6-title {
-  grid-column:2;
-  grid-row:1;
-  font-size:21px;
-  padding-left:5px !important;
-}
-.cr6-mosaic .cr6-post {
-  padding:20px 5px;
-  border-top:4px solid var(--group,currentColor);
-}
-.cr6-mosaic .cr6-meta span {
-  border:4px solid var(--group,currentColor);
-  border-radius:5px 20px 5px 20px;
-}
-
-/* 10 — AURA */
-.cr6-aura {
-  border-radius:85px 18px 85px 18px;
-}
-.cr6-aura:before {
-  content:"";
-  position:absolute;
-  inset:9px;
-  border:1px solid var(--group,currentColor);
-  border-radius:75px 12px 75px 12px;
-  pointer-events:none;
-}
-.cr6-aura .cr6-head {
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-}
-.cr6-aura .cr6-image {
-  width:100px;
-  height:100px;
-  flex-basis:100px;
-  border-radius:50% 50% 12px 50%;
-}
-.cr6-aura .cr6-title {
-  font-family:Georgia,serif;
-  font-style:italic;
-  font-weight:400;
-}
-.cr6-aura .cr6-post {
-  padding:20px 10px;
-  border-top:4px solid var(--group,currentColor);
-  border-bottom:4px solid var(--group,currentColor);
-  text-align:center;
-}
-.cr6-aura .cr6-meta span {
-  text-align:center;
-  border-bottom:4px solid var(--group,currentColor);
-}
-
