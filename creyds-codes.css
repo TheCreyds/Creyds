@@ -2514,3 +2514,115 @@
 .cr5-poppy:before {
   border-color: var(--group, currentColor) !important;
 }
+
+/* ==========================================
+   CREYDS — IMAGE CURVE COLLECTION
+   10 diseños con imagen y marco de grupo
+========================================== */
+
+.cr6-table {
+  width:520px;
+  max-width:95%;
+  margin:35px auto;
+  padding:28px;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  background:transparent !important;
+  color:inherit !important;
+  border:5px solid var(--group,currentColor) !important;
+  font-family:'Inter','Segoe UI',sans-serif;
+  font-size:13px;
+  line-height:1.8;
+}
+.cr6-table, .cr6-table * { box-sizing:border-box; }
+.cr6-head { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-bottom:22px; }
+.cr6-title { margin:0 !important; padding:0 !important; color:inherit !important; font-size:25px; font-weight:900; line-height:1.15; letter-spacing:1px; text-transform:uppercase; }
+.cr6-image { width:76px; height:76px; flex:0 0 76px; overflow:hidden; border:3px solid var(--group,currentColor); background:transparent !important; }
+.cr6-image img { display:block; width:100% !important; height:100% !important; object-fit:cover; object-position:center; border:0 !important; margin:0 !important; padding:0 !important; }
+.cr6-post { color:inherit !important; margin:0; font-size:13px; line-height:1.9; text-align:justify; }
+.cr6-label { display:block; margin-bottom:8px; color:var(--group,currentColor) !important; font-size:8px; font-weight:900; letter-spacing:3px; text-transform:uppercase; }
+.cr6-meta { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:9px; margin-top:24px; }
+.cr6-meta span { display:block; min-width:0; padding:10px; color:inherit !important; font-size:10px; line-height:1.5; overflow-wrap:anywhere; }
+.cr6-meta b { display:block; margin-bottom:5px; color:var(--group,currentColor) !important; font-size:8px; letter-spacing:2px; text-transform:uppercase; }
+
+/* 01 — PORTRAIT: imagen vertical */
+.cr6-portrait { border-radius:28px 90px 28px 28px; }
+.cr6-portrait .cr6-head { align-items:center; }
+.cr6-portrait .cr6-image { width:88px; height:112px; flex-basis:88px; border-radius:45px 45px 12px 12px; }
+.cr6-portrait .cr6-title { font-family:Georgia,serif; font-weight:400; font-style:italic; }
+.cr6-portrait .cr6-post { padding:20px 5px; border-top:1px solid currentColor; }
+.cr6-portrait .cr6-meta span { border-top:3px solid var(--group,currentColor); }
+
+/* 02 — POLAROID: fotografía tipo instantánea */
+.cr6-polaroid { border-radius:18px 55px 18px 55px; padding:25px; }
+.cr6-polaroid .cr6-head { flex-direction:column; align-items:stretch; }
+.cr6-polaroid .cr6-image { width:100%; height:190px; flex-basis:auto; border:5px solid var(--group,currentColor); border-radius:35px 8px 35px 8px; }
+.cr6-polaroid .cr6-title { text-align:center; font-family:Georgia,serif; font-weight:400; }
+.cr6-polaroid .cr6-post { padding:18px; border:1px solid currentColor; border-radius:22px; }
+.cr6-polaroid .cr6-meta span { text-align:center; border-bottom:3px solid var(--group,currentColor); }
+
+/* 03 — SIDEFRAME: imagen lateral */
+.cr6-sideframe { border-radius:65px 20px 65px 20px; }
+.cr6-sideframe .cr6-head { flex-direction:row-reverse; }
+.cr6-sideframe .cr6-image { width:105px; height:105px; flex-basis:105px; border-radius:50% 50% 12px 50%; }
+.cr6-sideframe .cr6-title { font-size:22px; }
+.cr6-sideframe .cr6-post { padding:18px 10px; border-left:4px solid var(--group,currentColor); }
+.cr6-sideframe .cr6-meta span { border:1px solid currentColor; border-radius:0 18px 0 18px; }
+
+/* 04 — GALLERY: imagen panorámica */
+.cr6-gallery { border-radius:35px; }
+.cr6-gallery .cr6-head { flex-direction:column-reverse; align-items:stretch; gap:15px; }
+.cr6-gallery .cr6-image { width:100%; height:150px; flex-basis:auto; border-radius:65px 12px 65px 12px; }
+.cr6-gallery .cr6-title { text-align:center; letter-spacing:3px; }
+.cr6-gallery .cr6-post { padding:20px 5px; border-top:1px solid currentColor; border-bottom:1px solid currentColor; }
+.cr6-gallery .cr6-meta span { border:1px solid currentColor; border-radius:25px; text-align:center; }
+
+/* 05 — MEDALLION: imagen circular */
+.cr6-medallion { border-radius:100px 25px 100px 25px; }
+.cr6-medallion .cr6-head { flex-direction:column; text-align:center; gap:12px; }
+.cr6-medallion .cr6-image { width:120px; height:120px; flex-basis:120px; border-radius:50%; border-width:5px; }
+.cr6-medallion .cr6-title { font-family:Georgia,serif; font-weight:400; letter-spacing:2px; }
+.cr6-medallion .cr6-post { padding:18px 12px; border-top:1px solid currentColor; text-align:center; }
+.cr6-medallion .cr6-meta span { border-top:3px solid var(--group,currentColor); text-align:center; }
+
+/* 06 — FILM: imagen con marco de película */
+.cr6-film { border-radius:20px 70px 20px 70px; }
+.cr6-film .cr6-head { align-items:flex-end; }
+.cr6-film .cr6-image { width:110px; height:78px; flex-basis:110px; border:5px double var(--group,currentColor); border-radius:8px; }
+.cr6-film .cr6-title { font-family:Georgia,serif; font-weight:400; font-style:italic; }
+.cr6-film .cr6-post { padding:20px 5px; border-top:3px double currentColor; }
+.cr6-film .cr6-meta span { border-bottom:1px solid var(--group,currentColor); }
+
+/* 07 — CASCADE: imagen desplazada */
+.cr6-cascade { border-radius:20px 90px 20px 20px; }
+.cr6-cascade .cr6-head { display:grid; grid-template-columns:90px 1fr; align-items:center; }
+.cr6-cascade .cr6-image { grid-column:1; grid-row:1; width:85px; height:105px; flex-basis:auto; border-radius:50% 50% 8px 8px; }
+.cr6-cascade .cr6-title { grid-column:2; grid-row:1; padding-left:10px !important; }
+.cr6-cascade .cr6-post { padding:20px; border:1px solid currentColor; border-radius:30px 5px 30px 5px; }
+.cr6-cascade .cr6-meta span { border-left:4px solid var(--group,currentColor); }
+
+/* 08 — WINDOW: ventana fotográfica */
+.cr6-window { border-radius:55px 55px 18px 18px; }
+.cr6-window .cr6-head { flex-direction:column; align-items:stretch; }
+.cr6-window .cr6-image { width:100%; height:170px; flex-basis:auto; border-radius:100px 100px 15px 15px; }
+.cr6-window .cr6-title { text-align:center; font-family:Georgia,serif; font-weight:400; }
+.cr6-window .cr6-post { padding:18px 8px; }
+.cr6-window .cr6-meta span { border:1px solid currentColor; border-radius:18px 18px 5px 5px; text-align:center; }
+
+/* 09 — MOSAIC: composición fotográfica asimétrica */
+.cr6-mosaic { border-radius:18px 80px 18px 80px; }
+.cr6-mosaic .cr6-head { display:grid; grid-template-columns:125px 1fr; align-items:center; }
+.cr6-mosaic .cr6-image { grid-column:1; grid-row:1; width:120px; height:120px; flex-basis:auto; border-radius:12px 55px 12px 12px; }
+.cr6-mosaic .cr6-title { grid-column:2; grid-row:1; font-size:21px; padding-left:5px !important; }
+.cr6-mosaic .cr6-post { padding:20px 5px; border-top:5px solid var(--group,currentColor); }
+.cr6-mosaic .cr6-meta span { border:1px solid currentColor; border-radius:5px 20px 5px 20px; }
+
+/* 10 — AURA: imagen flotante y marco doble */
+.cr6-aura { border-radius:85px 18px 85px 18px; }
+.cr6-aura:before { content:""; position:absolute; inset:9px; border:1px solid var(--group,currentColor); border-radius:75px 12px 75px 12px; pointer-events:none; }
+.cr6-aura .cr6-head { flex-direction:column; align-items:center; text-align:center; }
+.cr6-aura .cr6-image { width:100px; height:100px; flex-basis:100px; border-radius:50% 50% 12px 50%; }
+.cr6-aura .cr6-title { font-family:Georgia,serif; font-style:italic; font-weight:400; }
+.cr6-aura .cr6-post { padding:20px 10px; border-top:1px solid currentColor; border-bottom:1px solid currentColor; text-align:center; }
+.cr6-aura .cr6-meta span { text-align:center; border-bottom:3px solid var(--group,currentColor); }
